@@ -16,3 +16,9 @@ F:\Project\QuanLyKhachSan\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 F:\Project\QuanLyKhachSan\DTO\obj\Debug\DTO.dll
 F:\Project\QuanLyKhachSan\DTO\obj\Debug\DTO.pdb
 F:\Project\QuanLyKhachSan\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DTO\bin\Debug\DTO.dll
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DTO\bin\Debug\DTO.pdb
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DTO\obj\Debug\DTO.dll
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DTO\obj\Debug\DTO.pdb

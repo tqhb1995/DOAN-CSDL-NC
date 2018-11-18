@@ -25,3 +25,12 @@ F:\Project\QuanLyKhachSan\DAO\obj\Debug\DAO.csproj.CopyComplete
 F:\Project\QuanLyKhachSan\DAO\obj\Debug\DAO.dll
 F:\Project\QuanLyKhachSan\DAO\obj\Debug\DAO.pdb
 F:\Project\QuanLyKhachSan\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DAO\bin\Debug\DAO.dll
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DAO\bin\Debug\DAO.pdb
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DAO\bin\Debug\DTO.dll
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DAO\bin\Debug\DTO.pdb
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DAO\obj\Debug\DAO.csproj.CopyComplete
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DAO\obj\Debug\DAO.dll
+F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DAO\obj\Debug\DAO.pdb

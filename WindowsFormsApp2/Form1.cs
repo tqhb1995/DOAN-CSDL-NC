@@ -79,8 +79,8 @@ namespace WindowsFormsApp2
                     //settext = p.MaKH;
                     //settext1 = p.HoTen;
                     this.Hide();
-                    DangNhap frm = new DangNhap();
-                    frm.Show();
+                   // DangNhap frm = new DangNhap();
+                    //frm.Show();
                 }
                 else
                     MessageBox.Show("Lỗi, vui lòng thử lại! \n ", "Thông báo");
@@ -164,8 +164,8 @@ namespace WindowsFormsApp2
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Home frm = new Home();
-            frm.Show();
+            //Home frm = new Home();
+            //frm.Show();
         }
 
         private void cboHienThi_CheckedChanged_1(object sender, EventArgs e)

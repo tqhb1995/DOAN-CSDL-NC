@@ -20,9 +20,6 @@ namespace BUS
             return KhachHangDAO.KiemTraTonTai(temp);
 
         }
-        public static KhachHangDTO DangNhap(KhachHangDTO khDTO)
-        {
-            return KhachHangDAO.DangNhap(khDTO);
-        }
+       
     }
 }
