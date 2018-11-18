@@ -1,0 +1,62 @@
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csprojResolveAssemblyReference.cache
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ForInsertNewCustomer.resources
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.GenerateResource.cache
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.CoreCompileInputs.cache
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\BUS.dll
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\DTO.dll
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\DAO.dll
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\BUS.pdb
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\DTO.pdb
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\DAO.pdb
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.CopyComplete
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\BUS.dll
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\DTO.dll
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\DAO.dll
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\BUS.pdb
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\DTO.pdb
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\DAO.pdb
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csprojResolveAssemblyReference.cache
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ForInsertNewCustomer.resources
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.GenerateResource.cache
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.CoreCompileInputs.cache
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.CopyComplete
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\duong\Downloads\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\BUS.dll
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\DTO.dll
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\DAO.dll
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\BUS.pdb
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\DTO.pdb
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\bin\Debug\DAO.pdb
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ForInsertNewCustomer.resources
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.GenerateResource.cache
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.CoreCompileInputs.cache
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.CopyComplete
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Home.resources
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.DangNhap.resources
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.LoginBook.resources
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.AddKS.resources
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.admin.resources
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.DatPhong.resources
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.TimHoaDon.resources
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.BaoCaoThang.resources
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csprojAssemblyReference.cache
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\Interop.LCC11.dll
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.ResolveComReference.cache
+F:\Project\QuanLyKhachSan\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.BaoCaoSoPhongTrong.resources

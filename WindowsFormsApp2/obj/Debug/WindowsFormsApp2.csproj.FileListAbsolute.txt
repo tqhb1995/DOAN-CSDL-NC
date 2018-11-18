@@ -1,0 +1,30 @@
+C:\Users\Phuong Truong\Desktop\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Phuong Truong\Desktop\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Phuong Truong\Desktop\WindowsFormsApp2\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Phuong Truong\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojResolveAssemblyReference.cache
+C:\Users\Phuong Truong\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ForInsertNewCustomer.resources
+C:\Users\Phuong Truong\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Phuong Truong\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\Phuong Truong\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\Phuong Truong\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Phuong Truong\Desktop\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojResolveAssemblyReference.cache
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ForInsertNewCustomer.resources
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy - Copy_proc\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csprojResolveAssemblyReference.cache
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy - Copy_proc\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ForInsertNewCustomer.resources
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy - Copy_proc\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy - Copy_proc\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy - Copy_proc\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy - Copy_proc\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy - Copy_proc\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy - Copy_proc\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy - Copy_proc\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Phuong Truong\Desktop\Show new Cus - Copy - Copy_proc\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb

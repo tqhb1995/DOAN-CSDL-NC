@@ -1,0 +1,27 @@
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\DAO\bin\Debug\DAO.dll
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\DAO\bin\Debug\DAO.pdb
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\DAO\bin\Debug\DTO.dll
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\DAO\bin\Debug\DTO.pdb
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\DAO\obj\Debug\DAO.dll
+C:\Users\Phuong Truong\Desktop\QuanLyKhachSan\DAO\obj\Debug\DAO.pdb
+C:\Users\duong\Downloads\QuanLyKhachSan\DAO\bin\Debug\DAO.dll
+C:\Users\duong\Downloads\QuanLyKhachSan\DAO\bin\Debug\DAO.pdb
+C:\Users\duong\Downloads\QuanLyKhachSan\DAO\bin\Debug\DTO.dll
+C:\Users\duong\Downloads\QuanLyKhachSan\DAO\bin\Debug\DTO.pdb
+C:\Users\duong\Downloads\QuanLyKhachSan\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\duong\Downloads\QuanLyKhachSan\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+C:\Users\duong\Downloads\QuanLyKhachSan\DAO\obj\Debug\DAO.csproj.CopyComplete
+C:\Users\duong\Downloads\QuanLyKhachSan\DAO\obj\Debug\DAO.dll
+C:\Users\duong\Downloads\QuanLyKhachSan\DAO\obj\Debug\DAO.pdb
+F:\Project\QuanLyKhachSan\DAO\bin\Debug\DAO.dll
+F:\Project\QuanLyKhachSan\DAO\bin\Debug\DAO.pdb
+F:\Project\QuanLyKhachSan\DAO\bin\Debug\DTO.dll
+F:\Project\QuanLyKhachSan\DAO\bin\Debug\DTO.pdb
+F:\Project\QuanLyKhachSan\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+F:\Project\QuanLyKhachSan\DAO\obj\Debug\DAO.csproj.CopyComplete
+F:\Project\QuanLyKhachSan\DAO\obj\Debug\DAO.dll
+F:\Project\QuanLyKhachSan\DAO\obj\Debug\DAO.pdb
+F:\Project\QuanLyKhachSan\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
