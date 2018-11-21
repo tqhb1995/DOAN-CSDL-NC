@@ -1,6 +1,7 @@
 ﻿create DATABASE DatKhachSanOnline
+go
 USE DatKhachSanOnline
-
+go
 /*
 	DROP DATABASE DatKhachSanOnline;
 	DROP TABLE KhachHang;
@@ -87,15 +88,7 @@ CREATE TABLE HoaDon (
 	primary key (maHD)
 )
 
-CREATE TABLE NhanVien
-(
-	maNV char(10) not null,
-	hoTen nvarchar(100),
-	tenDangNhap varchar(30),
-	matKhau varchar(30),
-	maKS char(10),
-	PRIMARY KEY(maNV)
-)
+
 
 
 --Tạo khóa ngoại
