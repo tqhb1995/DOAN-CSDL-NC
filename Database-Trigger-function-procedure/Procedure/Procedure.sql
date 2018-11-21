@@ -61,3 +61,45 @@ create procedure DangNhapHeThong
 as
   Select * from KhachHang
       where tenDangNhap = @tenDangNhap and matKhau = @matKhau
+
+
+
+--------- Lập Hóa Đơn
+-- Input: maDP
+-- Output: thong tin hoa don vua moi lap
+
+CREATE PROCEDURE lapHoaDon
+	@maDP char(10)
+AS
+BEGIN
+	if(NOT EXISTS (SELECT *
+					FROM DatPhong
+					WHERE @maDP = maDP ))
+		BEGIN
+			print N'Mã đặt phòng không hợp lệ.'
+		END
+	else
+		BEGIN
+			-- Tính tổng tiền
+			DECLARE @ngayTraPhong date
+			DECLARE @ngayBD date
+			DECLARE @soNgay int
+			DECLARE @tongTien int
+			DECLARE @donGia int
+			--DECLARE @ngayThanhToan datetime
+			DECLARE @maHD char(10)
+			SELECT @ngayTraPhong = a.ngayTraPhong from DatPhong a where a.maDP = @maDP
+			SELECT @ngayBD = b.ngayBatDau from DatPhong b where b.maDP = @maDP
+			SELECT @donGia = c.donGia from DatPhong c where c.maDP = @maDP
+			--SELECT @ngayThanhToan = GETDATE()
+			SELECT @maHD = dbo.Auto_IdHD()
+			SET @soNgay = CAST(DATEDIFF(dd,@ngayBD,@ngayTraPhong) as INT)
+			SET @tongTien = @soNgay * @donGia
+			---- INSERT dữ liệu vào table Hóa Đơn
+			INSERT INTO HoaDon(maHD,ngayThanhToan,tongTien,maDP)
+			VALUES (@maHD,GETDATE(),@tongTien,@maDP)
+			---- Xuất thông tin hóa đơn vừa tạo cho nhân viên
+			SELECT * FROM HoaDon
+			WHERE maHD = @maHD
+		END
+END
