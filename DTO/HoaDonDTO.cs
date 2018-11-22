@@ -32,5 +32,6 @@ namespace DTO
             get { return _maDP; }
             set { _maDP = value; }
         }
+
     }
 }

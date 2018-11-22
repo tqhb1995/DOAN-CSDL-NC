@@ -103,3 +103,56 @@ BEGIN
 			WHERE maHD = @maHD
 		END
 END
+
+---------ĐẶT PHÒNG-------
+-------------------------
+CREATE PROCEDURE proc_DatPhong  
+(  
+	@LoaiPhong varchar(20),
+	@TenKS nvarchar(100),
+	@Quan nvarchar(100),
+	@ThanhPho nvarchar(100),
+	@NgayBatDau datetime,  
+	@NgayTraPhong datetime,  
+	@NgayDat datetime,
+	@MoTa nvarchar(100),
+	@TinhTrang varchar(20),
+	@SDT VARCHAR(11)
+)  
+AS  
+BEGIN
+	if(NOT EXISTS (SELECT *
+					FROM dbo.LoaiPhong
+					WHERE @LoaiPhong = maLoaiPhong ))
+		BEGIN
+			print N'Loại phòng không hợp lệ.'
+		END 
+	ELSE IF (NOT EXISTS (SELECT *
+					FROM dbo.KhachHang
+					WHERE @SDT = soDienThoai ))
+		BEGIN
+			print N'Khách hàng không tồn tại.'
+		END
+	ELSE
+		BEGIN
+			--Khai báo
+			DECLARE @maDP char(10)
+			DECLARE @maKH char(10)
+			DECLARE @maKS nvarchar(100)
+			DECLARE @maLoaiPhong varchar(20)
+			DECLARE @DonGia float
+			--Lấy dữ liệu
+			SELECT @maDP = dbo.Auto_IdDP()
+			SELECT @maKH FROM dbo.KhachHang WHERE @SDT = soDienThoai
+			SELECT @maKS FROM dbo.KhachSan WHERE @Quan = quan AND @ThanhPho = thanhPho
+			SELECT @maLoaiPhong from dbo.LoaiPhong WHERE @maKS = maKS
+			SELECT @DonGia FROM dbo.LoaiPhong WHERE @DonGia = donGia
+			INSERT INTO DatPhong(maDP, maLoaiPhong, maKH, ngayBatDau, ngayTraPhong, ngayDat, donGia, moTa, tinhTrang)
+			VALUES (@maDP, @maLoaiPhong, @maKH, @NgayBatDau, @ngayTraPhong, @NgayDat, @DonGia, @MoTa, @TinhTrang)
+		END
+END 
+
+
+
+
+

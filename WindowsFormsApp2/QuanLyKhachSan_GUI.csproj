@@ -56,6 +56,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatKhachSanOnlineDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DatPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatPhong.Designer.cs">
+      <DependentUpon>DatPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -34,7 +34,7 @@ BEGIN
 	IF (SELECT COUNT(maNV) FROM dbo.NhanVien) = 0
 		SET @temp = 0
 	ELSE
-		SET @temp = (SELECT MAX(CONVERT(INT, (RIGHT(maKH, 8)))) FROM dbo.KhachHang)
+		SET @temp = (SELECT MAX(CONVERT(INT, (RIGHT(maNV, 8)))) FROM dbo.NhanVien)
 	SET @id = CASE
 		WHEN @temp >= 0 and @temp < 9 THEN 'NV0000000' + CONVERT(CHAR, @temp + 1)
 		WHEN @temp >= 9 AND @temp < 99 THEN 'NV000000' + CONVERT(CHAR, @temp + 1)
@@ -126,3 +126,6 @@ END
 
 ALTER TABLE dbo.DatPhong
 ADD DEFAULT dbo.Auto_IdDP() FOR maDP
+
+
+
