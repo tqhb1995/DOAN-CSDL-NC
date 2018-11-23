@@ -108,26 +108,20 @@ END
 -------------------------
 CREATE PROCEDURE proc_DatPhong  
 (  
-	@LoaiPhong varchar(20),
 	@TenKS nvarchar(100),
 	@Quan nvarchar(100),
 	@ThanhPho nvarchar(100),
+	@tenLoaiPhong varchar(20),	
 	@NgayBatDau datetime,  
-	@NgayTraPhong datetime,  
-	@NgayDat datetime,
+	@NgayTraPhong datetime,
 	@MoTa nvarchar(100),
 	@TinhTrang varchar(20),
-	@SDT VARCHAR(11)
+	@SDT VARCHAR(11),
+	@CMND varchar(12)
 )  
 AS  
 BEGIN
-	if(NOT EXISTS (SELECT *
-					FROM dbo.LoaiPhong
-					WHERE @LoaiPhong = maLoaiPhong ))
-		BEGIN
-			print N'Loại phòng không hợp lệ.'
-		END 
-	ELSE IF (NOT EXISTS (SELECT *
+	IF (NOT EXISTS (SELECT *
 					FROM dbo.KhachHang
 					WHERE @SDT = soDienThoai ))
 		BEGIN
@@ -139,20 +133,20 @@ BEGIN
 			DECLARE @maDP char(10)
 			DECLARE @maKH char(10)
 			DECLARE @maKS nvarchar(100)
-			DECLARE @maLoaiPhong varchar(20)
 			DECLARE @DonGia float
+			DECLARE @maLoaiPhong varchar(100)
 			--Lấy dữ liệu
 			SELECT @maDP = dbo.Auto_IdDP()
-			SELECT @maKH FROM dbo.KhachHang WHERE @SDT = soDienThoai
-			SELECT @maKS FROM dbo.KhachSan WHERE @Quan = quan AND @ThanhPho = thanhPho
-			SELECT @maLoaiPhong from dbo.LoaiPhong WHERE @maKS = maKS
-			SELECT @DonGia FROM dbo.LoaiPhong WHERE @DonGia = donGia
+			SELECT @maKH = maKH FROM dbo.KhachHang WHERE @SDT = soDienThoai AND @CMND = soCMND
+			SELECT @maKS = maKS FROM dbo.KhachSan WHERE @Quan = quan AND @ThanhPho = thanhPho
+			SELECT @maLoaiPhong = maLoaiPhong from dbo.LoaiPhong WHERE @maKS = maKS AND @tenLoaiPhong = tenLoaiPhong
+			SELECT @DonGia = donGia FROM dbo.LoaiPhong WHERE @DonGia = donGia
 			INSERT INTO DatPhong(maDP, maLoaiPhong, maKH, ngayBatDau, ngayTraPhong, ngayDat, donGia, moTa, tinhTrang)
-			VALUES (@maDP, @maLoaiPhong, @maKH, @NgayBatDau, @ngayTraPhong, @NgayDat, @DonGia, @MoTa, @TinhTrang)
+			VALUES (@maDP, @maLoaiPhong, @maKH, @NgayBatDau, @ngayTraPhong, GETDATE(), @DonGia, @MoTa, @TinhTrang)
 		END
 END 
 
-
+-----------------------------------------
 
 
 
