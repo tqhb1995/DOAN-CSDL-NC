@@ -115,7 +115,6 @@ CREATE PROCEDURE proc_DatPhong
 	@NgayBatDau datetime,  
 	@NgayTraPhong datetime,
 	@MoTa nvarchar(100),
-	@TinhTrang varchar(20),
 	@SDT VARCHAR(11)
 )  
 AS  
@@ -134,16 +133,36 @@ BEGIN
 			DECLARE @maKS nvarchar(100)
 			DECLARE @DonGia float
 			DECLARE @maLoaiPhong varchar(100)
+			DECLARE @SLTrong int
+			DECLARE @soPhongTrong int
+			DECLARE @MaPhong varchar(20)
+			DECLARE @ngay datetime
+			DECLARE @tinhTrang nvarchar(50)
 			--Lấy dữ liệu
 			SELECT @maDP = dbo.Auto_IdDP()
 			SELECT @maKH = maKH FROM dbo.KhachHang WHERE @SDT = soDienThoai
 			SELECT @maKS = maKS FROM dbo.KhachSan WHERE @Quan = quan AND @ThanhPho = thanhPho
 			SELECT @maLoaiPhong = maLoaiPhong from dbo.LoaiPhong WHERE @maKS = maKS AND @tenLoaiPhong = tenLoaiPhong
 			SELECT @DonGia = donGia FROM dbo.LoaiPhong WHERE @DonGia = donGia
-			INSERT INTO DatPhong(maDP, maLoaiPhong, maKH, ngayBatDau, ngayTraPhong, ngayDat, donGia, moTa, tinhTrang)
-			VALUES (@maDP, @maLoaiPhong, @maKH, @NgayBatDau, @ngayTraPhong, GETDATE(), @DonGia, @MoTa, @TinhTrang)
+			SELECT @SLTrong = slTrong FROM dbo.LoaiPhong WHERE @maLoaiPhong = maLoaiPhong AND @maKS = maKS
+			SET @soPhongTrong = @SLTrong - 1
+			IF (@SLTrong <= 0)
+			BEGIN
+				print N'Đã hết phòng. Xin chọn lại!'
+			END
+			ELSE
+			BEGIN
+				INSERT INTO DatPhong(maDP, maLoaiPhong, maKH, ngayBatDau, ngayTraPhong, ngayDat, donGia, moTa)
+				VALUES (@maDP, @maLoaiPhong, @maKH, @NgayBatDau, @ngayTraPhong, GETDATE(), @DonGia, @MoTa)
+
+				--Update số lượng trống của Loại phòng đó trong bảng Loại Phòng
+				UPDATE dbo.LoaiPhong
+				SET slTrong = @soPhongTrong
+				WHERE @maLoaiPhong = maLoaiPhong AND @maKS = maKS
+			END
 		END
 END 
+
 
 -----------------------------------------
 
