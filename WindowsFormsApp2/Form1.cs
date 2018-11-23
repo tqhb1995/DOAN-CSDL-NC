@@ -182,6 +182,8 @@ namespace WindowsFormsApp2
             else txtXNMK.UseSystemPasswordChar = false;
         }
 
+        
+
 
 
 
