@@ -165,6 +165,59 @@ END
 
 
 -----------------------------------------
+--thêm sửa loại phòng, phòng, khách hàng
+CREATE PROCEDURE ThemLoaiPhong (@malp CHAR(10), @TenLP NVARCHAR(30), @MaKS CHAR(10), @DonGia FLOAT, @mota NVARCHAR(1000), @sltrong INT)
+AS
+INSERT INTO dbo.LoaiPhong
+(
+	maLoaiPhong,
+    tenLoaiPhong,
+    maKS,
+    donGia,
+    moTa,
+    slTrong
+)
+VALUES
+(   
+	@malp,
+	@TenLP, -- tenLoaiPhong - nvarchar(30)
+    @MaKS,  -- maKS - char(10)
+    @DonGia, -- donGia - float
+    @mota, -- moTa - nvarchar(1000)
+    @sltrong    -- slTrong - int
+)
+GO 
+CREATE PROCEDURE ThemPhong (@lp CHAR(10), @sophong INT) 
+AS
+INSERT INTO dbo.Phong
+(
+    loaiPhong,
+    soPhong
+)
+VALUES
+(   
+    @lp, -- loaiPhong - char(10)
+    @sophong   -- soPhong - int
+    )
+GO
+CREATE PROCEDURE SuaPhong(@ma CHAR(10), @lp CHAR(10), @sophong INT)
+AS
+UPDATE dbo.Phong
+SET loaiPhong = @lp, soPhong = @sophong
+WHERE maPhong = @ma
+GO 
+CREATE PROCEDURE SuaLoaiPhong (@malp CHAR(10), @TenLP NVARCHAR(30), @MaKS CHAR(10), @DonGia FLOAT, @mota NVARCHAR(1000), @sltrong INT)
+AS
+UPDATE dbo.LoaiPhong
+SET tenLoaiPhong = @TenLP, maKS = @MaKS, donGia = @DonGia, moTa = @mota, slTrong=@sltrong
+WHERE maLoaiPhong = @malp
+GO 
+CREATE PROCEDURE SuaKhachHang (@makh CHAR(10), @hoten NVARCHAR(100), @tendangnhap VARCHAR(10), @matkhau VARCHAR(16),
+@CMND VARCHAR(12), @diachi NVARCHAR(200), @sodienthoai VARCHAR(13), @moto NVARCHAR(1000),@email VARCHAR(100))
+AS
+UPDATE dbo.KhachHang
+SET hoTen=@hoten, tenDangNhap = @tendangnhap, matKhau = @matkhau, soCMND = @CMND, diaChi = @diachi, soDienThoai = @sodienthoai,
+moTa = @moto, email = @email
+WHERE maKH = @makh
 
-
-
+------------------------------------------------------------
