@@ -10,11 +10,46 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
-    public partial class DatPhong : Form
+    public partial class frmDatPhong : Form
     {
-        public DatPhong()
+        public frmDatPhong()
         {
             InitializeComponent();
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmDatPhong_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

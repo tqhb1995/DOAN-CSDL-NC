@@ -98,3 +98,4 @@ F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.c
 F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.CopyComplete
 F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
+F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmDatPhong.resources
