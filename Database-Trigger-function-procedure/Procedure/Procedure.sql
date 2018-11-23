@@ -116,8 +116,7 @@ CREATE PROCEDURE proc_DatPhong
 	@NgayTraPhong datetime,
 	@MoTa nvarchar(100),
 	@TinhTrang varchar(20),
-	@SDT VARCHAR(11),
-	@CMND varchar(12)
+	@SDT VARCHAR(11)
 )  
 AS  
 BEGIN
@@ -137,7 +136,7 @@ BEGIN
 			DECLARE @maLoaiPhong varchar(100)
 			--Lấy dữ liệu
 			SELECT @maDP = dbo.Auto_IdDP()
-			SELECT @maKH = maKH FROM dbo.KhachHang WHERE @SDT = soDienThoai AND @CMND = soCMND
+			SELECT @maKH = maKH FROM dbo.KhachHang WHERE @SDT = soDienThoai
 			SELECT @maKS = maKS FROM dbo.KhachSan WHERE @Quan = quan AND @ThanhPho = thanhPho
 			SELECT @maLoaiPhong = maLoaiPhong from dbo.LoaiPhong WHERE @maKS = maKS AND @tenLoaiPhong = tenLoaiPhong
 			SELECT @DonGia = donGia FROM dbo.LoaiPhong WHERE @DonGia = donGia
