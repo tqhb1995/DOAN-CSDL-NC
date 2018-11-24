@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,39 +19,57 @@ namespace WindowsFormsApp2
             InitializeComponent();
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void btnDatPhong_Click(object sender, EventArgs e)
         {
+            //if (txt == "" || txtCMND.Text == "" || txtSDT.Text == "" || txtEmail.Text == "" || txtMoTa.Text == "" || txtTenDangNhap.Text == "" || txtMatKhau.Text == "" || txtDiaChi.Text == "")
+            //{
+            //    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo");
+            //    return;
+            //}
 
+            //if (txtMatKhau.Text != txtXNMK.Text)
+            //{
+            //    MessageBox.Show("Mật khẩu không khớp! \nVui lòng nhập lại!", "Thông báo");
+            //    return;
+            //}
+            KhachHangDTO kh = new KhachHangDTO();
+            DatPhongDTO dp = new DatPhongDTO();
+            LoaiPhongDTO lp = new LoaiPhongDTO();
+            KhachSanDTO ks = new KhachSanDTO();
+
+            ks.TenKS = txtTenKS.Text;
+            ks.Quan = txtQuan.Text;
+            ks.ThanhPho = txtTP.Text;
+            lp.TenLoaiPhong = txtLP.Text;
+            kh.SoDienThoai = txtSDT.Text;
+            dp.NgayBatDau = this.dtpNgayBatDau.Text;
+            dp.NgayTraPhong = this.dtpNgayTraPhong.Text;
+            dp.MoTa = txtMoTa.Text;
+            if (DatPhongBUS.DatPhong(dp) == true)
+            {
+                // KhachHangDTO p = new KhachHangDTO();
+                MessageBox.Show("Đăng kí thành công!", "Thông báo");
+                //settext = p.MaKH;
+                //settext1 = p.HoTen;
+                this.Hide();
+                // DangNhap frm = new DangNhap();
+                //frm.Show();
+            }
+            else
+                MessageBox.Show("Lỗi, vui lòng thử lại! \n ", "Thông báo");
+            //kh.HoTen = txtHoTen.Text;
+            //kh.SoCMND = txtCMND.Text;
+            //kh.DiaChi = txtDiaChi.Text;
+            //kh.SoDienThoai = txtSDT.Text;
+            //kh.MoTa = txtMoTa.Text;
+            //kh.Email = txtEmail.Text;
+            //kh.TenDangNhap = txtTenDangNhap.Text;
+            //kh.MatKhau = txtMatKhau.Text;
         }
 
-        private void frmDatPhong_Load(object sender, EventArgs e)
+        private void btnHuyDP_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
+            Close();
         }
     }
 }

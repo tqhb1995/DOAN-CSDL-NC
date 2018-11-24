@@ -58,11 +58,9 @@ namespace WindowsFormsApp2
             this.datKhachSanOnlineDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnHuy = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gboTTCN.SuspendLayout();
             this.gboTTDN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblHoTen
@@ -350,30 +348,19 @@ namespace WindowsFormsApp2
             this.label1.TabIndex = 10;
             this.label1.Text = "ĐĂNG KÍ THÔNG TIN KHÁCH HÀNG";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 50);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // ForInsertNewCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(989, 415);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.gboTTDN);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.gboTTCN);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ForInsertNewCustomer";
             this.Text = "Thêm Khách Hàng Mới";
@@ -382,7 +369,6 @@ namespace WindowsFormsApp2
             this.gboTTDN.ResumeLayout(false);
             this.gboTTDN.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,7 +404,6 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox cboHienThi2;
         private System.Windows.Forms.CheckBox cboHienThi;
         private System.Windows.Forms.Label label2;
