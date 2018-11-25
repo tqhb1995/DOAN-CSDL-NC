@@ -1,7 +1,7 @@
 --Đăng kí khách hàng
 CREATE PROCEDURE DangKiKH
 	@hoTen nvarchar(100), @tenDangNhap varCHAR(30), @matKhau varCHAR(16), @soCMND varCHAR(12), @diaChi nvarchar(200), @soDienThoai varCHAR(13), @moTa nvarchar(1000), @email varCHAR(100)
-   AS
+   AS	
    IF(EXISTS(SELECT * FROM dbo.KhachHang WHERE tenDangNhap = @tenDangNhap OR soCMND = @soCMND OR soDienThoai = @soDienThoai OR email = @email))
    BEGIN
    RAISERROR('Lỗi!',16,1)
@@ -175,6 +175,12 @@ END
 --thêm loại phòng, phòng,sửa khách hàng
 CREATE PROCEDURE ThemLoaiPhong (@malp CHAR(10), @TenLP NVARCHAR(30), @MaKS CHAR(10), @DonGia FLOAT, @mota NVARCHAR(1000), @sltrong INT)
 AS
+BEGIN
+IF(EXISTS(SELECT * FROM dbo.LoaiPhong WHERE maLoaiPhong = @malp))
+   BEGIN
+   RAISERROR('Lỗi!',16,1)
+   RETURN
+   END
 INSERT INTO dbo.LoaiPhong
 (
 	maLoaiPhong,
@@ -186,46 +192,85 @@ INSERT INTO dbo.LoaiPhong
 )
 VALUES
 (   
-	@malp,
+	@malp, -- maLoaiPhong - char(10)
 	@TenLP, -- tenLoaiPhong - nvarchar(30)
     @MaKS,  -- maKS - char(10)
     @DonGia, -- donGia - float
     @mota, -- moTa - nvarchar(1000)
     @sltrong    -- slTrong - int
 )
+END
 
-CREATE PROCEDURE ThemPhong (@lp CHAR(10), @sophong INT) 
+CREATE PROCEDURE ThemPhong (@mp CHAR(10), @lp CHAR(10), @sophong INT) 
 AS
+BEGIN
+IF(EXISTS(SELECT * FROM dbo.Phong WHERE maPhong = @mp))
+   BEGIN
+   RAISERROR('Lỗi!',16,1)
+   RETURN
+   END
 INSERT INTO dbo.Phong
 (
+	maPhong,
     loaiPhong,
     soPhong
 )
 VALUES
 (   
+	@mp, -- maPhong
     @lp, -- loaiPhong - char(10)
     @sophong   -- soPhong - int
     )
+END 
+
 
 CREATE PROCEDURE SuaPhong(@ma CHAR(10), @lp CHAR(10), @sophong INT)
 AS
+BEGIN
+IF((SELECT COUNT(*) 
+	FROM  dbo.Phong 
+	WHERE maPhong= @ma) = 0)
+   BEGIN
+   RAISERROR('Phòng không tồn tại!',16,1)
+   RETURN
+   END
+
 UPDATE dbo.Phong
-SET loaiPhong = @lp, soPhong = @sophong
+SET loaiPhong = @lp, soPhong= @sophong
 WHERE maPhong = @ma
- 
+END 
+
 CREATE PROCEDURE SuaLoaiPhong (@malp CHAR(10), @TenLP NVARCHAR(30), @MaKS CHAR(10), @DonGia FLOAT, @mota NVARCHAR(1000), @sltrong INT)
 AS
+BEGIN
+IF((SELECT COUNT(*) 
+	FROM  dbo.LoaiPhong 
+	WHERE maLoaiPhong= @malp) = 0)
+   BEGIN
+   RAISERROR('Phòng không tồn tại!',16,1)
+   RETURN
+   END
 UPDATE dbo.LoaiPhong
 SET tenLoaiPhong = @TenLP, maKS = @MaKS, donGia = @DonGia, moTa = @mota, slTrong=@sltrong
 WHERE maLoaiPhong = @malp
+END 
 
 CREATE PROCEDURE SuaKhachHang (@makh CHAR(10), @hoten NVARCHAR(100), @tendangnhap VARCHAR(10), @matkhau VARCHAR(16),
 @CMND VARCHAR(12), @diachi NVARCHAR(200), @sodienthoai VARCHAR(13), @moto NVARCHAR(1000),@email VARCHAR(100))
 AS
+BEGIN
+IF((SELECT COUNT(*) 
+	FROM  dbo.KhachHang
+	WHERE maKH= @makh) = 0)
+	BEGIN
+   RAISERROR('Phòng không tồn tại!',16,1)
+   RETURN
+   END
 UPDATE dbo.KhachHang
 SET hoTen=@hoten, tenDangNhap = @tendangnhap, matKhau = @matkhau, soCMND = @CMND, diaChi = @diachi, soDienThoai = @sodienthoai,
 moTa = @moto, email = @email
 WHERE maKH = @makh
+END
 
 ---------------------------------------------------------------------------------------
 
