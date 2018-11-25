@@ -277,4 +277,106 @@ WHERE maKH = @makh
 END
 
 ---------------------------------------------------------------------------------------
-
+-- STORED PROCEDURE TIM KIEM KHACH SAN
+create procedure search_KS
+	@gia1 int,
+	@gia2 int,
+	@sao char(2),
+	@tp char(10)
+as
+begin
+	create table #result
+		(
+		rs_maKS char(10),
+		rs_tenKS nvarchar(100),
+		rs_soSao char(2),
+		rs_soNha varchar(10),
+		rs_duong nvarchar(100),
+		rs_quan nvarchar(100),
+		rs_thanhPho nvarchar(100),
+		rs_giaTB int,
+		rs_moTa nvarchar(1000)
+		)
+	if @gia1 is not null
+		begin 
+			if @gia2 is not null
+				begin 
+					insert into #result 
+					select *
+					from dbo.KhachSan
+					where giaTB between @gia1 and @gia2
+				end
+			else
+				begin 
+					insert into #result 
+					select *
+					from dbo.KhachSan
+					where giaTB >= @gia1
+				end
+		end
+	else 
+		begin
+			if @gia2 is not null
+				begin 
+					insert into #result 
+					select *
+					from dbo.KhachSan
+					where giaTB <= @gia2
+				end
+			else
+				begin
+				if @sao is not null
+					begin
+						insert into #result
+						select *
+						from dbo.KhachSan
+						where soSao=@sao
+					end
+				else
+					if @tp is not null
+						begin
+							insert into #result
+							select *
+							from dbo.KhachSan
+							where thanhPho=@tp
+						end
+					else
+						begin
+							raiserror (N'Điền vào thông tin cần tìm',16,1)
+							return
+						end
+				end
+		end
+	-- Xuat ket qua
+	if @sao is not null
+		begin 
+			if @tp is not null
+				begin
+					select * 
+					from #result
+					where rs_soSao=@sao and rs_thanhPho=@tp
+				end
+			else
+				begin
+					select *
+					from #result
+					where rs_soSao=@sao
+				end
+		end
+	else
+		begin
+			if @tp is not null
+				begin
+					select *
+					from #result
+					where rs_thanhPho=@tp
+				end
+			else
+				begin
+					select *
+					from #result
+				end
+		end
+----------------
+	drop table #result
+end
