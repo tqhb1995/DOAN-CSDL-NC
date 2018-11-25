@@ -1,7 +1,7 @@
 --Đăng kí khách hàng
 CREATE PROCEDURE DangKiKH
 	@hoTen nvarchar(100), @tenDangNhap varCHAR(30), @matKhau varCHAR(16), @soCMND varCHAR(12), @diaChi nvarchar(200), @soDienThoai varCHAR(13), @moTa nvarchar(1000), @email varCHAR(100)
-   AS	
+  AS	
    IF(EXISTS(SELECT * FROM dbo.KhachHang WHERE tenDangNhap = @tenDangNhap OR soCMND = @soCMND OR soDienThoai = @soDienThoai OR email = @email))
    BEGIN
    RAISERROR('Lỗi!',16,1)
@@ -28,13 +28,27 @@ CREATE PROCEDURE DangKiKH
              @email  -- email - char(20)
            )
 
-
-
 --Thêm khách sạn
-
+go
 CREATE PROCEDURE ThemKhachSan
-  (@tenKS nvarchar(100), @soSao CHAR(2), @soNha varCHAR(10), @duong nvarCHAR(100), @quan nvarchar(100), @thanhPho nvarCHAR(100), @moTa nvarchar(1000), @giaTB int)
+  (
+  @tenKS nvarchar(100), 
+  @soSao CHAR(2), 
+  @soNha varCHAR(10), 
+  @duong nvarCHAR(100), 
+  @quan nvarchar(100), 
+  @thanhPho nvarCHAR(100), 
+  @moTa nvarchar(1000), 
+  @giaTB int
+  )
    AS
+    IF(EXISTS(SELECT * FROM dbo.KhachSan WHERE tenKS = @tenKS and soSao = @soSao and soNha = @soNha 
+	and duong = @duong and quan = @quan and thanhPho = @thanhPho))
+   BEGIN
+   RAISERROR('Khách Sạn đã tồn tại!',16,1)
+   RETURN
+   END
+   begin
    INSERT INTO dbo.KhachSan
            ( tenKS ,
              soSao ,
@@ -54,15 +68,51 @@ CREATE PROCEDURE ThemKhachSan
              @moTa , 
              @giaTB  
            )
+	 end
+
+-- Procedure them nhan vien 
+go
+create procedure ThemNhanVien
+@hoTen nvarchar(100), @tenDangNhap varchar(30), @matKhau varchar(30), @maKS char(10)
+as
+begin
+	if (NOT EXISTS(select * from dbo.KhachSan where maKS = @maKS))
+	begin
+		print N'Mã khách sạn không tồn tại!'
+	end
+	
+	IF(EXISTS(SELECT * FROM dbo.NhanVien WHERE tenDangNhap = @tenDangNhap and matKhau = @matKhau and maKS = @maKS)
+	or EXISTS(SELECT * FROM dbo.NhanVien WHERE tenDangNhap = @tenDangNhap and matKhau = @matKhau) )
+   BEGIN
+   RAISERROR('Lỗi!',16,1)
+   RETURN
+   END
+
+   insert into dbo.NhanVien
+   (
+		hoTen,
+		tenDangNhap,
+		matKhau,
+		maKS
+   )
+   values
+   (
+	@hoTen,
+	@tenDangNhap,
+	@matKhau,
+	@maKS
+   )
+end
 
 --Procedure Đăng nhập hệ thống
-create procedure DangNhapHeThong
+go
+create   procedure DangNhapHeThong
   @tenDangNhap varchar(30), @matKhau varchar(16), @isNhanVien  bit
 as
 if (@isNhanVien = 1)
 Select * from NhanVien
       where tenDangNhap = @tenDangNhap and matKhau = @matKhau
- else 
+else
   Select * from KhachHang
       where tenDangNhap = @tenDangNhap and matKhau = @matKhau
 
@@ -380,3 +430,4 @@ begin
 ----------------
 	drop table #result
 end
+
