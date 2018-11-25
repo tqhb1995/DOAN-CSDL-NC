@@ -137,14 +137,20 @@ BEGIN
 			DECLARE @soPhongTrong int
 			DECLARE @MaPhong varchar(20)
 			DECLARE @ngay datetime
-			DECLARE @tinhTrang nvarchar(50)
-			--Lấy dữ liệu
+			DECLARE @duong varchar(100)
+			--=================================
+			--========Lấy dữ liệu==============
+			--=================================
+			--Lấy mã phát sinh tự động để tạo đặt phòng 
 			SELECT @maDP = dbo.Auto_IdDP()
+			--Lấy mã khách hàng dựa trên số điện thoại
 			SELECT @maKH = maKH FROM dbo.KhachHang WHERE @SDT = soDienThoai
-			SELECT @maKS = maKS FROM dbo.KhachSan WHERE @Quan = quan AND @ThanhPho = thanhPho
+			--Lấy mã khách sạn dựa trên thông tin đường quận thành phố.
+			SELECT @maKS = maKS FROM dbo.KhachSan WHERE @duong = duong AND @Quan = quan AND @ThanhPho = thanhPho
 			SELECT @maLoaiPhong = maLoaiPhong from dbo.LoaiPhong WHERE @maKS = maKS AND @tenLoaiPhong = tenLoaiPhong
-			SELECT @DonGia = donGia FROM dbo.LoaiPhong WHERE @DonGia = donGia
+			SELECT @DonGia = donGia FROM dbo.LoaiPhong WHERE @maLoaiPhong = maLoaiPhong AND @maKS = maKS
 			SELECT @SLTrong = slTrong FROM dbo.LoaiPhong WHERE @maLoaiPhong = maLoaiPhong AND @maKS = maKS
+			--Lấy giá trị phòng khi có người đặt.
 			SET @soPhongTrong = @SLTrong - 1
 			IF (@SLTrong <= 0)
 			BEGIN
@@ -152,8 +158,8 @@ BEGIN
 			END
 			ELSE
 			BEGIN
-				INSERT INTO DatPhong(maDP, maLoaiPhong, maKH, ngayBatDau, ngayTraPhong, ngayDat, donGia, moTa)
-				VALUES (@maDP, @maLoaiPhong, @maKH, @NgayBatDau, @ngayTraPhong, GETDATE(), @DonGia, @MoTa)
+				INSERT INTO DatPhong(maDP, maLoaiPhong, maKH, ngayBatDau, ngayTraPhong, ngayDat, donGia, moTa, tinhTrang)
+				VALUES (@maDP, @maLoaiPhong, @maKH, @NgayBatDau, @ngayTraPhong, GETDATE(), @DonGia, @MoTa, N'Chưa xác nhận')
 
 				--Update số lượng trống của Loại phòng đó trong bảng Loại Phòng
 				UPDATE dbo.LoaiPhong
