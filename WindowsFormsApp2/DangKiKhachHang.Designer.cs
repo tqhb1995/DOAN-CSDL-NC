@@ -66,11 +66,11 @@ namespace WindowsFormsApp2
             // lblHoTen
             // 
             this.lblHoTen.AutoSize = true;
-            this.lblHoTen.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHoTen.Location = new System.Drawing.Point(24, 41);
             this.lblHoTen.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblHoTen.Name = "lblHoTen";
-            this.lblHoTen.Size = new System.Drawing.Size(75, 23);
+            this.lblHoTen.Size = new System.Drawing.Size(77, 20);
             this.lblHoTen.TabIndex = 0;
             this.lblHoTen.Text = "Họ và tên";
             // 
@@ -80,7 +80,7 @@ namespace WindowsFormsApp2
             this.txtHoTen.Location = new System.Drawing.Point(126, 38);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(5);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(285, 26);
+            this.txtHoTen.Size = new System.Drawing.Size(285, 29);
             this.txtHoTen.TabIndex = 1;
             this.txtHoTen.Text = "Trần Văn A";
             this.txtHoTen.Enter += new System.EventHandler(this.txtHoTen_Enter);
@@ -100,7 +100,8 @@ namespace WindowsFormsApp2
             this.gboTTCN.Controls.Add(this.lblDiaChi);
             this.gboTTCN.Controls.Add(this.lblHoTen);
             this.gboTTCN.Controls.Add(this.txtHoTen);
-            this.gboTTCN.Location = new System.Drawing.Point(14, 94);
+            this.gboTTCN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gboTTCN.Location = new System.Drawing.Point(14, 66);
             this.gboTTCN.Margin = new System.Windows.Forms.Padding(5);
             this.gboTTCN.Name = "gboTTCN";
             this.gboTTCN.Padding = new System.Windows.Forms.Padding(5);
@@ -128,17 +129,17 @@ namespace WindowsFormsApp2
             this.txtCMND.Location = new System.Drawing.Point(126, 74);
             this.txtCMND.Margin = new System.Windows.Forms.Padding(5);
             this.txtCMND.Name = "txtCMND";
-            this.txtCMND.Size = new System.Drawing.Size(285, 26);
+            this.txtCMND.Size = new System.Drawing.Size(285, 29);
             this.txtCMND.TabIndex = 17;
             // 
             // lblSoCMND
             // 
             this.lblSoCMND.AutoSize = true;
-            this.lblSoCMND.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoCMND.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSoCMND.Location = new System.Drawing.Point(24, 77);
             this.lblSoCMND.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblSoCMND.Name = "lblSoCMND";
-            this.lblSoCMND.Size = new System.Drawing.Size(79, 23);
+            this.lblSoCMND.Size = new System.Drawing.Size(80, 20);
             this.lblSoCMND.TabIndex = 16;
             this.lblSoCMND.Text = "Số CMND";
             // 
@@ -147,17 +148,17 @@ namespace WindowsFormsApp2
             this.txtMoTa.Location = new System.Drawing.Point(126, 233);
             this.txtMoTa.Margin = new System.Windows.Forms.Padding(5);
             this.txtMoTa.Name = "txtMoTa";
-            this.txtMoTa.Size = new System.Drawing.Size(285, 26);
+            this.txtMoTa.Size = new System.Drawing.Size(285, 29);
             this.txtMoTa.TabIndex = 15;
             // 
             // lblMoTa
             // 
             this.lblMoTa.AutoSize = true;
-            this.lblMoTa.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoTa.Location = new System.Drawing.Point(24, 236);
             this.lblMoTa.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblMoTa.Name = "lblMoTa";
-            this.lblMoTa.Size = new System.Drawing.Size(48, 23);
+            this.lblMoTa.Size = new System.Drawing.Size(49, 20);
             this.lblMoTa.TabIndex = 14;
             this.lblMoTa.Text = "Mô tả";
             // 
@@ -167,7 +168,7 @@ namespace WindowsFormsApp2
             this.txtEmail.Location = new System.Drawing.Point(126, 269);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(5);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(285, 26);
+            this.txtEmail.Size = new System.Drawing.Size(285, 29);
             this.txtEmail.TabIndex = 13;
             this.txtEmail.Text = "tranvana@xyz.com";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
@@ -176,11 +177,11 @@ namespace WindowsFormsApp2
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(24, 272);
             this.lblEmail.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(48, 23);
+            this.lblEmail.Size = new System.Drawing.Size(48, 20);
             this.lblEmail.TabIndex = 12;
             this.lblEmail.Text = "Email";
             // 
@@ -189,28 +190,28 @@ namespace WindowsFormsApp2
             this.txtSDT.Location = new System.Drawing.Point(126, 197);
             this.txtSDT.Margin = new System.Windows.Forms.Padding(5);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(285, 26);
+            this.txtSDT.Size = new System.Drawing.Size(285, 29);
             this.txtSDT.TabIndex = 11;
             // 
             // lblSDT
             // 
             this.lblSDT.AutoSize = true;
-            this.lblSDT.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSDT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSDT.Location = new System.Drawing.Point(24, 196);
             this.lblSDT.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblSDT.Name = "lblSDT";
-            this.lblSDT.Size = new System.Drawing.Size(40, 23);
+            this.lblSDT.Size = new System.Drawing.Size(41, 20);
             this.lblSDT.TabIndex = 10;
             this.lblSDT.Text = "SĐT";
             // 
             // lblDiaChi
             // 
             this.lblDiaChi.AutoSize = true;
-            this.lblDiaChi.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDiaChi.Location = new System.Drawing.Point(24, 110);
             this.lblDiaChi.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblDiaChi.Name = "lblDiaChi";
-            this.lblDiaChi.Size = new System.Drawing.Size(59, 23);
+            this.lblDiaChi.Size = new System.Drawing.Size(57, 20);
             this.lblDiaChi.TabIndex = 7;
             this.lblDiaChi.Text = "Địa chỉ";
             // 
@@ -220,7 +221,7 @@ namespace WindowsFormsApp2
             this.btnInsert.Location = new System.Drawing.Point(690, 304);
             this.btnInsert.Margin = new System.Windows.Forms.Padding(5);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(101, 49);
+            this.btnInsert.Size = new System.Drawing.Size(101, 33);
             this.btnInsert.TabIndex = 7;
             this.btnInsert.Text = "Đăng kí";
             this.btnInsert.UseVisualStyleBackColor = false;
@@ -236,7 +237,8 @@ namespace WindowsFormsApp2
             this.gboTTDN.Controls.Add(this.txtMatKhau);
             this.gboTTDN.Controls.Add(this.txtTenDangNhap);
             this.gboTTDN.Controls.Add(this.lblTenDangNhap);
-            this.gboTTDN.Location = new System.Drawing.Point(461, 94);
+            this.gboTTDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gboTTDN.Location = new System.Drawing.Point(461, 66);
             this.gboTTDN.Margin = new System.Windows.Forms.Padding(5);
             this.gboTTDN.Name = "gboTTDN";
             this.gboTTDN.Padding = new System.Windows.Forms.Padding(5);
@@ -248,6 +250,7 @@ namespace WindowsFormsApp2
             // cboHienThi2
             // 
             this.cboHienThi2.AutoSize = true;
+            this.cboHienThi2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHienThi2.Location = new System.Drawing.Point(423, 101);
             this.cboHienThi2.Name = "cboHienThi2";
             this.cboHienThi2.Size = new System.Drawing.Size(82, 24);
@@ -259,6 +262,7 @@ namespace WindowsFormsApp2
             // cboHienThi
             // 
             this.cboHienThi.AutoSize = true;
+            this.cboHienThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboHienThi.Location = new System.Drawing.Point(423, 65);
             this.cboHienThi.Name = "cboHienThi";
             this.cboHienThi.Size = new System.Drawing.Size(82, 24);
@@ -270,11 +274,11 @@ namespace WindowsFormsApp2
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(24, 102);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 23);
+            this.label2.Size = new System.Drawing.Size(147, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Xác nhận Mật khẩu";
             // 
@@ -283,18 +287,18 @@ namespace WindowsFormsApp2
             this.txtXNMK.Location = new System.Drawing.Point(183, 99);
             this.txtXNMK.Margin = new System.Windows.Forms.Padding(5);
             this.txtXNMK.Name = "txtXNMK";
-            this.txtXNMK.Size = new System.Drawing.Size(226, 26);
+            this.txtXNMK.Size = new System.Drawing.Size(226, 29);
             this.txtXNMK.TabIndex = 5;
             this.txtXNMK.UseSystemPasswordChar = true;
             // 
             // lblMatKhau
             // 
             this.lblMatKhau.AutoSize = true;
-            this.lblMatKhau.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMatKhau.Location = new System.Drawing.Point(24, 66);
             this.lblMatKhau.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblMatKhau.Name = "lblMatKhau";
-            this.lblMatKhau.Size = new System.Drawing.Size(74, 23);
+            this.lblMatKhau.Size = new System.Drawing.Size(75, 20);
             this.lblMatKhau.TabIndex = 4;
             this.lblMatKhau.Text = "Mật khẩu";
             // 
@@ -303,7 +307,7 @@ namespace WindowsFormsApp2
             this.txtMatKhau.Location = new System.Drawing.Point(183, 63);
             this.txtMatKhau.Margin = new System.Windows.Forms.Padding(5);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(226, 26);
+            this.txtMatKhau.Size = new System.Drawing.Size(226, 29);
             this.txtMatKhau.TabIndex = 3;
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
@@ -312,39 +316,39 @@ namespace WindowsFormsApp2
             this.txtTenDangNhap.Location = new System.Drawing.Point(183, 27);
             this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(5);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(226, 26);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(226, 29);
             this.txtTenDangNhap.TabIndex = 1;
             // 
             // lblTenDangNhap
             // 
             this.lblTenDangNhap.AutoSize = true;
-            this.lblTenDangNhap.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTenDangNhap.Location = new System.Drawing.Point(24, 30);
             this.lblTenDangNhap.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblTenDangNhap.Name = "lblTenDangNhap";
-            this.lblTenDangNhap.Size = new System.Drawing.Size(117, 23);
+            this.lblTenDangNhap.Size = new System.Drawing.Size(116, 20);
             this.lblTenDangNhap.TabIndex = 0;
             this.lblTenDangNhap.Text = "Tên đăng nhập";
             // 
             // btnHuy
             // 
-            this.btnHuy.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnHuy.BackColor = System.Drawing.SystemColors.Control;
             this.btnHuy.Location = new System.Drawing.Point(801, 304);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(5);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(101, 49);
+            this.btnHuy.Size = new System.Drawing.Size(101, 33);
             this.btnHuy.TabIndex = 9;
-            this.btnHuy.Text = "Hủy";
+            this.btnHuy.Text = "Thoát";
             this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(268, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(387, 31);
+            this.label1.Size = new System.Drawing.Size(488, 32);
             this.label1.TabIndex = 10;
             this.label1.Text = "ĐĂNG KÍ THÔNG TIN KHÁCH HÀNG";
             // 

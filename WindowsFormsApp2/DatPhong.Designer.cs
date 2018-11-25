@@ -174,24 +174,26 @@
             // 
             // btnDatPhong
             // 
+            this.btnDatPhong.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnDatPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDatPhong.Location = new System.Drawing.Point(833, 375);
+            this.btnDatPhong.Location = new System.Drawing.Point(848, 382);
             this.btnDatPhong.Name = "btnDatPhong";
-            this.btnDatPhong.Size = new System.Drawing.Size(99, 43);
+            this.btnDatPhong.Size = new System.Drawing.Size(113, 39);
             this.btnDatPhong.TabIndex = 18;
             this.btnDatPhong.Text = "Đặt phòng";
-            this.btnDatPhong.UseVisualStyleBackColor = true;
+            this.btnDatPhong.UseVisualStyleBackColor = false;
             this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
             // 
             // btnHuyDP
             // 
+            this.btnHuyDP.BackColor = System.Drawing.SystemColors.Control;
             this.btnHuyDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuyDP.Location = new System.Drawing.Point(967, 375);
+            this.btnHuyDP.Location = new System.Drawing.Point(967, 382);
             this.btnHuyDP.Name = "btnHuyDP";
-            this.btnHuyDP.Size = new System.Drawing.Size(99, 43);
+            this.btnHuyDP.Size = new System.Drawing.Size(99, 39);
             this.btnHuyDP.TabIndex = 19;
             this.btnHuyDP.Text = "Hủy";
-            this.btnHuyDP.UseVisualStyleBackColor = true;
+            this.btnHuyDP.UseVisualStyleBackColor = false;
             this.btnHuyDP.Click += new System.EventHandler(this.btnHuyDP_Click);
             // 
             // groupBox1

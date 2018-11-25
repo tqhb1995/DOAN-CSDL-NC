@@ -57,8 +57,12 @@ CREATE PROCEDURE ThemKhachSan
 
 --Procedure Đăng nhập hệ thống
 create procedure DangNhapHeThong
-  @tenDangNhap varchar(30), @matKhau varchar(16)
+  @tenDangNhap varchar(30), @matKhau varchar(16), @isNhanVien  bit
 as
+if (@isNhanVien = 1)
+Select * from NhanVien
+      where tenDangNhap = @tenDangNhap and matKhau = @matKhau
+ else 
   Select * from KhachHang
       where tenDangNhap = @tenDangNhap and matKhau = @matKhau
 
