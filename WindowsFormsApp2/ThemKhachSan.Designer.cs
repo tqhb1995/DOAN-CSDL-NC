@@ -29,51 +29,51 @@
         private void InitializeComponent()
         {
             this.gboTTCN = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtDuong = new System.Windows.Forms.TextBox();
+            this.txtTP = new System.Windows.Forms.TextBox();
+            this.txtSoNha = new System.Windows.Forms.TextBox();
+            this.txtQuan = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSoSao = new System.Windows.Forms.TextBox();
             this.pictureBox_Sao = new System.Windows.Forms.PictureBox();
             this.lblSoCMND = new System.Windows.Forms.Label();
             this.txtMoTa = new System.Windows.Forms.TextBox();
             this.lblMoTa = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtGiaTB = new System.Windows.Forms.TextBox();
             this.lblSDT = new System.Windows.Forms.Label();
             this.lblDiaChi = new System.Windows.Forms.Label();
             this.lblHoTen = new System.Windows.Forms.Label();
-            this.txtHoTen = new System.Windows.Forms.TextBox();
+            this.txtTenKS = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
-            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnThemKS = new System.Windows.Forms.Button();
             this.gboTTCN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Sao)).BeginInit();
             this.SuspendLayout();
             // 
             // gboTTCN
             // 
-            this.gboTTCN.Controls.Add(this.textBox5);
-            this.gboTTCN.Controls.Add(this.textBox4);
-            this.gboTTCN.Controls.Add(this.textBox3);
-            this.gboTTCN.Controls.Add(this.textBox2);
+            this.gboTTCN.Controls.Add(this.txtDuong);
+            this.gboTTCN.Controls.Add(this.txtTP);
+            this.gboTTCN.Controls.Add(this.txtSoNha);
+            this.gboTTCN.Controls.Add(this.txtQuan);
             this.gboTTCN.Controls.Add(this.label5);
             this.gboTTCN.Controls.Add(this.label4);
             this.gboTTCN.Controls.Add(this.label3);
-            this.gboTTCN.Controls.Add(this.textBox1);
+            this.gboTTCN.Controls.Add(this.txtSoSao);
             this.gboTTCN.Controls.Add(this.pictureBox_Sao);
             this.gboTTCN.Controls.Add(this.lblSoCMND);
             this.gboTTCN.Controls.Add(this.txtMoTa);
             this.gboTTCN.Controls.Add(this.lblMoTa);
             this.gboTTCN.Controls.Add(this.lblEmail);
-            this.gboTTCN.Controls.Add(this.txtSDT);
+            this.gboTTCN.Controls.Add(this.txtGiaTB);
             this.gboTTCN.Controls.Add(this.lblSDT);
             this.gboTTCN.Controls.Add(this.lblDiaChi);
             this.gboTTCN.Controls.Add(this.lblHoTen);
-            this.gboTTCN.Controls.Add(this.txtHoTen);
+            this.gboTTCN.Controls.Add(this.txtTenKS);
             this.gboTTCN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gboTTCN.Location = new System.Drawing.Point(14, 56);
             this.gboTTCN.Margin = new System.Windows.Forms.Padding(5);
@@ -84,34 +84,34 @@
             this.gboTTCN.TabStop = false;
             this.gboTTCN.Text = "Thông tin doanh nghiệp";
             // 
-            // textBox5
+            // txtDuong
             // 
-            this.textBox5.Location = new System.Drawing.Point(152, 170);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(119, 29);
-            this.textBox5.TabIndex = 27;
+            this.txtDuong.Location = new System.Drawing.Point(152, 170);
+            this.txtDuong.Name = "txtDuong";
+            this.txtDuong.Size = new System.Drawing.Size(119, 29);
+            this.txtDuong.TabIndex = 27;
             // 
-            // textBox4
+            // txtTP
             // 
-            this.textBox4.Location = new System.Drawing.Point(152, 110);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(285, 29);
-            this.textBox4.TabIndex = 26;
+            this.txtTP.Location = new System.Drawing.Point(152, 110);
+            this.txtTP.Margin = new System.Windows.Forms.Padding(5);
+            this.txtTP.Name = "txtTP";
+            this.txtTP.Size = new System.Drawing.Size(285, 29);
+            this.txtTP.TabIndex = 26;
             // 
-            // textBox3
+            // txtSoNha
             // 
-            this.textBox3.Location = new System.Drawing.Point(345, 170);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(64, 29);
-            this.textBox3.TabIndex = 25;
+            this.txtSoNha.Location = new System.Drawing.Point(345, 170);
+            this.txtSoNha.Name = "txtSoNha";
+            this.txtSoNha.Size = new System.Drawing.Size(64, 29);
+            this.txtSoNha.TabIndex = 25;
             // 
-            // textBox2
+            // txtQuan
             // 
-            this.textBox2.Location = new System.Drawing.Point(152, 140);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(119, 29);
-            this.textBox2.TabIndex = 24;
+            this.txtQuan.Location = new System.Drawing.Point(152, 140);
+            this.txtQuan.Name = "txtQuan";
+            this.txtQuan.Size = new System.Drawing.Size(119, 29);
+            this.txtQuan.TabIndex = 24;
             // 
             // label5
             // 
@@ -146,12 +146,12 @@
             this.label3.TabIndex = 21;
             this.label3.Text = "Quận";
             // 
-            // textBox1
+            // txtSoSao
             // 
-            this.textBox1.Location = new System.Drawing.Point(152, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(64, 29);
-            this.textBox1.TabIndex = 20;
+            this.txtSoSao.Location = new System.Drawing.Point(152, 77);
+            this.txtSoSao.Name = "txtSoSao";
+            this.txtSoSao.Size = new System.Drawing.Size(64, 29);
+            this.txtSoSao.TabIndex = 20;
             // 
             // pictureBox_Sao
             // 
@@ -205,13 +205,13 @@
             this.lblEmail.Size = new System.Drawing.Size(0, 23);
             this.lblEmail.TabIndex = 12;
             // 
-            // txtSDT
+            // txtGiaTB
             // 
-            this.txtSDT.Location = new System.Drawing.Point(152, 208);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(5);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(285, 29);
-            this.txtSDT.TabIndex = 11;
+            this.txtGiaTB.Location = new System.Drawing.Point(152, 208);
+            this.txtGiaTB.Margin = new System.Windows.Forms.Padding(5);
+            this.txtGiaTB.Name = "txtGiaTB";
+            this.txtGiaTB.Size = new System.Drawing.Size(285, 29);
+            this.txtGiaTB.TabIndex = 11;
             // 
             // lblSDT
             // 
@@ -246,14 +246,14 @@
             this.lblHoTen.TabIndex = 0;
             this.lblHoTen.Text = "Tên Khách Sạn";
             // 
-            // txtHoTen
+            // txtTenKS
             // 
-            this.txtHoTen.ForeColor = System.Drawing.Color.Silver;
-            this.txtHoTen.Location = new System.Drawing.Point(152, 41);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(5);
-            this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(285, 29);
-            this.txtHoTen.TabIndex = 1;
+            this.txtTenKS.ForeColor = System.Drawing.Color.Silver;
+            this.txtTenKS.Location = new System.Drawing.Point(152, 41);
+            this.txtTenKS.Margin = new System.Windows.Forms.Padding(5);
+            this.txtTenKS.Name = "txtTenKS";
+            this.txtTenKS.Size = new System.Drawing.Size(285, 29);
+            this.txtTenKS.TabIndex = 1;
             // 
             // label1
             // 
@@ -277,17 +277,18 @@
             this.btnHuy.Text = "Thoát";
             this.btnHuy.UseVisualStyleBackColor = false;
             // 
-            // btnInsert
+            // btnThemKS
             // 
-            this.btnInsert.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.Location = new System.Drawing.Point(231, 379);
-            this.btnInsert.Margin = new System.Windows.Forms.Padding(5);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(101, 29);
-            this.btnInsert.TabIndex = 13;
-            this.btnInsert.Text = "Đăng kí";
-            this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnThemKS.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnThemKS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemKS.Location = new System.Drawing.Point(231, 379);
+            this.btnThemKS.Margin = new System.Windows.Forms.Padding(5);
+            this.btnThemKS.Name = "btnThemKS";
+            this.btnThemKS.Size = new System.Drawing.Size(101, 29);
+            this.btnThemKS.TabIndex = 13;
+            this.btnThemKS.Text = "Đăng kí";
+            this.btnThemKS.UseVisualStyleBackColor = false;
+            this.btnThemKS.Click += new System.EventHandler(this.btnThemKS_Click);
             // 
             // ThemKhachSan
             // 
@@ -295,7 +296,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(524, 450);
             this.Controls.Add(this.btnHuy);
-            this.Controls.Add(this.btnInsert);
+            this.Controls.Add(this.btnThemKS);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gboTTCN);
             this.Name = "ThemKhachSan";
@@ -315,22 +316,22 @@
         private System.Windows.Forms.TextBox txtMoTa;
         private System.Windows.Forms.Label lblMoTa;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtGiaTB;
         private System.Windows.Forms.Label lblSDT;
         private System.Windows.Forms.Label lblDiaChi;
         private System.Windows.Forms.Label lblHoTen;
-        private System.Windows.Forms.TextBox txtHoTen;
+        private System.Windows.Forms.TextBox txtTenKS;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnThemKS;
         private System.Windows.Forms.PictureBox pictureBox_Sao;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDuong;
+        private System.Windows.Forms.TextBox txtTP;
+        private System.Windows.Forms.TextBox txtSoNha;
+        private System.Windows.Forms.TextBox txtQuan;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSoSao;
     }
 }

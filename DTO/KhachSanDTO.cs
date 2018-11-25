@@ -64,29 +64,5 @@ namespace DTO
             set { _moTa = value; }
         }
 
-        public KhachSanDTO()
-        {
-            _maKS = "";
-            _tenKS = "";
-            _soSao = "";
-            _soNha = "";
-            _duong = "";
-            _quan = "";
-            _thanhPho = "";
-            _giaTB = 0;
-            _moTa = "";
-        }
-        public KhachSanDTO(string maKS, string tenKS, string soSao, string soNha, string duong, string quan, string thanhPho, int giaTB, string moTa)
-        {
-            _maKS = maKS;
-            _tenKS = tenKS;
-            _soSao = soSao;
-            _soNha = soNha;
-            _duong = duong;
-            _quan = quan;
-            _thanhPho = thanhPho;
-            _giaTB = giaTB;
-            _moTa = moTa;
-        }
     }
 }

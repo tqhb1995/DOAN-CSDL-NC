@@ -98,6 +98,7 @@ namespace DAO
             return kq;
         }
 
+        /*
         public static KhachHangDTO DangNhap(KhachHangDTO khDTO)
         {
             string procname = "DangNhapHeThong";
@@ -130,5 +131,6 @@ namespace DAO
             DataProvider.CloseConnection(conn);
             return q;
         }
+        */
     }
 }

@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="DatPhongBUS.cs" />
     <Compile Include="KhachHangBUS.cs" />
+    <Compile Include="KhachSanBUS.cs" />
+    <Compile Include="NhanVienBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

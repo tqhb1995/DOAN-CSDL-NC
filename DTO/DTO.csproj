@@ -45,6 +45,7 @@
     <Compile Include="KhachHangDTO.cs" />
     <Compile Include="KhachSanDTO.cs" />
     <Compile Include="LoaiPhongDTO.cs" />
+    <Compile Include="NhanVienDTO.cs" />
     <Compile Include="PhongDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TrangThaiPhongDTO.cs" />

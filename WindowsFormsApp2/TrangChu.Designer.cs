@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.gb_DangNhap = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxNhanVien = new System.Windows.Forms.CheckBox();
             this.btn_DangKy = new System.Windows.Forms.Button();
             this.btn_LogIn = new System.Windows.Forms.Button();
             this.txt_PassWord = new System.Windows.Forms.TextBox();
@@ -48,7 +48,7 @@
             // gb_DangNhap
             // 
             this.gb_DangNhap.BackColor = System.Drawing.Color.White;
-            this.gb_DangNhap.Controls.Add(this.checkBox1);
+            this.gb_DangNhap.Controls.Add(this.checkBoxNhanVien);
             this.gb_DangNhap.Controls.Add(this.btn_DangKy);
             this.gb_DangNhap.Controls.Add(this.btn_LogIn);
             this.gb_DangNhap.Controls.Add(this.txt_PassWord);
@@ -63,17 +63,17 @@
             this.gb_DangNhap.TabStop = false;
             this.gb_DangNhap.Text = "ĐĂNG NHẬP";
             // 
-            // checkBox1
+            // checkBoxNhanVien
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(137, 99);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(107, 24);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Nhân viên";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxNhanVien.AutoSize = true;
+            this.checkBoxNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxNhanVien.Location = new System.Drawing.Point(137, 99);
+            this.checkBoxNhanVien.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBoxNhanVien.Name = "checkBoxNhanVien";
+            this.checkBoxNhanVien.Size = new System.Drawing.Size(107, 24);
+            this.checkBoxNhanVien.TabIndex = 6;
+            this.checkBoxNhanVien.Text = "Nhân viên";
+            this.checkBoxNhanVien.UseVisualStyleBackColor = true;
             // 
             // btn_DangKy
             // 
@@ -85,6 +85,7 @@
             this.btn_DangKy.TabIndex = 5;
             this.btn_DangKy.Text = "ĐĂNG KÝ";
             this.btn_DangKy.UseVisualStyleBackColor = false;
+            this.btn_DangKy.Click += new System.EventHandler(this.btn_DangKy_Click);
             // 
             // btn_LogIn
             // 
@@ -219,7 +220,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBoxNhanVien;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
     }

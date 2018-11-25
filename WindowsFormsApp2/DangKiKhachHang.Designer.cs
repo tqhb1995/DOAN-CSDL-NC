@@ -2,7 +2,7 @@
 
 namespace WindowsFormsApp2
 {
-    partial class ForInsertNewCustomer
+    partial class DangKiKhachHang
     {
         /// <summary>
         /// Required designer variable.
@@ -352,7 +352,7 @@ namespace WindowsFormsApp2
             this.label1.TabIndex = 10;
             this.label1.Text = "ĐĂNG KÍ THÔNG TIN KHÁCH HÀNG";
             // 
-            // ForInsertNewCustomer
+            // DangKiKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -366,7 +366,7 @@ namespace WindowsFormsApp2
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "ForInsertNewCustomer";
+            this.Name = "DangKiKhachHang";
             this.Text = "Thêm Khách Hàng Mới";
             this.gboTTCN.ResumeLayout(false);
             this.gboTTCN.PerformLayout();

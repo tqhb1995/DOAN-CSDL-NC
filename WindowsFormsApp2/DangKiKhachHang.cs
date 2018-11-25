@@ -13,12 +13,12 @@ using DTO;
 
 namespace WindowsFormsApp2
 {
-    public partial class ForInsertNewCustomer : Form
+    public partial class DangKiKhachHang : Form
     {
         //public static string settext = "";
         // static string settext1 = "";
 
-        public ForInsertNewCustomer()
+        public DangKiKhachHang()
         {
             InitializeComponent();
         }

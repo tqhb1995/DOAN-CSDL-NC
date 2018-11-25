@@ -12,7 +12,7 @@ namespace WindowsFormsApp2.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.6.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.8.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,8 +26,19 @@ namespace WindowsFormsApp2.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0VVPAK8\\SQLEXPRESS;Initial Catalog=DatKhachSanOnline;Integrat" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-BIT0Q7A\\SQLEXPRESS;Initial Catalog=DatKhachSanOnline;Integrat" +
             "ed Security=True")]
+        public string DatKhachSanOnlineConnectionString1 {
+            get {
+                return ((string)(this["DatKhachSanOnlineConnectionString1"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-BIT0Q7A\\SQLEXPRESS;Initial Catalog=DatKhachSan;Integrated Sec" +
+            "urity=True")]
         public string DatKhachSanOnlineConnectionString {
             get {
                 return ((string)(this["DatKhachSanOnlineConnectionString"]));
@@ -37,11 +48,11 @@ namespace WindowsFormsApp2.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-BIT0Q7A\\SQLEXPRESS;Initial Catalog=DatKhachSanOnline;Integrat" +
-            "ed Security=True")]
-        public string DatKhachSanOnlineConnectionString1 {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-0VVPAK8\\SQLEXPRESS;Initial Catalog=DatKhachSanOnline_lan2;Int" +
+            "egrated Security=True")]
+        public string DatKhachSanOnline_lan2ConnectionString {
             get {
-                return ((string)(this["DatKhachSanOnlineConnectionString1"]));
+                return ((string)(this["DatKhachSanOnline_lan2ConnectionString"]));
             }
         }
     }

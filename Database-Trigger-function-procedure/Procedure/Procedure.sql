@@ -82,7 +82,7 @@ begin
 	end
 	
 	IF(EXISTS(SELECT * FROM dbo.NhanVien WHERE tenDangNhap = @tenDangNhap and matKhau = @matKhau and maKS = @maKS)
-	or EXISTS(SELECT * FROM dbo.NhanVien WHERE tenDangNhap = @tenDangNhap and matKhau = @matKhau) )
+	or EXISTS(SELECT * FROM dbo.NhanVien WHERE tenDangNhap = @tenDangNhap) )
    BEGIN
    RAISERROR('Lỗi!',16,1)
    RETURN
@@ -106,8 +106,8 @@ end
 
 --Procedure Đăng nhập hệ thống
 go
-create   procedure DangNhapHeThong
-  @tenDangNhap varchar(30), @matKhau varchar(16), @isNhanVien  bit
+create  alter procedure DangNhapHeThong
+  @tenDangNhap varchar(30), @matKhau varchar(16), @isNhanVien  int
 as
 if (@isNhanVien = 1)
 Select * from NhanVien
