@@ -161,9 +161,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label2.Location = new System.Drawing.Point(12, 282);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 20);
+            this.label2.Size = new System.Drawing.Size(335, 20);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Đặt phòng thông minh";
+            this.label2.Text = "Đặt phòng thông minh với mức giá ưu đãi";
             // 
             // label4
             // 

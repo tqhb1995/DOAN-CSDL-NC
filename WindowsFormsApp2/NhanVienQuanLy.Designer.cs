@@ -30,6 +30,7 @@
         {
             this.labelQuanLyKhachSan = new System.Windows.Forms.Label();
             this.btnSuaKhachSan = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelQuanLyKhachSan
@@ -53,11 +54,23 @@
             this.btnSuaKhachSan.UseVisualStyleBackColor = true;
             this.btnSuaKhachSan.Click += new System.EventHandler(this.btnSuaKhachSan_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(695, 365);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 32);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // NhanVienQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 400);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSuaKhachSan);
             this.Controls.Add(this.labelQuanLyKhachSan);
             this.Name = "NhanVienQuanLy";
@@ -71,5 +84,6 @@
 
         private System.Windows.Forms.Label labelQuanLyKhachSan;
         private System.Windows.Forms.Button btnSuaKhachSan;
+        private System.Windows.Forms.Button button1;
     }
 }

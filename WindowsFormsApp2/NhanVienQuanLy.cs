@@ -24,5 +24,13 @@ namespace WindowsFormsApp2
             //ad.ShowDialog();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TrangChu tc = new TrangChu();
+            tc.ShowDialog();
+            this.Close();
+        }
     }
 }

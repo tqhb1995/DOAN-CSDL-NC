@@ -71,5 +71,13 @@ namespace WindowsFormsApp2
 
     */
         }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin ad = new Admin();
+            ad.ShowDialog();
+            this.Close();
+        }
     }
 }

@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.cboMaKS = new System.Windows.Forms.ComboBox();
+            this.khachSan1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.datKhachSanOnlineDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.datKhachSanOnlineDataSet = new WindowsFormsApp2.DatKhachSanOnlineDataSet();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_DangKy = new System.Windows.Forms.Button();
@@ -40,13 +43,9 @@
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.btn_ThemNhanVienMoi = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.datKhachSanOnlineDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.datKhachSanOnlineDataSet = new WindowsFormsApp2.DatKhachSanOnlineDataSet();
             this.hoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDonTableAdapter = new WindowsFormsApp2.DatKhachSanOnlineDataSetTableAdapters.HoaDonTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.khachSan1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.khachSan1TableAdapter = new WindowsFormsApp2.DatKhachSanOnlineDataSetTableAdapters.KhachSan1TableAdapter();
             this.maKSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenKSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soSaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,13 +55,14 @@
             this.thanhPhoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giaTBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.moTaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.khachSan1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.khachSan1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khachSan1TableAdapter = new WindowsFormsApp2.DatKhachSanOnlineDataSetTableAdapters.KhachSan1TableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.khachSan1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachSan1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khachSan1BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // cboMaKS
@@ -76,6 +76,21 @@
             this.cboMaKS.Size = new System.Drawing.Size(197, 28);
             this.cboMaKS.TabIndex = 18;
             this.cboMaKS.SelectedIndexChanged += new System.EventHandler(this.cboMaKS_SelectedIndexChanged);
+            // 
+            // khachSan1BindingSource1
+            // 
+            this.khachSan1BindingSource1.DataMember = "KhachSan1";
+            this.khachSan1BindingSource1.DataSource = this.datKhachSanOnlineDataSetBindingSource;
+            // 
+            // datKhachSanOnlineDataSetBindingSource
+            // 
+            this.datKhachSanOnlineDataSetBindingSource.DataSource = this.datKhachSanOnlineDataSet;
+            this.datKhachSanOnlineDataSetBindingSource.Position = 0;
+            // 
+            // datKhachSanOnlineDataSet
+            // 
+            this.datKhachSanOnlineDataSet.DataSetName = "DatKhachSanOnlineDataSet";
+            this.datKhachSanOnlineDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label3
             // 
@@ -106,6 +121,7 @@
             this.btn_DangKy.TabIndex = 15;
             this.btn_DangKy.Text = "THOÁT";
             this.btn_DangKy.UseVisualStyleBackColor = true;
+            this.btn_DangKy.Click += new System.EventHandler(this.btn_DangKy_Click);
             // 
             // txtMatKhau
             // 
@@ -174,16 +190,6 @@
             this.label4.TabIndex = 20;
             this.label4.Text = "THÊM NHÂN VIÊN MỚI";
             // 
-            // datKhachSanOnlineDataSetBindingSource
-            // 
-            this.datKhachSanOnlineDataSetBindingSource.DataSource = this.datKhachSanOnlineDataSet;
-            this.datKhachSanOnlineDataSetBindingSource.Position = 0;
-            // 
-            // datKhachSanOnlineDataSet
-            // 
-            this.datKhachSanOnlineDataSet.DataSetName = "DatKhachSanOnlineDataSet";
-            this.datKhachSanOnlineDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // hoaDonBindingSource
             // 
             this.hoaDonBindingSource.DataMember = "HoaDon";
@@ -215,15 +221,6 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(801, 150);
             this.dataGridView1.TabIndex = 21;
-            // 
-            // khachSan1BindingSource
-            // 
-            this.khachSan1BindingSource.DataMember = "KhachSan1";
-            this.khachSan1BindingSource.DataSource = this.datKhachSanOnlineDataSet;
-            // 
-            // khachSan1TableAdapter
-            // 
-            this.khachSan1TableAdapter.ClearBeforeFill = true;
             // 
             // maKSDataGridViewTextBoxColumn
             // 
@@ -288,10 +285,14 @@
             this.moTaDataGridViewTextBoxColumn.Name = "moTaDataGridViewTextBoxColumn";
             this.moTaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // khachSan1BindingSource1
+            // khachSan1BindingSource
             // 
-            this.khachSan1BindingSource1.DataMember = "KhachSan1";
-            this.khachSan1BindingSource1.DataSource = this.datKhachSanOnlineDataSetBindingSource;
+            this.khachSan1BindingSource.DataMember = "KhachSan1";
+            this.khachSan1BindingSource.DataSource = this.datKhachSanOnlineDataSet;
+            // 
+            // khachSan1TableAdapter
+            // 
+            this.khachSan1TableAdapter.ClearBeforeFill = true;
             // 
             // ThemNhanVien
             // 
@@ -313,12 +314,12 @@
             this.Name = "ThemNhanVien";
             this.Text = "ThemNhanVien";
             this.Load += new System.EventHandler(this.ThemNhanVien_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.khachSan1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachSan1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khachSan1BindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

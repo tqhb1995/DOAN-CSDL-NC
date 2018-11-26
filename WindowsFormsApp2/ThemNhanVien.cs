@@ -35,12 +35,13 @@ namespace WindowsFormsApp2
                 return;
             }
             */
+            string s = cboMaKS.Text;
 
             NhanVienDTO nv = new NhanVienDTO();
             nv.HoTen = txtHoTen.Text;
             nv.TenDangNhap = txtTenDangNhap.Text;
             nv.MatKhau = txtMatKhau.Text;
-            nv.MaKS = cboMaKS.SelectedText;
+            nv.MaKS = s;
 
             int x = NhanVienBUS.KiemTraTonTai(nv);
 
@@ -72,6 +73,14 @@ namespace WindowsFormsApp2
             // TODO: This line of code loads data into the 'datKhachSanOnlineDataSet.KhachSan1' table. You can move, or remove it, as needed.
             this.khachSan1TableAdapter.Fill(this.datKhachSanOnlineDataSet.KhachSan1);
 
+        }
+
+        private void btn_DangKy_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin ad = new Admin();
+            ad.ShowDialog();
+            this.Close();
         }
     }
 }
