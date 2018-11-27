@@ -16,5 +16,10 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
+
+        private void TimKiemKhachSan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
