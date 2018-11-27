@@ -78,7 +78,7 @@
             this.txtMoTa.Location = new System.Drawing.Point(174, 183);
             this.txtMoTa.Multiline = true;
             this.txtMoTa.Name = "txtMoTa";
-            this.txtMoTa.Size = new System.Drawing.Size(285, 77);
+            this.txtMoTa.Size = new System.Drawing.Size(295, 77);
             this.txtMoTa.TabIndex = 4;
             // 
             // dtpNgayBatDau

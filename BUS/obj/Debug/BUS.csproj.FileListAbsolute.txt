@@ -42,17 +42,6 @@ F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
 F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\BUS\obj\Debug\BUS.csproj.CopyComplete
 F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\BUS\obj\Debug\BUS.dll
 F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\BUS\obj\Debug\BUS.pdb
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\BUS\bin\Debug\BUS.dll
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\BUS\bin\Debug\BUS.pdb
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\BUS\bin\Debug\DAO.dll
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\BUS\bin\Debug\DTO.dll
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\BUS\bin\Debug\DAO.pdb
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\BUS\bin\Debug\DTO.pdb
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\BUS\obj\Debug\BUS.csproj.CopyComplete
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\BUS\obj\Debug\BUS.dll
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\BUS\obj\Debug\BUS.pdb
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\BUS\bin\Debug\BUS.dll
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\BUS\bin\Debug\BUS.pdb
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\BUS\bin\Debug\DAO.dll

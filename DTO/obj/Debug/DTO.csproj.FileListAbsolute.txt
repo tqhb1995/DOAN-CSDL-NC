@@ -22,12 +22,6 @@ F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
 F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DTO\obj\Debug\DTO.dll
 F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\DTO\obj\Debug\DTO.pdb
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\DTO\bin\Debug\DTO.dll
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\DTO\bin\Debug\DTO.pdb
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\DTO\obj\Debug\DTO.dll
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\DTO\obj\Debug\DTO.pdb
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DTO\bin\Debug\DTO.dll
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DTO\bin\Debug\DTO.pdb
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csprojAssemblyReference.cache

@@ -79,25 +79,6 @@ F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\BUS.pdb
 F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\DAO.pdb
 F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\DTO.pdb
 F:\CSDL-NC\DA-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.CopyComplete
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\BUS.dll
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\DAO.dll
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\DTO.dll
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\BUS.pdb
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\DAO.pdb
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\DTO.pdb
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csprojAssemblyReference.cache
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\Interop.LCC11.dll
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.ResolveComReference.cache
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.GenerateResource.cache
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.CoreCompileInputs.cache
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.CopyComplete
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmDatPhong.resources
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
@@ -123,10 +104,3 @@ C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\W
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Admin.resources
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.DangKiKhachHang.resources
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.TimKiemKhachSan.resources
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Admin.resources
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.DangKiKhachHang.resources
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.NhanVienQuanLy.resources
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ThemKhachSan.resources
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ThemNhanVien.resources
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.TimKiemKhachSan.resources
-F:\CSDL-NC\DOAN-GIT\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.TrangChu.resources
