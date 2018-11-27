@@ -47,9 +47,9 @@
             // buttonThemMoiNhanVien
             // 
             this.buttonThemMoiNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThemMoiNhanVien.Location = new System.Drawing.Point(12, 72);
+            this.buttonThemMoiNhanVien.Location = new System.Drawing.Point(298, 68);
             this.buttonThemMoiNhanVien.Name = "buttonThemMoiNhanVien";
-            this.buttonThemMoiNhanVien.Size = new System.Drawing.Size(164, 27);
+            this.buttonThemMoiNhanVien.Size = new System.Drawing.Size(218, 26);
             this.buttonThemMoiNhanVien.TabIndex = 1;
             this.buttonThemMoiNhanVien.Text = "Thêm mới nhân viên";
             this.buttonThemMoiNhanVien.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@
             // btnThemKS
             // 
             this.btnThemKS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemKS.Location = new System.Drawing.Point(264, 72);
+            this.btnThemKS.Location = new System.Drawing.Point(25, 69);
             this.btnThemKS.Name = "btnThemKS";
             this.btnThemKS.Size = new System.Drawing.Size(218, 26);
             this.btnThemKS.TabIndex = 1;
