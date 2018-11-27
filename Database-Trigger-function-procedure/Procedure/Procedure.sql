@@ -166,6 +166,7 @@ CREATE PROCEDURE proc_DatPhong
 	@Quan nvarchar(100),
 	@ThanhPho nvarchar(100),
 	@tenLoaiPhong varchar(20),	
+	@soPhong varchar(30),
 	@NgayBatDau datetime,  
 	@NgayTraPhong datetime,
 	@MoTa nvarchar(100),
@@ -191,7 +192,7 @@ BEGIN
 			DECLARE @soPhongTrong int
 			DECLARE @MaPhong varchar(20)
 			DECLARE @ngay datetime
-			DECLARE @duong varchar(100)
+			--DECLARE @duong varchar(100)
 			--=================================
 			--========Lấy dữ liệu==============
 			--=================================
@@ -200,10 +201,12 @@ BEGIN
 			--Lấy mã khách hàng dựa trên số điện thoại
 			SELECT @maKH = maKH FROM dbo.KhachHang WHERE @SDT = soDienThoai
 			--Lấy mã khách sạn dựa trên thông tin đường quận thành phố.
-			SELECT @maKS = maKS FROM dbo.KhachSan WHERE @duong = duong AND @Quan = quan AND @ThanhPho = thanhPho
+			SELECT @maKS = maKS FROM dbo.KhachSan WHERE @Quan = quan AND @ThanhPho = thanhPho
 			SELECT @maLoaiPhong = maLoaiPhong from dbo.LoaiPhong WHERE @maKS = maKS AND @tenLoaiPhong = tenLoaiPhong
 			SELECT @DonGia = donGia FROM dbo.LoaiPhong WHERE @maLoaiPhong = maLoaiPhong AND @maKS = maKS
 			SELECT @SLTrong = slTrong FROM dbo.LoaiPhong WHERE @maLoaiPhong = maLoaiPhong AND @maKS = maKS
+			SELECT @ngay = ngayBatDau from DatPhong WHERE @maDP = maDP
+			SELECT @MaPhong = maPhong from Phong where @maLoaiPhong = loaiPhong AND @soPhong = soPhong
 			--Lấy giá trị phòng khi có người đặt.
 			SET @soPhongTrong = @SLTrong - 1
 			IF (@SLTrong <= 0)
@@ -212,13 +215,28 @@ BEGIN
 			END
 			ELSE
 			BEGIN
-				INSERT INTO DatPhong(maDP, maLoaiPhong, maKH, ngayBatDau, ngayTraPhong, ngayDat, donGia, moTa, tinhTrang)
+				INSERT INTO DatPhong(maDP, maPhong, maKH, ngayBatDau, ngayTraPhong, ngayDat, donGia, moTa, tinhTrang)
 				VALUES (@maDP, @maLoaiPhong, @maKH, @NgayBatDau, @ngayTraPhong, GETDATE(), @DonGia, @MoTa, N'Chưa xác nhận')
 
 				--Update số lượng trống của Loại phòng đó trong bảng Loại Phòng
 				UPDATE dbo.LoaiPhong
 				SET slTrong = @soPhongTrong
 				WHERE @maLoaiPhong = maLoaiPhong AND @maKS = maKS
+
+				--IF(EXISTS(select * from TrangThaiPhong WHERE @ngay = ngay AND tinhTrang = N'Đã đặt'))
+				--BEGIN
+				--	print N'Phòng đã được đặt hoặc đang bảo trì'
+				--END
+			END
+			IF(EXISTS(select * from TrangThaiPhong WHERE @ngay = ngay AND tinhTrang = N'Đã đặt'))
+			BEGIN
+				print N'Phòng đã được đặt hoặc đang bảo trì'
+			END
+			ELSE
+			BEGIN
+				UPDATE TrangThaiPhong
+				SET tinhTrang = N'Đã đặt'
+				WHERE @MaPhong = maPhong AND @ngay = ngay
 			END
 		END
 END 
