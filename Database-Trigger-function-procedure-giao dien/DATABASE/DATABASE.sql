@@ -25,6 +25,7 @@ CREATE TABLE KhachHang (
 	email varchar(100),
 	primary key (maKH)
 )
+go
 CREATE TABLE NhanVien
 (
 	maNV char(10) not null,
@@ -34,6 +35,7 @@ CREATE TABLE NhanVien
 	maKS char(10),
 	PRIMARY KEY(maNV)
 )
+go
 CREATE TABLE KhachSan (
 	maKS CHAR(10) not null,
 	tenKS nvarchar(100),
@@ -46,7 +48,7 @@ CREATE TABLE KhachSan (
 	moTa nvarchar(1000),
 	primary key (maKS)
 )
-
+go
 CREATE TABLE LoaiPhong (
 	maLoaiPhong char(10) not null,
 	tenLoaiPhong nvarchar(30),
@@ -56,18 +58,21 @@ CREATE TABLE LoaiPhong (
 	slTrong int,
 	primary key (maLoaiPhong)
 )
+go
 CREATE TABLE Phong (
 	maPhong char(10) not null,
 	loaiPhong char(10),
 	soPhong int,
 	primary key (maPhong)
 )
+go
 CREATE TABLE TrangThaiPhong (
 	maPhong char(10) NOT NULL,
 	ngay DATETIME,
 	tinhTrang nvarchar(14),
 	primary key (maPhong, ngay)
 )
+go
 CREATE TABLE DatPhong (
 	maDP CHAR(10) not null,
 	maLoaiPhong NOT NULL,
@@ -81,6 +86,7 @@ CREATE TABLE DatPhong (
 	tinhTrang nvarchar(15),
 	primary key (maDP)
 )
+go
 CREATE TABLE HoaDon (
 	maHD CHAR(10) NOT NULL,
 	ngayThanhToan datetime,
@@ -90,7 +96,7 @@ CREATE TABLE HoaDon (
 )
 
 
-
+go
 
 --Tạo khóa ngoại
 
