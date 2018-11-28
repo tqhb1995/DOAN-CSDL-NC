@@ -166,7 +166,6 @@ CREATE PROCEDURE proc_DatPhong
 	@Quan nvarchar(100),
 	@ThanhPho nvarchar(100),
 	@tenLoaiPhong varchar(20),	
-	--@soPhong varchar(30),
 	@NgayBatDau datetime,  
 	@NgayTraPhong datetime,
 	@MoTa nvarchar(100),
@@ -215,8 +214,8 @@ BEGIN
 			END
 			ELSE
 			BEGIN
-				INSERT INTO DatPhong(maDP, maLoaiPhong, maKH, ngayBatDau, ngayTraPhong, ngayDat, donGia, moTa, tinhTrang)
-				VALUES (@maDP, @maLoaiPhong, @maKH, @NgayBatDau, @ngayTraPhong, GETDATE(), @DonGia, @MoTa, N'Chưa xác nhận')
+				INSERT INTO DatPhong(maDP, maLoaiPhong, maPhong, maKH, ngayBatDau, ngayTraPhong, ngayDat, donGia, moTa, tinhTrang)
+				VALUES (@maDP, @maLoaiPhong, NULL, @maKH, @NgayBatDau, @ngayTraPhong, GETDATE(), @DonGia, @MoTa, N'Chưa xác nhận')
 
 				--Update số lượng trống của Loại phòng đó trong bảng Loại Phòng
 				UPDATE dbo.LoaiPhong

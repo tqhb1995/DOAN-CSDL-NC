@@ -64,13 +64,14 @@ CREATE TABLE Phong (
 )
 CREATE TABLE TrangThaiPhong (
 	maPhong char(10) NOT NULL,
-	ngay DATETIME NOT NULL,
+	ngay DATETIME,
 	tinhTrang nvarchar(14),
 	primary key (maPhong, ngay)
 )
 CREATE TABLE DatPhong (
 	maDP CHAR(10) not null,
-	maPhong char(10) not null,
+	maLoaiPhong NOT NULL,
+	maPhong char(10),
 	maKH CHAR(10) not null,
 	ngayBatDau datetime,
 	ngayTraPhong datetime,
@@ -98,6 +99,7 @@ alter table Phong add constraint FK_Phong_LoaiPhong foreign key (loaiPhong) refe
 alter table TrangThaiPhong add constraint FK_TrangThaiPhong_Phong foreign key (maPhong) references Phong(maPhong)
 alter table DatPhong add constraint FK_DatPhong_Phong foreign key (maPhong) references Phong(maPhong)
 alter table DatPhong add constraint FK_DatPhong_KhachHang foreign key (maKH) references KhachHang(maKH)
+alter table DatPhong add constraint FK_DatPhong_LoaiPhong foreign key (maLoaiPhong) references LoaiPhong(maLoaiPhong)
 alter table HoaDon add constraint FK_HoaDon_DatPhong foreign key (maDP) references DatPhong(maDP)
 alter table NhanVien add constraint FK_NhanVien_KhachSan foreign key (maKS) references KhachSan(maKS)
 
