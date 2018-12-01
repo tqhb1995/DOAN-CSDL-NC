@@ -104,3 +104,32 @@ C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\W
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Admin.resources
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.DangKiKhachHang.resources
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.TimKiemKhachSan.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\BUS.dll
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\DAO.dll
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\DTO.dll
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\BUS.pdb
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\DAO.pdb
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\DTO.pdb
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csprojAssemblyReference.cache
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.ResolveComReference.cache
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Admin.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.frmDatPhong.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.DangKiKhachHang.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.NhanVienQuanLy.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.SuaKhachHang.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ThemKhachHang.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ThemKhachSan.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ThemNhanVien.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ThemPhong.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.TimKiemKhachSan.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.TrangChu.resources
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.GenerateResource.cache
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.CoreCompileInputs.cache
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.CopyComplete
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb

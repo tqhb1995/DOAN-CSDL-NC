@@ -75,7 +75,7 @@ CREATE TABLE TrangThaiPhong (
 go
 CREATE TABLE DatPhong (
 	maDP CHAR(10) not null,
-	maLoaiPhong NOT NULL,
+	maLoaiPhong char(10) NOT NULL,
 	maPhong char(10),
 	maKH CHAR(10) not null,
 	ngayBatDau datetime,

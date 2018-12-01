@@ -106,7 +106,7 @@ end
 
 --Procedure Đăng nhập hệ thống
 go
-create  alter procedure DangNhapHeThong
+create  procedure DangNhapHeThong
   @tenDangNhap varchar(30), @matKhau varchar(16), @isNhanVien  int
 as
 if (@isNhanVien = 1)
