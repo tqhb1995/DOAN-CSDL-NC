@@ -262,6 +262,8 @@ VALUES
 )
 END
 
+
+--proc them phong
 CREATE PROCEDURE ThemPhong (@mp CHAR(10), @lp CHAR(10), @sophong INT) 
 AS
 BEGIN
@@ -285,6 +287,7 @@ VALUES
 END 
 
 
+--proc sua phong
 CREATE PROCEDURE SuaPhong(@ma CHAR(10), @lp CHAR(10), @sophong INT)
 AS
 BEGIN
@@ -301,6 +304,8 @@ SET loaiPhong = @lp, soPhong= @sophong
 WHERE maPhong = @ma
 END 
 
+
+--proc sua loai phong
 CREATE PROCEDURE SuaLoaiPhong (@malp CHAR(10), @TenLP NVARCHAR(30), @MaKS CHAR(10), @DonGia FLOAT, @mota NVARCHAR(1000), @sltrong INT)
 AS
 BEGIN
@@ -316,6 +321,8 @@ SET tenLoaiPhong = @TenLP, maKS = @MaKS, donGia = @DonGia, moTa = @mota, slTrong
 WHERE maLoaiPhong = @malp
 END 
 
+
+-- proc sua khach hang
 CREATE PROCEDURE SuaKhachHang (@makh CHAR(10), @hoten NVARCHAR(100), @tendangnhap VARCHAR(10), @matkhau VARCHAR(16),
 @CMND VARCHAR(12), @diachi NVARCHAR(200), @sodienthoai VARCHAR(13), @moto NVARCHAR(1000),@email VARCHAR(100))
 AS

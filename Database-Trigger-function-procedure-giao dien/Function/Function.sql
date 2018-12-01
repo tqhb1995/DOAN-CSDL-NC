@@ -75,6 +75,7 @@ END
 
 ALTER TABLE dbo.KhachSan
 ADD DEFAULT dbo.Auto_IdKS() FOR maKS
+
 --fUNCTION Tạo mã tự động hóa đơn
 CREATE FUNCTION Auto_IdHD()
 RETURNS CHAR(10)

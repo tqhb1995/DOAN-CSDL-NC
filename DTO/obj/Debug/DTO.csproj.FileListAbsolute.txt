@@ -28,9 +28,3 @@ C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csprojAsse
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DTO\obj\Debug\DTO.dll
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DTO\obj\Debug\DTO.pdb
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DTO\bin\Debug\DTO.dll
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DTO\bin\Debug\DTO.pdb
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DTO\obj\Debug\DTO.dll
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DTO\obj\Debug\DTO.pdb

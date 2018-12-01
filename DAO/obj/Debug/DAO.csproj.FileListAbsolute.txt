@@ -43,12 +43,3 @@ C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DAO\obj\Debug\DAO.csproj.Cor
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DAO\obj\Debug\DAO.csproj.CopyComplete
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DAO\obj\Debug\DAO.dll
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DAO\obj\Debug\DAO.pdb
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DAO\bin\Debug\DAO.dll
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DAO\bin\Debug\DAO.pdb
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DAO\bin\Debug\DTO.dll
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DAO\bin\Debug\DTO.pdb
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DAO\obj\Debug\DAO.csproj.CopyComplete
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DAO\obj\Debug\DAO.dll
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\DAO\obj\Debug\DAO.pdb

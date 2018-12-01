@@ -53,14 +53,3 @@ C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\BUS\obj\Debug\BUS.csproj.Cor
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\BUS\obj\Debug\BUS.csproj.CopyComplete
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\BUS\obj\Debug\BUS.dll
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\BUS\obj\Debug\BUS.pdb
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\BUS\bin\Debug\BUS.dll
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\BUS\bin\Debug\BUS.pdb
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\BUS\bin\Debug\DAO.dll
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\BUS\bin\Debug\DTO.dll
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\BUS\bin\Debug\DAO.pdb
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\BUS\bin\Debug\DTO.pdb
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\BUS\obj\Debug\BUS.csproj.CopyComplete
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\BUS\obj\Debug\BUS.dll
-C:\Users\Phuong Truong\Desktop\csdl nc\New folder\DOAN-CSDL-NC\BUS\obj\Debug\BUS.pdb

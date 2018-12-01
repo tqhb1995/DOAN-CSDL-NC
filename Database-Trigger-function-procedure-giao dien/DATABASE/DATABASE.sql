@@ -73,9 +73,9 @@ CREATE TABLE TrangThaiPhong (
 	primary key (maPhong, ngay)
 )
 go
-CREATE TABLE DatPhong (
+CREATE  TABLE DatPhong (
 	maDP CHAR(10) not null,
-	maLoaiPhong char(10) NOT NULL,
+	maLoaiPhong char(10),
 	maPhong char(10),
 	maKH CHAR(10) not null,
 	ngayBatDau datetime,
