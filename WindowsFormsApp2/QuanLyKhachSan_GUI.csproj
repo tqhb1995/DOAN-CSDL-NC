@@ -57,10 +57,31 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatKhachSanOnlineDataSet.cs">
+      <DependentUpon>DatKhachSanOnlineDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DatKhachSanOnlineDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DatKhachSanOnlineDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatKhachSanOnlineDataSet_All_KS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatKhachSanOnlineDataSet_All_KS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatKhachSanOnlineDataSet_All_NV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatKhachSanOnlineDataSet_All_NV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatKhachSanOnlineDataSet_KS_notin_NV.cs">
+      <DependentUpon>DatKhachSanOnlineDataSet_KS_notin_NV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatKhachSanOnlineDataSet_KS_notin_NV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatKhachSanOnlineDataSet_KS_notin_NV.xsd</DependentUpon>
     </Compile>
     <Compile Include="DatPhong.cs">
       <SubType>Form</SubType>
@@ -186,6 +207,39 @@
     </None>
     <None Include="DatKhachSanOnlineDataSet.xss">
       <DependentUpon>DatKhachSanOnlineDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatKhachSanOnlineDataSet_All_KS.xsc">
+      <DependentUpon>DatKhachSanOnlineDataSet_All_KS.xsd</DependentUpon>
+    </None>
+    <None Include="DatKhachSanOnlineDataSet_All_KS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatKhachSanOnlineDataSet_All_KS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatKhachSanOnlineDataSet_All_KS.xss">
+      <DependentUpon>DatKhachSanOnlineDataSet_All_KS.xsd</DependentUpon>
+    </None>
+    <None Include="DatKhachSanOnlineDataSet_All_NV.xsc">
+      <DependentUpon>DatKhachSanOnlineDataSet_All_NV.xsd</DependentUpon>
+    </None>
+    <None Include="DatKhachSanOnlineDataSet_All_NV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatKhachSanOnlineDataSet_All_NV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatKhachSanOnlineDataSet_All_NV.xss">
+      <DependentUpon>DatKhachSanOnlineDataSet_All_NV.xsd</DependentUpon>
+    </None>
+    <None Include="DatKhachSanOnlineDataSet_KS_notin_NV.xsc">
+      <DependentUpon>DatKhachSanOnlineDataSet_KS_notin_NV.xsd</DependentUpon>
+    </None>
+    <None Include="DatKhachSanOnlineDataSet_KS_notin_NV.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatKhachSanOnlineDataSet_KS_notin_NV.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatKhachSanOnlineDataSet_KS_notin_NV.xss">
+      <DependentUpon>DatKhachSanOnlineDataSet_KS_notin_NV.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

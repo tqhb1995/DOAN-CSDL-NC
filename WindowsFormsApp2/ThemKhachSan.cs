@@ -49,6 +49,9 @@ namespace WindowsFormsApp2
                     // KhachSanDTO p = new KhachSanDTO();
                     MessageBox.Show("Thêm thành công!", "Thông báo");
                     this.Hide();
+                   ThemKhachSan ks1 = new ThemKhachSan();
+                    ks1.ShowDialog();
+                    this.Close();
                 }
                 else
                     MessageBox.Show("Lỗi, vui lòng thử lại! \n ", "Thông báo");

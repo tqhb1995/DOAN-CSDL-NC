@@ -70,9 +70,8 @@ namespace WindowsFormsApp2
 
         private void ThemNhanVien_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'datKhachSanOnlineDataSet.KhachSan1' table. You can move, or remove it, as needed.
-            this.khachSan1TableAdapter.Fill(this.datKhachSanOnlineDataSet.KhachSan1);
-
+            // TODO: This line of code loads data into the 'datKhachSanOnlineDataSet_KS_notin_NV.KhachSan' table. You can move, or remove it, as needed.
+            this.khachSanTableAdapter.Fill(this.datKhachSanOnlineDataSet_KS_notin_NV.KhachSan);
         }
 
         private void btn_DangKy_Click(object sender, EventArgs e)
@@ -82,5 +81,7 @@ namespace WindowsFormsApp2
             ad.ShowDialog();
             this.Close();
         }
+
+
     }
 }

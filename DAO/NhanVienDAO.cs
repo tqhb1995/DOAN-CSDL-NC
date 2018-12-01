@@ -32,9 +32,9 @@ namespace DAO
                 //Truyền giá trị vào tham số.
                 cmd.Parameters["@hoTen"].Value = nv.HoTen;
                 cmd.Parameters["@tenDangNhap"].Value = nv.TenDangNhap;
-                cmd.Parameters["@matnvau"].Value = nv.MatKhau;
+                cmd.Parameters["@matKhau"].Value = nv.MatKhau;
                 cmd.Parameters["@maKS"].Value = nv.MaKS;
-
+                //cmd.Parameters.AddWithValue("@maKS", nv.MaKS);
                 cmd.ExecuteNonQuery();
 
                 DataProvider.CloseConnection(conn);

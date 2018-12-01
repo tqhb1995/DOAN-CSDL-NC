@@ -64,7 +64,7 @@
             this.gboTTCN.Controls.Add(this.label4);
             this.gboTTCN.Controls.Add(this.label3);
             this.gboTTCN.Controls.Add(this.lblDiaChi);
-            this.gboTTCN.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gboTTCN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gboTTCN.Location = new System.Drawing.Point(29, 140);
             this.gboTTCN.Margin = new System.Windows.Forms.Padding(5);
             this.gboTTCN.Name = "gboTTCN";
@@ -78,7 +78,7 @@
             // 
             this.txtDuong.Location = new System.Drawing.Point(138, 81);
             this.txtDuong.Name = "txtDuong";
-            this.txtDuong.Size = new System.Drawing.Size(119, 29);
+            this.txtDuong.Size = new System.Drawing.Size(119, 26);
             this.txtDuong.TabIndex = 53;
             // 
             // txtTP
@@ -86,31 +86,32 @@
             this.txtTP.Location = new System.Drawing.Point(138, 21);
             this.txtTP.Margin = new System.Windows.Forms.Padding(5);
             this.txtTP.Name = "txtTP";
-            this.txtTP.Size = new System.Drawing.Size(285, 29);
+            this.txtTP.Size = new System.Drawing.Size(285, 26);
             this.txtTP.TabIndex = 52;
             // 
             // txtSoNha
             // 
+            this.txtSoNha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoNha.Location = new System.Drawing.Point(331, 81);
             this.txtSoNha.Name = "txtSoNha";
-            this.txtSoNha.Size = new System.Drawing.Size(64, 29);
+            this.txtSoNha.Size = new System.Drawing.Size(64, 26);
             this.txtSoNha.TabIndex = 51;
             // 
             // txtQuan
             // 
             this.txtQuan.Location = new System.Drawing.Point(138, 51);
             this.txtQuan.Name = "txtQuan";
-            this.txtQuan.Size = new System.Drawing.Size(119, 29);
+            this.txtQuan.Size = new System.Drawing.Size(119, 26);
             this.txtQuan.TabIndex = 50;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(265, 87);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 20);
+            this.label5.Size = new System.Drawing.Size(60, 20);
             this.label5.TabIndex = 49;
             this.label5.Text = "Số nhà";
             // 
@@ -179,15 +180,16 @@
             this.btnThemKS.Name = "btnThemKS";
             this.btnThemKS.Size = new System.Drawing.Size(101, 29);
             this.btnThemKS.TabIndex = 13;
-            this.btnThemKS.Text = "Đăng kí";
+            this.btnThemKS.Text = "Thêm";
             this.btnThemKS.UseVisualStyleBackColor = false;
             this.btnThemKS.Click += new System.EventHandler(this.btnThemKS_Click);
             // 
             // txtSoSao
             // 
+            this.txtSoSao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSoSao.Location = new System.Drawing.Point(166, 105);
             this.txtSoSao.Name = "txtSoSao";
-            this.txtSoSao.Size = new System.Drawing.Size(64, 20);
+            this.txtSoSao.Size = new System.Drawing.Size(64, 26);
             this.txtSoSao.TabIndex = 38;
             // 
             // pictureBox_Sao
@@ -214,6 +216,7 @@
             // 
             // txtMoTa
             // 
+            this.txtMoTa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMoTa.Location = new System.Drawing.Point(166, 311);
             this.txtMoTa.Margin = new System.Windows.Forms.Padding(5);
             this.txtMoTa.Multiline = true;
@@ -244,10 +247,11 @@
             // 
             // txtGiaTB
             // 
+            this.txtGiaTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiaTB.Location = new System.Drawing.Point(166, 275);
             this.txtGiaTB.Margin = new System.Windows.Forms.Padding(5);
             this.txtGiaTB.Name = "txtGiaTB";
-            this.txtGiaTB.Size = new System.Drawing.Size(285, 20);
+            this.txtGiaTB.Size = new System.Drawing.Size(285, 26);
             this.txtGiaTB.TabIndex = 32;
             // 
             // lblSDT
@@ -274,11 +278,12 @@
             // 
             // txtTenKS
             // 
-            this.txtTenKS.ForeColor = System.Drawing.Color.Silver;
+            this.txtTenKS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenKS.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtTenKS.Location = new System.Drawing.Point(166, 69);
             this.txtTenKS.Margin = new System.Windows.Forms.Padding(5);
             this.txtTenKS.Name = "txtTenKS";
-            this.txtTenKS.Size = new System.Drawing.Size(285, 20);
+            this.txtTenKS.Size = new System.Drawing.Size(285, 26);
             this.txtTenKS.TabIndex = 29;
             // 
             // ThemKhachSan

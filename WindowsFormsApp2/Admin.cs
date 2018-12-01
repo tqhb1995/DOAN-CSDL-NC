@@ -41,5 +41,19 @@ namespace WindowsFormsApp2
             tc.ShowDialog();
             this.Close();
         }
+
+        private void Admin_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'datKhachSanOnlineDataSet_All_NV.NhanVien' table. You can move, or remove it, as needed.
+            this.nhanVienTableAdapter.Fill(this.datKhachSanOnlineDataSet_All_NV.NhanVien);
+            // TODO: This line of code loads data into the 'datKhachSanOnlineDataSet_All_KS.KhachSan' table. You can move, or remove it, as needed.
+            this.khachSanTableAdapter1.Fill(this.datKhachSanOnlineDataSet_All_KS.KhachSan);
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
