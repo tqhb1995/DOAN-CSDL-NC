@@ -189,9 +189,6 @@ BEGIN
 			DECLARE @maLoaiPhong varchar(100)
 			DECLARE @SLTrong int
 			DECLARE @soPhongTrong int
-			--DECLARE @MaPhong varchar(20)
-			--DECLARE @ngay datetime
-			--DECLARE @duong varchar(100)
 			--=================================
 			--========Lấy dữ liệu==============
 			--=================================
@@ -222,10 +219,6 @@ BEGIN
 				SET slTrong = @soPhongTrong
 				WHERE @maLoaiPhong = maLoaiPhong AND @maKS = maKS
 
-				--IF(EXISTS(select * from TrangThaiPhong WHERE @ngay = ngay AND tinhTrang = N'Đã đặt'))
-				--BEGIN
-				--	print N'Phòng đã được đặt hoặc đang bảo trì'
-				--END
 			END
 		END
 END 
