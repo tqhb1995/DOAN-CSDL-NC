@@ -1,4 +1,6 @@
---Đăng kí khách hàng
+--==================================
+--====Đăng kí khách hàng============
+--==================================
 CREATE PROCEDURE DangKiKH
 	@hoTen nvarchar(100), @tenDangNhap varCHAR(30), @matKhau varCHAR(16), @soCMND varCHAR(12), @diaChi nvarchar(200), @soDienThoai varCHAR(13), @moTa nvarchar(1000), @email varCHAR(100)
   AS	
@@ -27,8 +29,9 @@ CREATE PROCEDURE DangKiKH
              @moTa , -- moTa - nvarchar(30)
              @email  -- email - char(20)
            )
-
---Thêm khách sạn
+--================================
+--======Thêm khách sạn============
+--================================
 go
 CREATE PROCEDURE ThemKhachSan
   (
@@ -70,7 +73,9 @@ CREATE PROCEDURE ThemKhachSan
            )
 	 end
 
--- Procedure them nhan vien 
+--============================================
+--=============Thêm nhân viên=================
+--============================================
 go
 create procedure ThemNhanVien
 @hoTen nvarchar(100), @tenDangNhap varchar(30), @matKhau varchar(30), @maKS char(10)
@@ -103,8 +108,9 @@ begin
 	@maKS
    )
 end
-
---Procedure Đăng nhập hệ thống
+--======================================================
+--============Đăng nhập hệ thống========================
+--======================================================
 go
 create  procedure DangNhapHeThong
   @tenDangNhap varchar(30), @matKhau varchar(16), @isNhanVien  int
@@ -117,10 +123,10 @@ else
       where tenDangNhap = @tenDangNhap and matKhau = @matKhau
 
 
-
---------- Lập Hóa Đơn
--- Input: maDP
--- Output: thong tin hoa don vua moi lap
+--======================================================
+--================Lập Hóa Đơn===========================
+--===============Input: maDP============================
+--===========Output: thông tin hóa đơn==================
 
 CREATE PROCEDURE lapHoaDon
 	@maDP char(10)
@@ -157,9 +163,9 @@ BEGIN
 			WHERE maHD = @maHD
 		END
 END
-
----------ĐẶT PHÒNG-------
--------------------------
+--=============================================
+--==============ĐẶT PHÒNG======================
+--=============================================
 CREATE PROCEDURE proc_DatPhong  
 (  
 	@TenKS nvarchar(100),
@@ -201,8 +207,6 @@ BEGIN
 			SELECT @maLoaiPhong = maLoaiPhong from dbo.LoaiPhong WHERE @maKS = maKS AND @tenLoaiPhong = tenLoaiPhong
 			SELECT @DonGia = donGia FROM dbo.LoaiPhong WHERE @maLoaiPhong = maLoaiPhong AND @maKS = maKS
 			SELECT @SLTrong = slTrong FROM dbo.LoaiPhong WHERE @maLoaiPhong = maLoaiPhong AND @maKS = maKS
-			--SELECT @ngay = ngayBatDau from DatPhong WHERE @maDP = maDP
-			--SELECT @MaPhong = maPhong from Phong where @maLoaiPhong = loaiPhong AND @soPhong = soPhong
 			--Lấy giá trị phòng khi có người đặt.
 			SET @soPhongTrong = @SLTrong - 1
 			IF (@SLTrong <= 0)
@@ -223,10 +227,10 @@ BEGIN
 		END
 END 
 
-
------------------------------------------
-
---thêm loại phòng, phòng,sửa khách hàng
+--================================================================
+--==============Các thao tác tên Phòng, Loại Phòng================
+--================================================================
+---------------------------Thêm Loại Phòng------------------------
 CREATE PROCEDURE ThemLoaiPhong (@malp CHAR(10), @TenLP NVARCHAR(30), @MaKS CHAR(10), @DonGia FLOAT, @mota NVARCHAR(1000), @sltrong INT)
 AS
 BEGIN
@@ -256,7 +260,7 @@ VALUES
 END
 
 
---proc them phong
+----------------------------Thêm Phòng-------------------------------
 CREATE PROCEDURE ThemPhong (@mp CHAR(10), @lp CHAR(10), @sophong INT) 
 AS
 BEGIN
@@ -280,7 +284,7 @@ VALUES
 END 
 
 
---proc sua phong
+---------------------------Sửa phòng-----------------------------------
 CREATE PROCEDURE SuaPhong(@ma CHAR(10), @lp CHAR(10), @sophong INT)
 AS
 BEGIN
@@ -298,7 +302,7 @@ WHERE maPhong = @ma
 END 
 
 
---proc sua loai phong
+-------------------------------Sửa Loại Phòng----------------------------------
 CREATE PROCEDURE SuaLoaiPhong (@malp CHAR(10), @TenLP NVARCHAR(30), @MaKS CHAR(10), @DonGia FLOAT, @mota NVARCHAR(1000), @sltrong INT)
 AS
 BEGIN
@@ -315,7 +319,7 @@ WHERE maLoaiPhong = @malp
 END 
 
 
--- proc sua khach hang
+-----------------------------------Sửa Khách hàng-------------------------------------
 CREATE PROCEDURE SuaKhachHang (@makh CHAR(10), @hoten NVARCHAR(100), @tendangnhap VARCHAR(10), @matkhau VARCHAR(16),
 @CMND VARCHAR(12), @diachi NVARCHAR(200), @sodienthoai VARCHAR(13), @moto NVARCHAR(1000),@email VARCHAR(100))
 AS
@@ -333,8 +337,9 @@ moTa = @moto, email = @email
 WHERE maKH = @makh
 END
 
----------------------------------------------------------------------------------------
--- STORED PROCEDURE TIM KIEM KHACH SAN
+--=============================================================================
+--================STORED PROCEDURE Tìm kiếm khách sạn==========================
+--=============================================================================
 create procedure search_KS
 	@gia1 int,
 	@gia2 int,
