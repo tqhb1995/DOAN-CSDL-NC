@@ -176,7 +176,7 @@
             // 
             this.btnDatPhong.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnDatPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDatPhong.Location = new System.Drawing.Point(848, 382);
+            this.btnDatPhong.Location = new System.Drawing.Point(810, 354);
             this.btnDatPhong.Name = "btnDatPhong";
             this.btnDatPhong.Size = new System.Drawing.Size(113, 39);
             this.btnDatPhong.TabIndex = 18;
@@ -188,7 +188,7 @@
             // 
             this.btnHuyDP.BackColor = System.Drawing.SystemColors.Control;
             this.btnHuyDP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuyDP.Location = new System.Drawing.Point(967, 382);
+            this.btnHuyDP.Location = new System.Drawing.Point(929, 354);
             this.btnHuyDP.Name = "btnHuyDP";
             this.btnHuyDP.Size = new System.Drawing.Size(99, 39);
             this.btnHuyDP.TabIndex = 19;
@@ -207,9 +207,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(23, 50);
+            this.groupBox1.Location = new System.Drawing.Point(12, 50);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(549, 280);
+            this.groupBox1.Size = new System.Drawing.Size(521, 280);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin khách sạn";
@@ -242,7 +242,7 @@
             this.groupBox2.Controls.Add(this.dtpNgayTraPhong);
             this.groupBox2.Controls.Add(this.txtMoTa);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(659, 50);
+            this.groupBox2.Location = new System.Drawing.Point(544, 50);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(485, 280);
             this.groupBox2.TabIndex = 21;
@@ -253,7 +253,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1175, 446);
+            this.ClientSize = new System.Drawing.Size(1041, 446);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnHuyDP);

@@ -34,6 +34,16 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl_Admin = new System.Windows.Forms.TabControl();
             this.tabPage_NV = new System.Windows.Forms.TabPage();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.lblTimKiem = new System.Windows.Forms.Label();
+            this.dataGridView_NV = new System.Windows.Forms.DataGridView();
+            this.maNVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoTenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenDangNhapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.matKhauDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maKSDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.datKhachSanOnlineDataSet_All_NV = new WindowsFormsApp2.DatKhachSanOnlineDataSet_All_NV();
             this.tabPage_KS = new System.Windows.Forms.TabPage();
             this.dataGridView_KS = new System.Windows.Forms.DataGridView();
             this.maKSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,17 +65,12 @@
             this.datKhachSanOnlineDataSetBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.khachSanBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.khachSanTableAdapter1 = new WindowsFormsApp2.DatKhachSanOnlineDataSet_All_KSTableAdapters.KhachSanTableAdapter();
-            this.dataGridView_NV = new System.Windows.Forms.DataGridView();
-            this.datKhachSanOnlineDataSet_All_NV = new WindowsFormsApp2.DatKhachSanOnlineDataSet_All_NV();
-            this.nhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nhanVienTableAdapter = new WindowsFormsApp2.DatKhachSanOnlineDataSet_All_NVTableAdapters.NhanVienTableAdapter();
-            this.maNVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoTenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenDangNhapDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.matKhauDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maKSDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl_Admin.SuspendLayout();
             this.tabPage_NV.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_NV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhanVienBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSet_All_NV)).BeginInit();
             this.tabPage_KS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_KS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachSanBindingSource3)).BeginInit();
@@ -76,15 +81,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.khachSanBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSetBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachSanBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_NV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSet_All_NV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhanVienBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonThemMoiNhanVien
             // 
             this.buttonThemMoiNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonThemMoiNhanVien.Location = new System.Drawing.Point(6, 6);
+            this.buttonThemMoiNhanVien.Location = new System.Drawing.Point(351, 10);
             this.buttonThemMoiNhanVien.Name = "buttonThemMoiNhanVien";
             this.buttonThemMoiNhanVien.Size = new System.Drawing.Size(168, 26);
             this.buttonThemMoiNhanVien.TabIndex = 1;
@@ -127,6 +129,8 @@
             // 
             // tabPage_NV
             // 
+            this.tabPage_NV.Controls.Add(this.txtTimKiem);
+            this.tabPage_NV.Controls.Add(this.lblTimKiem);
             this.tabPage_NV.Controls.Add(this.dataGridView_NV);
             this.tabPage_NV.Controls.Add(this.buttonThemMoiNhanVien);
             this.tabPage_NV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -137,6 +141,78 @@
             this.tabPage_NV.TabIndex = 1;
             this.tabPage_NV.Text = "Nhân Viên";
             this.tabPage_NV.UseVisualStyleBackColor = true;
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Location = new System.Drawing.Point(84, 7);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(236, 26);
+            this.txtTimKiem.TabIndex = 4;
+            // 
+            // lblTimKiem
+            // 
+            this.lblTimKiem.AutoSize = true;
+            this.lblTimKiem.Location = new System.Drawing.Point(6, 13);
+            this.lblTimKiem.Name = "lblTimKiem";
+            this.lblTimKiem.Size = new System.Drawing.Size(71, 20);
+            this.lblTimKiem.TabIndex = 3;
+            this.lblTimKiem.Text = "Tìm kiếm";
+            // 
+            // dataGridView_NV
+            // 
+            this.dataGridView_NV.AutoGenerateColumns = false;
+            this.dataGridView_NV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_NV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maNVDataGridViewTextBoxColumn,
+            this.hoTenDataGridViewTextBoxColumn,
+            this.tenDangNhapDataGridViewTextBoxColumn,
+            this.matKhauDataGridViewTextBoxColumn,
+            this.maKSDataGridViewTextBoxColumn1});
+            this.dataGridView_NV.DataSource = this.nhanVienBindingSource;
+            this.dataGridView_NV.Location = new System.Drawing.Point(7, 53);
+            this.dataGridView_NV.Name = "dataGridView_NV";
+            this.dataGridView_NV.Size = new System.Drawing.Size(547, 210);
+            this.dataGridView_NV.TabIndex = 2;
+            // 
+            // maNVDataGridViewTextBoxColumn
+            // 
+            this.maNVDataGridViewTextBoxColumn.DataPropertyName = "maNV";
+            this.maNVDataGridViewTextBoxColumn.HeaderText = "maNV";
+            this.maNVDataGridViewTextBoxColumn.Name = "maNVDataGridViewTextBoxColumn";
+            // 
+            // hoTenDataGridViewTextBoxColumn
+            // 
+            this.hoTenDataGridViewTextBoxColumn.DataPropertyName = "hoTen";
+            this.hoTenDataGridViewTextBoxColumn.HeaderText = "hoTen";
+            this.hoTenDataGridViewTextBoxColumn.Name = "hoTenDataGridViewTextBoxColumn";
+            // 
+            // tenDangNhapDataGridViewTextBoxColumn
+            // 
+            this.tenDangNhapDataGridViewTextBoxColumn.DataPropertyName = "tenDangNhap";
+            this.tenDangNhapDataGridViewTextBoxColumn.HeaderText = "tenDangNhap";
+            this.tenDangNhapDataGridViewTextBoxColumn.Name = "tenDangNhapDataGridViewTextBoxColumn";
+            // 
+            // matKhauDataGridViewTextBoxColumn
+            // 
+            this.matKhauDataGridViewTextBoxColumn.DataPropertyName = "matKhau";
+            this.matKhauDataGridViewTextBoxColumn.HeaderText = "matKhau";
+            this.matKhauDataGridViewTextBoxColumn.Name = "matKhauDataGridViewTextBoxColumn";
+            // 
+            // maKSDataGridViewTextBoxColumn1
+            // 
+            this.maKSDataGridViewTextBoxColumn1.DataPropertyName = "maKS";
+            this.maKSDataGridViewTextBoxColumn1.HeaderText = "maKS";
+            this.maKSDataGridViewTextBoxColumn1.Name = "maKSDataGridViewTextBoxColumn1";
+            // 
+            // nhanVienBindingSource
+            // 
+            this.nhanVienBindingSource.DataMember = "NhanVien";
+            this.nhanVienBindingSource.DataSource = this.datKhachSanOnlineDataSet_All_NV;
+            // 
+            // datKhachSanOnlineDataSet_All_NV
+            // 
+            this.datKhachSanOnlineDataSet_All_NV.DataSetName = "DatKhachSanOnlineDataSet_All_NV";
+            this.datKhachSanOnlineDataSet_All_NV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage_KS
             // 
@@ -273,65 +349,9 @@
             // 
             this.khachSanTableAdapter1.ClearBeforeFill = true;
             // 
-            // dataGridView_NV
-            // 
-            this.dataGridView_NV.AutoGenerateColumns = false;
-            this.dataGridView_NV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_NV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maNVDataGridViewTextBoxColumn,
-            this.hoTenDataGridViewTextBoxColumn,
-            this.tenDangNhapDataGridViewTextBoxColumn,
-            this.matKhauDataGridViewTextBoxColumn,
-            this.maKSDataGridViewTextBoxColumn1});
-            this.dataGridView_NV.DataSource = this.nhanVienBindingSource;
-            this.dataGridView_NV.Location = new System.Drawing.Point(7, 53);
-            this.dataGridView_NV.Name = "dataGridView_NV";
-            this.dataGridView_NV.Size = new System.Drawing.Size(716, 150);
-            this.dataGridView_NV.TabIndex = 2;
-            // 
-            // datKhachSanOnlineDataSet_All_NV
-            // 
-            this.datKhachSanOnlineDataSet_All_NV.DataSetName = "DatKhachSanOnlineDataSet_All_NV";
-            this.datKhachSanOnlineDataSet_All_NV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // nhanVienBindingSource
-            // 
-            this.nhanVienBindingSource.DataMember = "NhanVien";
-            this.nhanVienBindingSource.DataSource = this.datKhachSanOnlineDataSet_All_NV;
-            // 
             // nhanVienTableAdapter
             // 
             this.nhanVienTableAdapter.ClearBeforeFill = true;
-            // 
-            // maNVDataGridViewTextBoxColumn
-            // 
-            this.maNVDataGridViewTextBoxColumn.DataPropertyName = "maNV";
-            this.maNVDataGridViewTextBoxColumn.HeaderText = "maNV";
-            this.maNVDataGridViewTextBoxColumn.Name = "maNVDataGridViewTextBoxColumn";
-            // 
-            // hoTenDataGridViewTextBoxColumn
-            // 
-            this.hoTenDataGridViewTextBoxColumn.DataPropertyName = "hoTen";
-            this.hoTenDataGridViewTextBoxColumn.HeaderText = "hoTen";
-            this.hoTenDataGridViewTextBoxColumn.Name = "hoTenDataGridViewTextBoxColumn";
-            // 
-            // tenDangNhapDataGridViewTextBoxColumn
-            // 
-            this.tenDangNhapDataGridViewTextBoxColumn.DataPropertyName = "tenDangNhap";
-            this.tenDangNhapDataGridViewTextBoxColumn.HeaderText = "tenDangNhap";
-            this.tenDangNhapDataGridViewTextBoxColumn.Name = "tenDangNhapDataGridViewTextBoxColumn";
-            // 
-            // matKhauDataGridViewTextBoxColumn
-            // 
-            this.matKhauDataGridViewTextBoxColumn.DataPropertyName = "matKhau";
-            this.matKhauDataGridViewTextBoxColumn.HeaderText = "matKhau";
-            this.matKhauDataGridViewTextBoxColumn.Name = "matKhauDataGridViewTextBoxColumn";
-            // 
-            // maKSDataGridViewTextBoxColumn1
-            // 
-            this.maKSDataGridViewTextBoxColumn1.DataPropertyName = "maKS";
-            this.maKSDataGridViewTextBoxColumn1.HeaderText = "maKS";
-            this.maKSDataGridViewTextBoxColumn1.Name = "maKSDataGridViewTextBoxColumn1";
             // 
             // Admin
             // 
@@ -345,6 +365,10 @@
             this.Load += new System.EventHandler(this.Admin_Load);
             this.tabControl_Admin.ResumeLayout(false);
             this.tabPage_NV.ResumeLayout(false);
+            this.tabPage_NV.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_NV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nhanVienBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSet_All_NV)).EndInit();
             this.tabPage_KS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_KS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachSanBindingSource3)).EndInit();
@@ -355,9 +379,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.khachSanBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSetBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachSanBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_NV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSet_All_NV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nhanVienBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -399,5 +420,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tenDangNhapDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn matKhauDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn maKSDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Label lblTimKiem;
+        private System.Windows.Forms.TextBox txtTimKiem;
     }
 }
