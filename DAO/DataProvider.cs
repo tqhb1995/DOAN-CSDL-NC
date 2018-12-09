@@ -15,7 +15,7 @@ namespace DAO
         // Ket noi
         public static SqlConnection OpenConnection()
         {
-            string connectionString = @"Data Source=DESKTOP-0VVPAK8\SQLEXPRESS;Initial Catalog=DatKhachSanOnline;Integrated Security=True";
+            string connectionString = @"Data Source=DESKTOP-FLKIMA5\SQLEXPRESS;Initial Catalog=DatKhachSanOnline;Integrated Security=True";
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
             return conn;

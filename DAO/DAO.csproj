@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DataProvider.cs" />
     <Compile Include="DatPhongDAO.cs" />
+    <Compile Include="HoaDonDAO.cs" />
     <Compile Include="KhachHangDAO.cs" />
     <Compile Include="KhachSanDAO.cs" />
     <Compile Include="NhanVienDAO.cs" />

@@ -127,11 +127,13 @@ else
 --================Lập Hóa Đơn===========================
 --===============Input: maDP============================
 --===========Output: thông tin hóa đơn==================
-
+go
 CREATE PROCEDURE lapHoaDon
-	@maDP char(10)
+	@maDP char(10),
+	@maHD char(10) output
 AS
 BEGIN
+	SET NOCOUNT ON;
 	if(NOT EXISTS (SELECT *
 					FROM DatPhong
 					WHERE @maDP = maDP ))
@@ -146,23 +148,44 @@ BEGIN
 			DECLARE @soNgay int
 			DECLARE @tongTien int
 			DECLARE @donGia int
-			--DECLARE @ngayThanhToan datetime
-			DECLARE @maHD char(10)
+			DECLARE @maPhong char(10)
+			--DECLARE @maHD char(10)
+
 			SELECT @ngayTraPhong = a.ngayTraPhong from DatPhong a where a.maDP = @maDP
 			SELECT @ngayBD = b.ngayBatDau from DatPhong b where b.maDP = @maDP
 			SELECT @donGia = c.donGia from DatPhong c where c.maDP = @maDP
-			--SELECT @ngayThanhToan = GETDATE()
+			SELECT @maPhong = d.maPhong from DatPhong d where d.maDP = @maDP
 			SELECT @maHD = dbo.Auto_IdHD()
+
 			SET @soNgay = CAST(DATEDIFF(dd,@ngayBD,@ngayTraPhong) as INT)
 			SET @tongTien = @soNgay * @donGia
 			---- INSERT dữ liệu vào table Hóa Đơn
 			INSERT INTO HoaDon(maHD,ngayThanhToan,tongTien,maDP)
 			VALUES (@maHD,GETDATE(),@tongTien,@maDP)
-			---- Xuất thông tin hóa đơn vừa tạo cho nhân viên
-			SELECT * FROM HoaDon
-			WHERE maHD = @maHD
+			----- UPDATE Số lượng phòng trống
+			DECLARE @maLoaiPhong char(10)
+			SELECT @maLoaiPhong = x.loaiPhong from Phong x where x.maPhong = @maPhong
+			UPDATE LOAIPHONG
+			SET slTrong = slTrong + 1
+			WHERE maLoaiPhong = @maLoaiPhong
+			----- UPDATE trạng thái phòng
+			UPDATE TrangThaiPhong
+			SET tinhTrang = N'còn trống',
+				ngay = GETDATE()
+			WHERE maPhong = @maPhong
 		END
 END
+
+--DROP PROCEDURE lapHoaDon
+--EXECUTE lapHoaDon 'DP00000001'
+--drop database DatKhachSanOnline
+----S
+----select * from TrangThaiPhong
+--go
+--declare @maHD char(10)
+--EXECUTE lapHoaDon 'DP00000002', @maHD out
+--print @maHD
+
 --=============================================
 --==============ĐẶT PHÒNG======================
 --=============================================

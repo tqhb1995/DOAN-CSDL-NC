@@ -101,6 +101,12 @@
     <Compile Include="GetALLHotel.Designer.cs">
       <DependentUpon>GetALLHotel.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon.Designer.cs">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhanVienQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GetALLHotel.resx">
       <DependentUpon>GetALLHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon.resx">
+      <DependentUpon>HoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVienQuanLy.resx">
       <DependentUpon>NhanVienQuanLy.cs</DependentUpon>
