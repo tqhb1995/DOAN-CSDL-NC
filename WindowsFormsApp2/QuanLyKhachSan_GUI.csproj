@@ -95,6 +95,12 @@
     <Compile Include="DangKiKhachHang.Designer.cs">
       <DependentUpon>DangKiKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetALLHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetALLHotel.Designer.cs">
+      <DependentUpon>GetALLHotel.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhanVienQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DangKiKhachHang.resx">
       <DependentUpon>DangKiKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetALLHotel.resx">
+      <DependentUpon>GetALLHotel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVienQuanLy.resx">
       <DependentUpon>NhanVienQuanLy.cs</DependentUpon>

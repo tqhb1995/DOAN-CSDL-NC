@@ -10,6 +10,7 @@ namespace DTO
     {
         private string _maDP;
         private string _maLoaiPhong;
+        private string _maPhong;
         private string _maKH;
         private string _ngayBatDau;
         private string _ngayTraPhong;
@@ -27,6 +28,11 @@ namespace DTO
         {
             get { return _maLoaiPhong; }
             set { _maLoaiPhong = value; }
+        }
+        public string MaPhong
+        {
+            get { return _maPhong; }
+            set { _maPhong = value; }
         }
         public string MaKH
         {

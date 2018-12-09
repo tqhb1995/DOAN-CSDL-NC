@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using DTO;
@@ -12,34 +13,30 @@ namespace DAO
     public class DatPhongDAO
     {
         static SqlConnection conn;
-        public static bool DatPhongKhachSan(DatPhongDTO dp)
+        public static bool DatPhong(DatPhongDTO dp, KhachSanDTO ks, KhachHangDTO kh)
         {
             try
             {
-                KhachSanDTO ks = new KhachSanDTO();
-                LoaiPhongDTO lp = new LoaiPhongDTO();
-                KhachHangDTO kh = new KhachHangDTO();
                 string procname = "proc_DatPhong";
                 conn = DataProvider.OpenConnection();
                 SqlCommand cmd = new SqlCommand(procname);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Connection = conn;
+                //-----------------------------------
+
+
 
                 //Truyền tham số.
-                cmd.Parameters.Add("@TenKS", SqlDbType.NVarChar);
-                cmd.Parameters.Add("@Quan", SqlDbType.NVarChar);
-                cmd.Parameters.Add("@ThanhPho", SqlDbType.NVarChar);
-                cmd.Parameters.Add("@tenLoaiPhong", SqlDbType.VarChar);
+                cmd.Parameters.Add("@maKS", SqlDbType.VarChar);
+                cmd.Parameters.Add("@maLoaiPhong", SqlDbType.VarChar);
                 cmd.Parameters.Add("@NgayBatDau", SqlDbType.DateTime);
                 cmd.Parameters.Add("@NgayTraPhong", SqlDbType.DateTime);
                 cmd.Parameters.Add("@MoTa", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@SDT", SqlDbType.VarChar);
 
                 //Truyền giá trị vào tham số.
-                cmd.Parameters["@TenKS"].Value = ks.TenKS;
-                cmd.Parameters["@Quan"].Value = ks.Quan;
-                cmd.Parameters["@ThanhPho"].Value = ks.ThanhPho;
-                cmd.Parameters["@tenLoaiPhong"].Value = lp.TenLoaiPhong;
+                cmd.Parameters["@maKS"].Value = ks.MaKS;
+                cmd.Parameters["@maLoaiPhong"].Value = dp.MaLoaiPhong;
                 cmd.Parameters["@NgayBatDau"].Value = dp.NgayBatDau;
                 cmd.Parameters["@NgayTraPhong"].Value = dp.NgayTraPhong;
                 cmd.Parameters["@MoTa"].Value = dp.MoTa;
@@ -56,5 +53,22 @@ namespace DAO
                 return false;
             }
         }
+        public static int KiemTraTonTai(KhachHangDTO temp)
+        {
+            int kq = 0;
+            conn = DataProvider.OpenConnection();
+
+            string sTruyVan3 = "select * from KhachHang where soDienThoai = '" + temp.SoDienThoai + "' ";
+            SqlCommand cmd3 = new SqlCommand(sTruyVan3, conn);
+            cmd3.Connection = conn;
+            cmd3.ExecuteNonQuery();
+            DataTable dt3 = DataProvider.GetDataTable(sTruyVan3, conn);
+            if (dt3.Rows.Count > 0)
+                kq = 1;
+
+            DataProvider.CloseConnection(conn);
+            return kq;
+        }
+
     }
 }

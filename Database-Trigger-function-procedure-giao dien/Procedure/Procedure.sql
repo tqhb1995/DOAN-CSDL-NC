@@ -168,10 +168,8 @@ END
 --=============================================
 CREATE PROCEDURE proc_DatPhong  
 (  
-	@TenKS nvarchar(100),
-	@Quan nvarchar(100),
-	@ThanhPho nvarchar(100),
-	@tenLoaiPhong varchar(20),	
+	@maKS varchar(20),
+	@maLoaiPhong varchar(20),	
 	@NgayBatDau datetime,  
 	@NgayTraPhong datetime,
 	@MoTa nvarchar(100),
@@ -190,7 +188,7 @@ BEGIN
 			--Khai báo
 			DECLARE @maDP char(10)
 			DECLARE @maKH char(10)
-			DECLARE @maKS nvarchar(100)
+			--DECLARE @maKS nvarchar(100)
 			DECLARE @DonGia float
 			DECLARE @maLoaiPhong varchar(100)
 			DECLARE @SLTrong int
@@ -203,7 +201,7 @@ BEGIN
 			--Lấy mã khách hàng dựa trên số điện thoại
 			SELECT @maKH = maKH FROM dbo.KhachHang WHERE @SDT = soDienThoai
 			--Lấy mã khách sạn dựa trên thông tin đường quận thành phố.
-			SELECT @maKS = maKS FROM dbo.KhachSan WHERE @Quan = quan AND @ThanhPho = thanhPho
+			--SELECT @maKS = maKS FROM dbo.KhachSan WHERE @Quan = quan AND @ThanhPho = thanhPho
 			SELECT @maLoaiPhong = maLoaiPhong from dbo.LoaiPhong WHERE @maKS = maKS AND @tenLoaiPhong = tenLoaiPhong
 			SELECT @DonGia = donGia FROM dbo.LoaiPhong WHERE @maLoaiPhong = maLoaiPhong AND @maKS = maKS
 			SELECT @SLTrong = slTrong FROM dbo.LoaiPhong WHERE @maLoaiPhong = maLoaiPhong AND @maKS = maKS

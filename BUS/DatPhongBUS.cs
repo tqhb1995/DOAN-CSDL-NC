@@ -10,10 +10,14 @@ namespace BUS
 {
     public class DatPhongBUS
     {
-        public static bool DatPhong(DatPhongDTO dp)
+        public static bool DatPhong(DatPhongDTO dp, KhachSanDTO ks, KhachHangDTO kh)
         {
-
-            return DatPhongDAO.DatPhongKhachSan(dp);
+            return DatPhongDAO.DatPhong(dp, ks, kh);
         }
+        public static int KiemTraTonTai(KhachHangDTO kh)
+        {
+            return DatPhongDAO.KiemTraTonTai(kh);
+        }
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using BUS;
 using DTO;
+using DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace WindowsFormsApp2
 {
     public partial class frmDatPhong : Form
     {
+        static SqlConnection conn;
         public frmDatPhong()
         {
             InitializeComponent();
@@ -21,55 +23,72 @@ namespace WindowsFormsApp2
 
         private void btnDatPhong_Click(object sender, EventArgs e)
         {
-            //if (txt == "" || txtCMND.Text == "" || txtSDT.Text == "" || txtEmail.Text == "" || txtMoTa.Text == "" || txtTenDangNhap.Text == "" || txtMatKhau.Text == "" || txtDiaChi.Text == "")
-            //{
-            //    MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo");
-            //    return;
-            //}
+            //txtmaKS.Text = maks;
+            if (cboLP.Text == "" || txtSDT.Text == "")
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo");
+                return;
+            }
+            //string sql = DataProvider.GetDataTable("SELECT maKH FROM KhachHang WHERE soDienThoai = '" + SoDienThoai + "'", conn);
+            //frmDatPhong.maks = txtmaKS.Text;
+            //frmDatPhong.makh = txtSDT.Text;
 
-            //if (txtMatKhau.Text != txtXNMK.Text)
-            //{
-            //    MessageBox.Show("Mật khẩu không khớp! \nVui lòng nhập lại!", "Thông báo");
-            //    return;
-            //}
             KhachHangDTO kh = new KhachHangDTO();
             DatPhongDTO dp = new DatPhongDTO();
-            LoaiPhongDTO lp = new LoaiPhongDTO();
             KhachSanDTO ks = new KhachSanDTO();
 
-            ks.TenKS = txtTenKS.Text;
-            ks.Quan = txtQuan.Text;
-            ks.ThanhPho = txtTP.Text;
-            lp.TenLoaiPhong = txtLP.Text;
+            ks.MaKS = txtmaKS.Text;
+            dp.MaLoaiPhong = cboLP.Text;
             kh.SoDienThoai = txtSDT.Text;
             dp.NgayBatDau = this.dtpNgayBatDau.Text;
             dp.NgayTraPhong = this.dtpNgayTraPhong.Text;
             dp.MoTa = txtMoTa.Text;
-            if (DatPhongBUS.DatPhong(dp) == true)
+
+            int x = DatPhongBUS.KiemTraTonTai(kh);
+
+            if (x == 0)
             {
-                // KhachHangDTO p = new KhachHangDTO();
-                MessageBox.Show("Đăng kí thành công!", "Thông báo");
-                //settext = p.MaKH;
-                //settext1 = p.HoTen;
-                this.Hide();
-                // DangNhap frm = new DangNhap();
-                //frm.Show();
+                MessageBox.Show("Khách hàng không tồn tại.\nKhông thể thêm mới.", "Thông báo");
+                return;
             }
-            else
-                MessageBox.Show("Lỗi, vui lòng thử lại! \n ", "Thông báo");
-            //kh.HoTen = txtHoTen.Text;
-            //kh.SoCMND = txtCMND.Text;
-            //kh.DiaChi = txtDiaChi.Text;
-            //kh.SoDienThoai = txtSDT.Text;
-            //kh.MoTa = txtMoTa.Text;
-            //kh.Email = txtEmail.Text;
-            //kh.TenDangNhap = txtTenDangNhap.Text;
-            //kh.MatKhau = txtMatKhau.Text;
+
+            if (x == 1)
+            {
+                if (DatPhongBUS.DatPhong(dp, ks, kh) == true)
+                {
+                    MessageBox.Show("Thêm thành công!", "Thông báo");
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Lỗi, vui lòng thử lại! \n ", "Thông báo");
+                }
+            }
         }
 
         private void btnHuyDP_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void frmDatPhong_Load(object sender, EventArgs e)
+        {
+            conn = DataProvider.OpenConnection();
+            string sql = "select * from LoaiPhong";
+            cboLP.DataSource = DataProvider.GetDataTable(sql, conn);
+            cboLP.DisplayMember = "maLoaiPhong";
+            cboLP.ValueMember = "maLoaiPhong";
+            DataProvider.CloseConnection(conn);
+            //disable
+            txtmaKS.Enabled = false;
+            txtTenKS.Enabled = false;
+            txtSoSao.Enabled = false;
+            txtSoNha.Enabled = false;
+            txtDuong.Enabled = false;
+            txtQuan.Enabled = false;
+            txtTP.Enabled = false;
+            txtGia.Enabled = false;
+            // txtmaKS.Text = maks;
         }
     }
 }
