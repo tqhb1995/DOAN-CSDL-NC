@@ -57,6 +57,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="DanhSachPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachPhong.Designer.cs">
+      <DependentUpon>DanhSachPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatKhachSanOnlineDataSet.cs">
       <DependentUpon>DatKhachSanOnlineDataSet.xsd</DependentUpon>
     </Compile>
@@ -94,6 +100,12 @@
     </Compile>
     <Compile Include="DangKiKhachHang.Designer.cs">
       <DependentUpon>DangKiKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DSLoaiPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DSLoaiPhong.Designer.cs">
+      <DependentUpon>DSLoaiPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="GetALLHotel.cs">
       <SubType>Form</SubType>
@@ -166,11 +178,17 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachPhong.resx">
+      <DependentUpon>DanhSachPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DatPhong.resx">
       <DependentUpon>DatPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DangKiKhachHang.resx">
       <DependentUpon>DangKiKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DSLoaiPhong.resx">
+      <DependentUpon>DSLoaiPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GetALLHotel.resx">
       <DependentUpon>GetALLHotel.cs</DependentUpon>

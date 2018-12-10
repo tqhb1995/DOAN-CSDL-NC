@@ -20,6 +20,17 @@ namespace BUS
             return KhachHangDAO.KiemTraTonTai(temp);
 
         }
-       
+
+        public static bool SuaKhachHang(KhachHangDTO kh)
+        {
+
+            return KhachHangDAO.SuaKhachHang(kh);
+        }
+        public static int KiemTraSua(KhachHangDTO temp)
+        {
+            return KhachHangDAO.KiemTraSua(temp);
+
+        }
+
     }
 }

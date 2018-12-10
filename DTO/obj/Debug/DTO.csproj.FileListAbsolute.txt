@@ -28,3 +28,9 @@ C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csprojAsse
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DTO\obj\Debug\DTO.dll
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\DTO\obj\Debug\DTO.pdb
+C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\DTO\bin\Debug\DTO.dll
+C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\DTO\bin\Debug\DTO.pdb
+C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\DTO\obj\Debug\DTO.dll
+C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\DTO\obj\Debug\DTO.pdb

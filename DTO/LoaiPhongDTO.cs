@@ -11,7 +11,7 @@ namespace DTO
         private string _maLoaiPhong;
         private string _tenLoaiPhong;
         private string _maKS;
-        private int _donGia;
+        private float _donGia;
         private string _moTa;
         private int _slTrong;
 
@@ -30,7 +30,7 @@ namespace DTO
             get { return _maKS; }
             set { _maKS = value; }
         }
-        public int DonGia
+        public float DonGia
         {
             get { return _donGia; }
             set { _donGia = value; }
