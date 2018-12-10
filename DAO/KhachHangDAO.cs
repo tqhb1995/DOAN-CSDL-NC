@@ -7,6 +7,7 @@ using System.Data;
 using System.Windows.Forms;
 using DTO;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 
 
@@ -67,6 +68,7 @@ namespace DAO
                 cmd.Connection = conn;
 
                 //Truyền tham số.
+                cmd.Parameters.Add("@makh", SqlDbType.Char);
                 cmd.Parameters.Add("@hoTen", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@tenDangNhap", SqlDbType.VarChar);
                 cmd.Parameters.Add("@matKhau", SqlDbType.VarChar);
@@ -138,6 +140,18 @@ namespace DAO
             DataProvider.CloseConnection(conn);
             return kq;
         }
+        public static bool isEmail(string inputEmail)
+        {
+            inputEmail = inputEmail ?? string.Empty;
+            string strRegex = @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
+                  @"\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" +
+                  @".)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
+            Regex re = new Regex(strRegex);
+            if (re.IsMatch(inputEmail))
+                return (true);
+            else
+                return (false);
+        }
 
         /*
         public static KhachHangDTO DangNhap(KhachHangDTO khDTO)
@@ -177,22 +191,6 @@ namespace DAO
         {
             int kq = 0;
             conn = DataProvider.OpenConnection();
-            string struyvan4 = "select * from KhachHang where maKH = '" + temp.MaKH + "' ";
-            SqlCommand cmd4 = new SqlCommand(struyvan4, conn);
-            cmd4.Connection = conn;
-            cmd4.ExecuteNonQuery();
-            DataTable dt4 = DataProvider.GetDataTable(struyvan4, conn);
-            if (dt4.Rows.Count == 0)
-                kq = 5;
-
-            string sTruyVan3 = "select * from KhachHang where tenDangNhap = '" + temp.TenDangNhap + "' ";
-            SqlCommand cmd3 = new SqlCommand(sTruyVan3, conn);
-            cmd3.Connection = conn;
-            cmd3.ExecuteNonQuery();
-            DataTable dt3 = DataProvider.GetDataTable(sTruyVan3, conn);
-            if (dt3.Rows.Count > 0)
-                kq = 4;
-
             string sTruyVan = "select * from KhachHang where soCMND = '" + temp.SoCMND + "' ";
             SqlCommand cmd = new SqlCommand(sTruyVan, conn);
             cmd.ExecuteNonQuery();

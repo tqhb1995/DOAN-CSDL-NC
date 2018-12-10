@@ -118,7 +118,6 @@ C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\Wi
 C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.NhanVienQuanLy.resources
 C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
 C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.SuaKhachHang.resources
-C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ThemKhachHang.resources
 C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ThemKhachSan.resources
 C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.AddLoaiPhong.resources
 C:\Users\Phung\Desktop\đồ án main\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ThemNhanVien.resources

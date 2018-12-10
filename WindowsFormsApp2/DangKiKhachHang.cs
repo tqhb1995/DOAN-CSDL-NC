@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using BUS;
 using DTO;
+using DAO;
 
 namespace WindowsFormsApp2
 {
@@ -17,7 +18,7 @@ namespace WindowsFormsApp2
     {
         //public static string settext = "";
         // static string settext1 = "";
-
+        static SqlConnection conn;
         public DangKiKhachHang()
         {
             InitializeComponent();
@@ -50,6 +51,12 @@ namespace WindowsFormsApp2
 
             int x = KhachHangBUS.KiemTraTonTai(kh);
 
+            if (KhachHangDAO.isEmail(txtEmail.Text) == false)
+            {
+                MessageBox.Show("Email không đúng định dạng", "Thông báo");
+                return;
+            }
+
             if (x == 4)
             {
                 MessageBox.Show("Tên đăng nhập đã tồn tại.\nKhông thể đăng kí.", "Thông báo");
@@ -74,17 +81,11 @@ namespace WindowsFormsApp2
             if (x == 0)
                 if (KhachHangBUS.ThemKhachHang(kh) == true)
                 {
-                   // KhachHangDTO p = new KhachHangDTO();
-                    MessageBox.Show("Đăng kí thành công!", "Thông báo");
-                    //settext = p.MaKH;
-                    //settext1 = p.HoTen;
-                    this.Hide();
-                   // DangNhap frm = new DangNhap();
-                    //frm.Show();
+                    // KhachHangDTO p = new KhachHangDTO();
+                    MessageBox.Show("Đăng kí thành công!", "Thông báo");       
                 }
                 else
                     MessageBox.Show("Lỗi, vui lòng thử lại! \n ", "Thông báo");
-
 
             /*if (KhachHangBUS.ThemKhachHang(kh) == true)
             {

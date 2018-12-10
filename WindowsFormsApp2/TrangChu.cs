@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using DAO;
+using DTO;
 
 namespace WindowsFormsApp2
 {
@@ -58,12 +59,16 @@ namespace WindowsFormsApp2
                 {
 
                     MessageBox.Show("Đăng nhập thành công!\nXin chào " + (string)(reader[1]));
+
+
                     
+
                     if (checkBoxNhanVien.Checked)
                     {
                         this.Hide();
                         NhanVienQuanLy nvql = new NhanVienQuanLy();
                         nvql.ShowDialog();
+                        DataProvider.CloseConnection(conn);
                         this.Close();
                     }
                     
@@ -74,6 +79,17 @@ namespace WindowsFormsApp2
                             this.Hide();
                             TimKiemKhachSan tkks = new TimKiemKhachSan();
                             tkks.ShowDialog();
+                            DataProvider.CloseConnection(conn);
+
+                            conn = DataProvider.OpenConnection();
+                            string TruyVan = "select * from KhachHang where tenDangNhap = '" + txt_UserName.Text + "' ";
+                            SqlCommand cmdx = new SqlCommand(TruyVan, conn);
+                            cmdx.Connection = conn;
+                            cmdx.ExecuteNonQuery();
+                            DataTable dt = DataProvider.GetDataTable(TruyVan, conn);
+                            globalvar.var = dt.Rows[0][0].ToString();
+                            DataProvider.CloseConnection(conn);
+
                             this.Close();
                         }
                         
@@ -82,6 +98,7 @@ namespace WindowsFormsApp2
                             this.Hide();
                             Admin ad = new Admin();
                             ad.ShowDialog();
+                            DataProvider.CloseConnection(conn);
                             this.Close();
 
                         }

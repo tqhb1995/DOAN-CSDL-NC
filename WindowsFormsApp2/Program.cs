@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
 
 namespace WindowsFormsApp2
 {
+    
     static class Program
     {
         /// <summary>
@@ -16,7 +18,7 @@ namespace WindowsFormsApp2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddLoaiPhong());
+            Application.Run(new SuaKhachHang());
         }
     }
 }

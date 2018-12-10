@@ -30,13 +30,12 @@
         {
             this.sua = new System.Windows.Forms.Button();
             this.thoat = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txt_mota = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_sodt = new System.Windows.Forms.TextBox();
             this.txt_diachi = new System.Windows.Forms.TextBox();
             this.txt_socmnd = new System.Windows.Forms.TextBox();
             this.txt_tenkhachhang = new System.Windows.Forms.TextBox();
-            this.txt_xacnhanmk = new System.Windows.Forms.TextBox();
             this.txt_matkhau = new System.Windows.Forms.TextBox();
             this.txt_tendangnhap = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -44,15 +43,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.txt_makhachhang = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.table = new System.Windows.Forms.Button();
+            this.txt_makhachhang = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -76,13 +73,13 @@
             this.thoat.Text = "Thoát";
             this.thoat.UseVisualStyleBackColor = true;
             // 
-            // textBox9
+            // txt_mota
             // 
-            this.textBox9.Location = new System.Drawing.Point(127, 357);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(976, 118);
-            this.textBox9.TabIndex = 37;
+            this.txt_mota.Location = new System.Drawing.Point(127, 357);
+            this.txt_mota.Multiline = true;
+            this.txt_mota.Name = "txt_mota";
+            this.txt_mota.Size = new System.Drawing.Size(976, 118);
+            this.txt_mota.TabIndex = 37;
             // 
             // txt_email
             // 
@@ -119,15 +116,9 @@
             this.txt_tenkhachhang.Size = new System.Drawing.Size(292, 36);
             this.txt_tenkhachhang.TabIndex = 32;
             // 
-            // txt_xacnhanmk
-            // 
-            this.txt_xacnhanmk.Location = new System.Drawing.Point(264, 182);
-            this.txt_xacnhanmk.Name = "txt_xacnhanmk";
-            this.txt_xacnhanmk.Size = new System.Drawing.Size(292, 36);
-            this.txt_xacnhanmk.TabIndex = 31;
-            // 
             // txt_matkhau
             // 
+            this.txt_matkhau.Enabled = false;
             this.txt_matkhau.Location = new System.Drawing.Point(264, 137);
             this.txt_matkhau.Name = "txt_matkhau";
             this.txt_matkhau.Size = new System.Drawing.Size(292, 36);
@@ -135,6 +126,7 @@
             // 
             // txt_tendangnhap
             // 
+            this.txt_tendangnhap.Enabled = false;
             this.txt_tendangnhap.Location = new System.Drawing.Point(264, 88);
             this.txt_tendangnhap.Name = "txt_tendangnhap";
             this.txt_tendangnhap.Size = new System.Drawing.Size(292, 36);
@@ -190,16 +182,6 @@
             this.label5.TabIndex = 24;
             this.label5.Text = "Số CMND";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 185);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(250, 29);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Xác nhận lại mật khẩu";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -239,26 +221,17 @@
             this.label10.TabIndex = 40;
             this.label10.Text = "Mã khách hàng";
             // 
-            // txt_makhachhang
-            // 
-            this.txt_makhachhang.Location = new System.Drawing.Point(264, 37);
-            this.txt_makhachhang.Name = "txt_makhachhang";
-            this.txt_makhachhang.Size = new System.Drawing.Size(292, 36);
-            this.txt_makhachhang.TabIndex = 41;
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txt_xacnhanmk);
             this.groupBox1.Controls.Add(this.txt_makhachhang);
             this.groupBox1.Controls.Add(this.txt_matkhau);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txt_tendangnhap);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(14, 25);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(589, 229);
+            this.groupBox1.Size = new System.Drawing.Size(589, 201);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tài khoản ";
@@ -282,31 +255,30 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin";
             // 
-            // table
+            // txt_makhachhang
             // 
-            this.table.Location = new System.Drawing.Point(278, 274);
-            this.table.Name = "table";
-            this.table.Size = new System.Drawing.Size(292, 57);
-            this.table.TabIndex = 44;
-            this.table.Text = "Danh sách khách hàng";
-            this.table.UseVisualStyleBackColor = true;
+            this.txt_makhachhang.Enabled = false;
+            this.txt_makhachhang.Location = new System.Drawing.Point(264, 34);
+            this.txt_makhachhang.Name = "txt_makhachhang";
+            this.txt_makhachhang.Size = new System.Drawing.Size(292, 36);
+            this.txt_makhachhang.TabIndex = 41;
             // 
             // SuaKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1181, 653);
-            this.Controls.Add(this.table);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.sua);
             this.Controls.Add(this.thoat);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txt_mota);
             this.Controls.Add(this.label9);
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SuaKhachHang";
             this.Text = "SuaKhachHang";
+            this.Load += new System.EventHandler(this.SuaKhachHang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -320,13 +292,12 @@
 
         private System.Windows.Forms.Button sua;
         private System.Windows.Forms.Button thoat;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txt_mota;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.TextBox txt_sodt;
         private System.Windows.Forms.TextBox txt_diachi;
         private System.Windows.Forms.TextBox txt_socmnd;
         private System.Windows.Forms.TextBox txt_tenkhachhang;
-        private System.Windows.Forms.TextBox txt_xacnhanmk;
         private System.Windows.Forms.TextBox txt_matkhau;
         private System.Windows.Forms.TextBox txt_tendangnhap;
         private System.Windows.Forms.Label label9;
@@ -334,14 +305,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txt_makhachhang;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button table;
+        private System.Windows.Forms.TextBox txt_makhachhang;
     }
 }

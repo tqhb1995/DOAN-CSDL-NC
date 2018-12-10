@@ -101,10 +101,11 @@ namespace DAO
             cmd1.Connection = conn;
             cmd1.ExecuteNonQuery();
             DataTable dt2 = DataProvider.GetDataTable(que2, conn);
+            DataProvider.CloseConnection(conn);
             if (dt2.Rows.Count == 0)
                 return 2;
             return 0;
-
+            
         }
 
         public static int KiemTraSua(LoaiPhongDTO lp)
@@ -123,6 +124,7 @@ namespace DAO
             cmd1.Connection = conn;
             cmd1.ExecuteNonQuery();
             DataTable dt2 = DataProvider.GetDataTable(que2, conn);
+            DataProvider.CloseConnection(conn);
             if (dt2.Rows.Count == 0)
                 return 2;
             return 0;

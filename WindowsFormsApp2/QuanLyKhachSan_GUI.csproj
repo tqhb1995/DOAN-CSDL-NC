@@ -133,12 +133,6 @@
     <Compile Include="SuaKhachHang.Designer.cs">
       <DependentUpon>SuaKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThemKhachHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThemKhachHang.Designer.cs">
-      <DependentUpon>ThemKhachHang.cs</DependentUpon>
-    </Compile>
     <Compile Include="ThemKhachSan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,9 +205,6 @@
     </Compile>
     <EmbeddedResource Include="SuaKhachHang.resx">
       <DependentUpon>SuaKhachHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ThemKhachHang.resx">
-      <DependentUpon>ThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThemKhachSan.resx">
       <DependentUpon>ThemKhachSan.cs</DependentUpon>
