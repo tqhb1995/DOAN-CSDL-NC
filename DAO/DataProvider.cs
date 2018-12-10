@@ -11,11 +11,10 @@ namespace DAO
 {
     public class DataProvider
     {
-        
         // Ket noi
         public static SqlConnection OpenConnection()
         {
-            string connectionString = @"Data Source=DESKTOP-GNB764S;Initial Catalog=DatKhachSanOnline;Integrated Security=True";
+            string connectionString = @"Data Source=DESKTOP-0VVPAK8\SQLEXPRESS;Initial Catalog=DatKhachSanOnline;Integrated Security=True";
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
             return conn;
@@ -64,7 +63,7 @@ namespace DAO
             CloseConnection(conn);
             return dt;
         }*/
-        
+
         public static DataTable taobang(string sql)
         {
 
@@ -75,7 +74,7 @@ namespace DAO
             return dt;
 
 
-        }
 
+        }
     }
 }

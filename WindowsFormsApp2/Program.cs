@@ -8,17 +8,18 @@ using DTO;
 namespace WindowsFormsApp2
 {
     
-    static class Program
+    public  class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+       public static string username = null;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SuaKhachHang());
+            Application.Run(new TrangChu());
         }
     }
 }

@@ -131,5 +131,17 @@ namespace DAO
 
         }
 
+        public static DataTable LoadDuLieuLoaiPhong(string s)
+        {
+            string sTruyVan = "select * from LoaiPhong where maKS = (select maKS from NhanVien where tenDangNhap= '" + s + "') ";
+            conn = DataProvider.OpenConnection();
+            DataTable dt = DataProvider.GetDataTable(sTruyVan, conn);
+            DataProvider.CloseConnection(conn);
+            return dt;
+
+        }
+
+
+
     }
 }

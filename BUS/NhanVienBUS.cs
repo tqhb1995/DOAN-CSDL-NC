@@ -21,6 +21,13 @@ namespace BUS
             return NhanVienDAO.KiemTraTonTai(temp);
 
         }
-        
+
+
+        public static string LayMaNV(string tdn)
+        {
+            string s = ""; 
+            return s = NhanVienDAO.LayMaNV(tdn);
+        }
+
     }
 }

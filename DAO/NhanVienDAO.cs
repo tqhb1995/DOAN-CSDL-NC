@@ -64,6 +64,18 @@ namespace DAO
             return kq;
         }
         
+        public static string LayMaNV(string tdn)
+        {
+            string s = "";
+            conn = DataProvider.OpenConnection();
+            string sTruyVan3 = "select maNV from NhanVien where tenDangNhap = '" + tdn + "' ";
+            SqlCommand cmd3 = new SqlCommand(sTruyVan3, conn);
+            cmd3.Connection = conn;
+            cmd3.ExecuteNonQuery();
+
+            DataProvider.CloseConnection(conn);
+            return s ;
+        }
 
     }
 

@@ -31,6 +31,16 @@ namespace WindowsFormsApp2
             TrangChu tc = new TrangChu();
             tc.ShowDialog();
             this.Close();
+            Program.username = "";
+        }
+
+        private void btnKiemTraTinhTrangPhong_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();
+            KiemTraTinhTrangPhong tc = new KiemTraTinhTrangPhong();
+            tc.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -13,24 +13,24 @@ using DTO;
 
 namespace WindowsFormsApp2
 {
+    
+
     public partial class TrangChu : Form
     {
+        
         public TrangChu()
         {
+            
             InitializeComponent();
+            
         }
-
+       
         private void btn_LogIn_Click(object sender, EventArgs e)
         {
             if (txt_UserName.Text == "" || txt_PassWord.Text == "" )
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo");
                 return;
-            }
-
-            if (checkBoxNhanVien.Checked)
-            {
-                
             }
 
             SqlConnection conn;
@@ -59,12 +59,10 @@ namespace WindowsFormsApp2
                 {
 
                     MessageBox.Show("Đăng nhập thành công!\nXin chào " + (string)(reader[1]));
-
-
-                    
-
+                    Program.username = txt_UserName.Text;
                     if (checkBoxNhanVien.Checked)
                     {
+                      
                         this.Hide();
                         NhanVienQuanLy nvql = new NhanVienQuanLy();
                         nvql.ShowDialog();

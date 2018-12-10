@@ -21,5 +21,21 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SuaKhachHang skh = new SuaKhachHang();
+            skh.ShowDialog();
+            this.Close();
+        }
+
+        private void btBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TrangChu tc = new TrangChu();
+            tc.ShowDialog();
+            this.Close();
+        }
     }
 }

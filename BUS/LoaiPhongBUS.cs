@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using DTO;
 using DAO;
 
@@ -26,5 +27,11 @@ namespace BUS
         {
             return LoaiPhongDAO.SuaLoaiPhong(lp);
         }
+
+        public static DataTable LoadDuLieuLoaiPhong(string s)
+        {
+            return LoaiPhongDAO.LoadDuLieuLoaiPhong(s);
+        }
+
     }
 }

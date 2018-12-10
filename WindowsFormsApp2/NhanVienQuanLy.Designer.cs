@@ -30,8 +30,9 @@
         {
             this.labelQuanLyKhachSan = new System.Windows.Forms.Label();
             this.btnSuaKhachSan = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnXemBaoCao = new System.Windows.Forms.Button();
+            this.btnKiemTraTinhTrangPhong = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelQuanLyKhachSan
@@ -55,34 +56,46 @@
             this.btnSuaKhachSan.UseVisualStyleBackColor = true;
             this.btnSuaKhachSan.Click += new System.EventHandler(this.btnSuaKhachSan_Click);
             // 
-            // button1
+            // btnThoat
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(695, 365);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 32);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Thoát";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Location = new System.Drawing.Point(695, 365);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(75, 32);
+            this.btnThoat.TabIndex = 2;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnXemBaoCao
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(330, 63);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(209, 30);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Xem báo cáo";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnXemBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXemBaoCao.Location = new System.Drawing.Point(330, 63);
+            this.btnXemBaoCao.Name = "btnXemBaoCao";
+            this.btnXemBaoCao.Size = new System.Drawing.Size(209, 30);
+            this.btnXemBaoCao.TabIndex = 3;
+            this.btnXemBaoCao.Text = "Xem báo cáo";
+            this.btnXemBaoCao.UseVisualStyleBackColor = true;
+            // 
+            // btnKiemTraTinhTrangPhong
+            // 
+            this.btnKiemTraTinhTrangPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKiemTraTinhTrangPhong.Location = new System.Drawing.Point(32, 117);
+            this.btnKiemTraTinhTrangPhong.Name = "btnKiemTraTinhTrangPhong";
+            this.btnKiemTraTinhTrangPhong.Size = new System.Drawing.Size(202, 31);
+            this.btnKiemTraTinhTrangPhong.TabIndex = 4;
+            this.btnKiemTraTinhTrangPhong.Text = "Kiểm tra tình trạng phòng";
+            this.btnKiemTraTinhTrangPhong.UseVisualStyleBackColor = true;
+            this.btnKiemTraTinhTrangPhong.Click += new System.EventHandler(this.btnKiemTraTinhTrangPhong_Click);
             // 
             // NhanVienQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 400);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnKiemTraTinhTrangPhong);
+            this.Controls.Add(this.btnXemBaoCao);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnSuaKhachSan);
             this.Controls.Add(this.labelQuanLyKhachSan);
             this.Name = "NhanVienQuanLy";
@@ -96,7 +109,8 @@
 
         private System.Windows.Forms.Label labelQuanLyKhachSan;
         private System.Windows.Forms.Button btnSuaKhachSan;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Button btnXemBaoCao;
+        private System.Windows.Forms.Button btnKiemTraTinhTrangPhong;
     }
 }

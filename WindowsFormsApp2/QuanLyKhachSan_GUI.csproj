@@ -119,6 +119,12 @@
     <Compile Include="HoaDon.Designer.cs">
       <DependentUpon>HoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="KiemTraTinhTrangPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KiemTraTinhTrangPhong.Designer.cs">
+      <DependentUpon>KiemTraTinhTrangPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhanVienQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HoaDon.resx">
       <DependentUpon>HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KiemTraTinhTrangPhong.resx">
+      <DependentUpon>KiemTraTinhTrangPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NhanVienQuanLy.resx">
       <DependentUpon>NhanVienQuanLy.cs</DependentUpon>
@@ -323,6 +332,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\index.icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User003_Edit-512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
