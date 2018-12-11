@@ -45,6 +45,7 @@ namespace WindowsFormsApp2
         private void Thoat_Click(object sender, EventArgs e)
         {
             Hide();
+            Close();
         }
     }
 }

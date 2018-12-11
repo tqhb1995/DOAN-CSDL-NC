@@ -66,6 +66,8 @@ namespace WindowsFormsApp2
         private void Thoat_Click(object sender, EventArgs e)
         {
             this.Hide();
+            NhanVienQuanLy n = new NhanVienQuanLy();
+            n.Show();
             this.Close();
         }
 

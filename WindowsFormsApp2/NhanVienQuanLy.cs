@@ -22,6 +22,7 @@ namespace WindowsFormsApp2
             this.Hide();
             //Admin ad = new Admin();
             //ad.ShowDialog();
+            MessageBox.Show("chưa cài đặt");
             this.Close();
         }
 
@@ -41,6 +42,24 @@ namespace WindowsFormsApp2
             KiemTraTinhTrangPhong tc = new KiemTraTinhTrangPhong();
             tc.ShowDialog();
             this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Hide();
+            frmLapHoaDon n = new frmLapHoaDon();
+            n.Show();
+            Close();
+        }
+
+        private void btnDuyetPhong_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("chưa cài đặt");
+        }
+
+        private void btnXemBaoCao_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("chưa cài đặt");
         }
     }
 }

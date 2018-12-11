@@ -37,7 +37,7 @@
             // table
             // 
             this.table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.table.Location = new System.Drawing.Point(18, 65);
+            this.table.Location = new System.Drawing.Point(17, 32);
             this.table.Margin = new System.Windows.Forms.Padding(4);
             this.table.Name = "table";
             this.table.RowTemplate.Height = 28;
@@ -47,10 +47,10 @@
             // 
             // Thoat
             // 
-            this.Thoat.Location = new System.Drawing.Point(691, 541);
+            this.Thoat.Location = new System.Drawing.Point(702, 507);
             this.Thoat.Margin = new System.Windows.Forms.Padding(4);
             this.Thoat.Name = "Thoat";
-            this.Thoat.Size = new System.Drawing.Size(108, 48);
+            this.Thoat.Size = new System.Drawing.Size(96, 29);
             this.Thoat.TabIndex = 1;
             this.Thoat.Text = "Thoát";
             this.Thoat.UseVisualStyleBackColor = true;
@@ -59,18 +59,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 21);
+            this.label1.Location = new System.Drawing.Point(13, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 29);
+            this.label1.Size = new System.Drawing.Size(168, 19);
             this.label1.TabIndex = 2;
             this.label1.Text = "Danh sách loại phòng:";
             // 
             // DSLoaiPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 599);
+            this.ClientSize = new System.Drawing.Size(811, 539);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Thoat);
             this.Controls.Add(this.table);

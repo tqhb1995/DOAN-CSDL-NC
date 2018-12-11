@@ -131,10 +131,26 @@ namespace WindowsFormsApp2
             DataTable data = new DataTable();
             adapter.Fill(data);
 
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.DataSource = data;
+            dgvtk.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvtk.DataSource = data;
 
             DataProvider.CloseConnection(conn);
+        }
+
+        private void dgvtk_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            frmDatPhong frm = new frmDatPhong();
+
+            frm.txtmaKS.Text = this.dgvtk.CurrentRow.Cells[0].Value.ToString();
+            frm.txtTenKS.Text = this.dgvtk.CurrentRow.Cells[1].Value.ToString();
+            frm.txtSoSao.Text = this.dgvtk.CurrentRow.Cells[2].Value.ToString();
+            frm.txtSoNha.Text = this.dgvtk.CurrentRow.Cells[3].Value.ToString();
+            frm.txtDuong.Text = this.dgvtk.CurrentRow.Cells[4].Value.ToString();
+            frm.txtQuan.Text = this.dgvtk.CurrentRow.Cells[5].Value.ToString();
+            frm.txtTP.Text = this.dgvtk.CurrentRow.Cells[6].Value.ToString();
+            frm.txtGia.Text = this.dgvtk.CurrentRow.Cells[7].Value.ToString();
+            this.Hide();
+            frm.ShowDialog();
         }
     }
 }

@@ -49,5 +49,18 @@ namespace WindowsFormsApp2
         {
             LoadCbo();
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            Hide();
+            NhanVienQuanLy n = new NhanVienQuanLy();
+            n.Show();
+            Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

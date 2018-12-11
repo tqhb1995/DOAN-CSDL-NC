@@ -81,8 +81,13 @@ namespace WindowsFormsApp2
             if (x == 0)
                 if (KhachHangBUS.ThemKhachHang(kh) == true)
                 {
+                    Hide();
                     // KhachHangDTO p = new KhachHangDTO();
-                    MessageBox.Show("Đăng kí thành công!", "Thông báo");       
+                    MessageBox.Show("Đăng kí thành công!", "Thông báo");
+                    TrangChu tc = new TrangChu();
+                    tc.Show();
+                    Close();
+                    
                 }
                 else
                     MessageBox.Show("Lỗi, vui lòng thử lại! \n ", "Thông báo");
@@ -159,6 +164,12 @@ namespace WindowsFormsApp2
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            
+
+            Hide();
+           
+            TrangChu tc = new TrangChu();
+            tc.Show();
             this.Close();
         }
 

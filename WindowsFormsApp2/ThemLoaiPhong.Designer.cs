@@ -50,10 +50,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(82, 55);
+            this.label1.Location = new System.Drawing.Point(7, 6);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 29);
+            this.label1.Size = new System.Drawing.Size(109, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã loại phòng";
             // 
@@ -62,10 +62,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(82, 128);
+            this.label2.Location = new System.Drawing.Point(7, 39);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(170, 29);
+            this.label2.Size = new System.Drawing.Size(116, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên loại phòng";
             // 
@@ -73,10 +73,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(82, 196);
+            this.label3.Location = new System.Drawing.Point(7, 74);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 29);
+            this.label3.Size = new System.Drawing.Size(104, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mã khách sạn";
             // 
@@ -84,10 +84,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(82, 271);
+            this.label4.Location = new System.Drawing.Point(7, 110);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 29);
+            this.label4.Size = new System.Drawing.Size(64, 19);
             this.label4.TabIndex = 3;
             this.label4.Text = "Đơn giá";
             // 
@@ -95,10 +95,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(558, 271);
+            this.label5.Location = new System.Drawing.Point(6, 144);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 29);
+            this.label5.Size = new System.Drawing.Size(116, 19);
             this.label5.TabIndex = 4;
             this.label5.Text = "Số lượng trống";
             // 
@@ -106,73 +106,74 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(82, 347);
+            this.label6.Location = new System.Drawing.Point(7, 198);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 29);
+            this.label6.Size = new System.Drawing.Size(48, 19);
             this.label6.TabIndex = 5;
             this.label6.Text = "Mô tả";
             // 
             // txt_MaLP
             // 
-            this.txt_MaLP.Location = new System.Drawing.Point(260, 55);
+            this.txt_MaLP.Location = new System.Drawing.Point(185, 6);
             this.txt_MaLP.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MaLP.Name = "txt_MaLP";
-            this.txt_MaLP.Size = new System.Drawing.Size(237, 36);
+            this.txt_MaLP.Size = new System.Drawing.Size(237, 27);
             this.txt_MaLP.TabIndex = 6;
             // 
             // txt_TenLP
             // 
-            this.txt_TenLP.Location = new System.Drawing.Point(260, 130);
+            this.txt_TenLP.Location = new System.Drawing.Point(185, 41);
             this.txt_TenLP.Name = "txt_TenLP";
-            this.txt_TenLP.Size = new System.Drawing.Size(237, 36);
+            this.txt_TenLP.Size = new System.Drawing.Size(237, 27);
             this.txt_TenLP.TabIndex = 7;
             // 
             // txt_Maks
             // 
-            this.txt_Maks.Location = new System.Drawing.Point(260, 196);
+            this.txt_Maks.Location = new System.Drawing.Point(185, 74);
             this.txt_Maks.Name = "txt_Maks";
-            this.txt_Maks.Size = new System.Drawing.Size(237, 36);
+            this.txt_Maks.Size = new System.Drawing.Size(237, 27);
             this.txt_Maks.TabIndex = 8;
             // 
             // txt_Dongia
             // 
-            this.txt_Dongia.Location = new System.Drawing.Point(260, 268);
+            this.txt_Dongia.Location = new System.Drawing.Point(185, 107);
             this.txt_Dongia.Name = "txt_Dongia";
-            this.txt_Dongia.Size = new System.Drawing.Size(237, 36);
+            this.txt_Dongia.Size = new System.Drawing.Size(237, 27);
             this.txt_Dongia.TabIndex = 9;
             // 
             // txt_Sltrong
             // 
-            this.txt_Sltrong.Location = new System.Drawing.Point(737, 268);
+            this.txt_Sltrong.Location = new System.Drawing.Point(185, 141);
             this.txt_Sltrong.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Sltrong.Name = "txt_Sltrong";
-            this.txt_Sltrong.Size = new System.Drawing.Size(237, 36);
+            this.txt_Sltrong.Size = new System.Drawing.Size(237, 27);
             this.txt_Sltrong.TabIndex = 10;
             // 
             // txt_Mota
             // 
-            this.txt_Mota.Location = new System.Drawing.Point(260, 344);
+            this.txt_Mota.Location = new System.Drawing.Point(185, 175);
             this.txt_Mota.Multiline = true;
             this.txt_Mota.Name = "txt_Mota";
-            this.txt_Mota.Size = new System.Drawing.Size(714, 155);
+            this.txt_Mota.Size = new System.Drawing.Size(237, 61);
             this.txt_Mota.TabIndex = 11;
             // 
             // Them
             // 
-            this.Them.Location = new System.Drawing.Point(782, 553);
+            this.Them.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Them.Location = new System.Drawing.Point(384, 271);
             this.Them.Name = "Them";
-            this.Them.Size = new System.Drawing.Size(175, 59);
+            this.Them.Size = new System.Drawing.Size(78, 27);
             this.Them.TabIndex = 12;
             this.Them.Text = "Thêm";
-            this.Them.UseVisualStyleBackColor = true;
+            this.Them.UseVisualStyleBackColor = false;
             this.Them.Click += new System.EventHandler(this.Them_Click);
             // 
             // Thoat
             // 
-            this.Thoat.Location = new System.Drawing.Point(96, 552);
+            this.Thoat.Location = new System.Drawing.Point(490, 270);
             this.Thoat.Name = "Thoat";
-            this.Thoat.Size = new System.Drawing.Size(175, 61);
+            this.Thoat.Size = new System.Drawing.Size(78, 29);
             this.Thoat.TabIndex = 13;
             this.Thoat.Text = "Thoát";
             this.Thoat.UseVisualStyleBackColor = true;
@@ -180,19 +181,20 @@
             // 
             // Sua
             // 
-            this.Sua.Location = new System.Drawing.Point(450, 552);
+            this.Sua.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Sua.Location = new System.Drawing.Point(286, 269);
             this.Sua.Name = "Sua";
-            this.Sua.Size = new System.Drawing.Size(175, 61);
+            this.Sua.Size = new System.Drawing.Size(78, 29);
             this.Sua.TabIndex = 14;
             this.Sua.Text = "Sửa";
-            this.Sua.UseVisualStyleBackColor = true;
+            this.Sua.UseVisualStyleBackColor = false;
             this.Sua.Click += new System.EventHandler(this.Sua_Click);
             // 
             // dsLoaiphong
             // 
-            this.dsLoaiphong.Location = new System.Drawing.Point(699, 55);
+            this.dsLoaiphong.Location = new System.Drawing.Point(468, 100);
             this.dsLoaiphong.Name = "dsLoaiphong";
-            this.dsLoaiphong.Size = new System.Drawing.Size(275, 48);
+            this.dsLoaiphong.Size = new System.Drawing.Size(184, 29);
             this.dsLoaiphong.TabIndex = 15;
             this.dsLoaiphong.Text = "Danh sách loại phòng";
             this.dsLoaiphong.UseVisualStyleBackColor = true;
@@ -200,9 +202,9 @@
             // 
             // AddLoaiPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1092, 620);
+            this.ClientSize = new System.Drawing.Size(664, 308);
             this.Controls.Add(this.dsLoaiphong);
             this.Controls.Add(this.Sua);
             this.Controls.Add(this.Thoat);

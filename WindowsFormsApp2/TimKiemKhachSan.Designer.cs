@@ -38,16 +38,16 @@
             this.lbSao = new System.Windows.Forms.Label();
             this.lbTP = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbSao = new System.Windows.Forms.ComboBox();
             this.btSearch = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btbSuaThongTin = new System.Windows.Forms.Button();
-            this.cbSao = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvtk = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvtk)).BeginInit();
             this.SuspendLayout();
             // 
             // btBack
@@ -136,6 +136,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm khách sạn";
             // 
+            // cbSao
+            // 
+            this.cbSao.FormattingEnabled = true;
+            this.cbSao.Location = new System.Drawing.Point(97, 85);
+            this.cbSao.Name = "cbSao";
+            this.cbSao.Size = new System.Drawing.Size(121, 21);
+            this.cbSao.TabIndex = 9;
+            // 
             // btSearch
             // 
             this.btSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btSearch.BackgroundImage")));
@@ -180,28 +188,21 @@
             this.btbSuaThongTin.UseVisualStyleBackColor = true;
             this.btbSuaThongTin.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cbSao
+            // dgvtk
             // 
-            this.cbSao.FormattingEnabled = true;
-            this.cbSao.Location = new System.Drawing.Point(97, 85);
-            this.cbSao.Name = "cbSao";
-            this.cbSao.Size = new System.Drawing.Size(121, 21);
-            this.cbSao.TabIndex = 9;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 187);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(727, 287);
-            this.dataGridView1.TabIndex = 7;
+            this.dgvtk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvtk.Location = new System.Drawing.Point(28, 187);
+            this.dgvtk.Name = "dgvtk";
+            this.dgvtk.Size = new System.Drawing.Size(727, 287);
+            this.dgvtk.TabIndex = 7;
+            this.dgvtk.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvtk_CellDoubleClick);
             // 
             // TimKiemKhachSan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(777, 512);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvtk);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btBack);
             this.Controls.Add(this.groupBox1);
@@ -212,7 +213,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvtk)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,6 +233,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btbSuaThongTin;
         private System.Windows.Forms.ComboBox cbSao;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvtk;
     }
 }

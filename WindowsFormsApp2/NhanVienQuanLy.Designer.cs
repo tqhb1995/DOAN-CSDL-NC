@@ -33,6 +33,8 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnXemBaoCao = new System.Windows.Forms.Button();
             this.btnKiemTraTinhTrangPhong = new System.Windows.Forms.Button();
+            this.btnDuyetPhong = new System.Windows.Forms.Button();
+            this.btnLapHoaDon = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelQuanLyKhachSan
@@ -59,7 +61,7 @@
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(695, 365);
+            this.btnThoat.Location = new System.Drawing.Point(419, 309);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 32);
             this.btnThoat.TabIndex = 2;
@@ -70,12 +72,13 @@
             // btnXemBaoCao
             // 
             this.btnXemBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXemBaoCao.Location = new System.Drawing.Point(330, 63);
+            this.btnXemBaoCao.Location = new System.Drawing.Point(285, 64);
             this.btnXemBaoCao.Name = "btnXemBaoCao";
             this.btnXemBaoCao.Size = new System.Drawing.Size(209, 30);
             this.btnXemBaoCao.TabIndex = 3;
             this.btnXemBaoCao.Text = "Xem báo cáo";
             this.btnXemBaoCao.UseVisualStyleBackColor = true;
+            this.btnXemBaoCao.Click += new System.EventHandler(this.btnXemBaoCao_Click);
             // 
             // btnKiemTraTinhTrangPhong
             // 
@@ -88,11 +91,35 @@
             this.btnKiemTraTinhTrangPhong.UseVisualStyleBackColor = true;
             this.btnKiemTraTinhTrangPhong.Click += new System.EventHandler(this.btnKiemTraTinhTrangPhong_Click);
             // 
+            // btnDuyetPhong
+            // 
+            this.btnDuyetPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDuyetPhong.Location = new System.Drawing.Point(285, 118);
+            this.btnDuyetPhong.Name = "btnDuyetPhong";
+            this.btnDuyetPhong.Size = new System.Drawing.Size(209, 30);
+            this.btnDuyetPhong.TabIndex = 5;
+            this.btnDuyetPhong.Text = "Duyệt phòng của Booking";
+            this.btnDuyetPhong.UseVisualStyleBackColor = true;
+            this.btnDuyetPhong.Click += new System.EventHandler(this.btnDuyetPhong_Click);
+            // 
+            // btnLapHoaDon
+            // 
+            this.btnLapHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLapHoaDon.Location = new System.Drawing.Point(32, 174);
+            this.btnLapHoaDon.Name = "btnLapHoaDon";
+            this.btnLapHoaDon.Size = new System.Drawing.Size(202, 31);
+            this.btnLapHoaDon.TabIndex = 6;
+            this.btnLapHoaDon.Text = "Lập hóa đơn";
+            this.btnLapHoaDon.UseVisualStyleBackColor = true;
+            this.btnLapHoaDon.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // NhanVienQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 400);
+            this.ClientSize = new System.Drawing.Size(512, 353);
+            this.Controls.Add(this.btnLapHoaDon);
+            this.Controls.Add(this.btnDuyetPhong);
             this.Controls.Add(this.btnKiemTraTinhTrangPhong);
             this.Controls.Add(this.btnXemBaoCao);
             this.Controls.Add(this.btnThoat);
@@ -112,5 +139,7 @@
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnXemBaoCao;
         private System.Windows.Forms.Button btnKiemTraTinhTrangPhong;
+        private System.Windows.Forms.Button btnDuyetPhong;
+        private System.Windows.Forms.Button btnLapHoaDon;
     }
 }

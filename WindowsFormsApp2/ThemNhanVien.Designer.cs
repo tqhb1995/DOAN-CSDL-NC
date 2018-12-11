@@ -40,8 +40,8 @@
             this.btn_ThemNhanVienMoi = new System.Windows.Forms.Button();
             this.lblTHEMNHANVIENMOI = new System.Windows.Forms.Label();
             this.cboMaKS = new System.Windows.Forms.ComboBox();
-            this.datKhachSanOnlineDataSet_KS_notin_NV = new WindowsFormsApp2.DatKhachSanOnlineDataSet_KS_notin_NV();
             this.khachSanBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.datKhachSanOnlineDataSet_KS_notin_NV = new WindowsFormsApp2.DatKhachSanOnlineDataSet_KS_notin_NV();
             this.khachSanTableAdapter = new WindowsFormsApp2.DatKhachSanOnlineDataSet_KS_notin_NVTableAdapters.KhachSanTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.maKSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,8 +53,8 @@
             this.thanhPhoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giaTBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.moTaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSet_KS_notin_NV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachSanBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSet_KS_notin_NV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +62,7 @@
             // 
             this.lblMaKS.AutoSize = true;
             this.lblMaKS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaKS.Location = new System.Drawing.Point(12, 119);
+            this.lblMaKS.Location = new System.Drawing.Point(12, 116);
             this.lblMaKS.Name = "lblMaKS";
             this.lblMaKS.Size = new System.Drawing.Size(113, 20);
             this.lblMaKS.TabIndex = 17;
@@ -92,7 +92,7 @@
             // txtMatKhau
             // 
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(540, 113);
+            this.txtMatKhau.Location = new System.Drawing.Point(540, 110);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(197, 26);
             this.txtMatKhau.TabIndex = 13;
@@ -102,7 +102,7 @@
             // 
             this.lblMatKhau.AutoSize = true;
             this.lblMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatKhau.Location = new System.Drawing.Point(418, 121);
+            this.lblMatKhau.Location = new System.Drawing.Point(418, 116);
             this.lblMatKhau.Name = "lblMatKhau";
             this.lblMatKhau.Size = new System.Drawing.Size(75, 20);
             this.lblMatKhau.TabIndex = 12;
@@ -162,20 +162,20 @@
             this.cboMaKS.DisplayMember = "maKS";
             this.cboMaKS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMaKS.FormattingEnabled = true;
-            this.cboMaKS.Location = new System.Drawing.Point(131, 117);
+            this.cboMaKS.Location = new System.Drawing.Point(131, 108);
             this.cboMaKS.Name = "cboMaKS";
             this.cboMaKS.Size = new System.Drawing.Size(197, 28);
             this.cboMaKS.TabIndex = 21;
-            // 
-            // datKhachSanOnlineDataSet_KS_notin_NV
-            // 
-            this.datKhachSanOnlineDataSet_KS_notin_NV.DataSetName = "DatKhachSanOnlineDataSet_KS_notin_NV";
-            this.datKhachSanOnlineDataSet_KS_notin_NV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // khachSanBindingSource
             // 
             this.khachSanBindingSource.DataMember = "KhachSan";
             this.khachSanBindingSource.DataSource = this.datKhachSanOnlineDataSet_KS_notin_NV;
+            // 
+            // datKhachSanOnlineDataSet_KS_notin_NV
+            // 
+            this.datKhachSanOnlineDataSet_KS_notin_NV.DataSetName = "DatKhachSanOnlineDataSet_KS_notin_NV";
+            this.datKhachSanOnlineDataSet_KS_notin_NV.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // khachSanTableAdapter
             // 
@@ -275,8 +275,8 @@
             this.Name = "ThemNhanVien";
             this.Text = "ThemNhanVien";
             this.Load += new System.EventHandler(this.ThemNhanVien_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSet_KS_notin_NV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachSanBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSet_KS_notin_NV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

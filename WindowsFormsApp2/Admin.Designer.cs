@@ -108,7 +108,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(684, 371);
+            this.button1.Location = new System.Drawing.Point(538, 334);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 28);
             this.button1.TabIndex = 2;
@@ -124,7 +124,7 @@
             this.tabControl_Admin.Location = new System.Drawing.Point(12, 1);
             this.tabControl_Admin.Name = "tabControl_Admin";
             this.tabControl_Admin.SelectedIndex = 0;
-            this.tabControl_Admin.Size = new System.Drawing.Size(964, 327);
+            this.tabControl_Admin.Size = new System.Drawing.Size(601, 327);
             this.tabControl_Admin.TabIndex = 3;
             // 
             // tabPage_NV
@@ -137,7 +137,7 @@
             this.tabPage_NV.Location = new System.Drawing.Point(4, 29);
             this.tabPage_NV.Name = "tabPage_NV";
             this.tabPage_NV.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_NV.Size = new System.Drawing.Size(956, 294);
+            this.tabPage_NV.Size = new System.Drawing.Size(593, 294);
             this.tabPage_NV.TabIndex = 1;
             this.tabPage_NV.Text = "Nhân Viên";
             this.tabPage_NV.UseVisualStyleBackColor = true;
@@ -357,7 +357,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 450);
+            this.ClientSize = new System.Drawing.Size(628, 370);
             this.Controls.Add(this.tabControl_Admin);
             this.Controls.Add(this.button1);
             this.Name = "Admin";

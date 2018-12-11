@@ -49,6 +49,9 @@ namespace WindowsFormsApp2
 
         private void btnThoatLapHD_Click(object sender, EventArgs e)
         {
+            Hide();
+            NhanVienQuanLy n = new NhanVienQuanLy();
+            n.Show();
             Close();
         }
     }

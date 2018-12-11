@@ -56,7 +56,7 @@ namespace WindowsFormsApp2
             {
                 if (DatPhongBUS.DatPhong(dp, ks, kh) == true)
                 {
-                    MessageBox.Show("Thêm thành công!", "Thông báo");
+                    MessageBox.Show("Thêm thành công!\n Cảm ơn bạn đã sử dụng dịch vụ!", "Thông báo");
                     this.Close();
                 }
                 else
@@ -69,6 +69,11 @@ namespace WindowsFormsApp2
         private void btnHuyDP_Click(object sender, EventArgs e)
         {
             Close();
+            TimKiemKhachSan n = new TimKiemKhachSan();
+            n.Show();
+            Hide();
+           
+            
         }
 
         private void frmDatPhong_Load(object sender, EventArgs e)
@@ -89,6 +94,11 @@ namespace WindowsFormsApp2
             txtTP.Enabled = false;
             txtGia.Enabled = false;
             // txtmaKS.Text = maks;
+        }
+
+        private void linkLoaiPhong_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
         }
     }
 }

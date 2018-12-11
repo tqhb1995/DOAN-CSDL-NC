@@ -93,6 +93,8 @@ namespace WindowsFormsApp2
         private void thoat_Click(object sender, EventArgs e)
         {
             this.Hide();
+            TimKiemKhachSan tk = new TimKiemKhachSan();
+            tk.ShowDialog();
             this.Close();
         }
     }
