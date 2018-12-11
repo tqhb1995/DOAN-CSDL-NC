@@ -72,7 +72,7 @@ namespace WindowsFormsApp2
         {
 
             conn = DataProvider.OpenConnection();
-            string TruyVan = "select * from KhachHang where maKH = '" + globalvar.var + "' ";
+            string TruyVan = "select * from KhachHang where tenDangNhap = '" + Program.username + "' ";
             SqlCommand cmd = new SqlCommand(TruyVan, conn);
             cmd.Connection = conn;
             cmd.ExecuteNonQuery();
@@ -88,6 +88,12 @@ namespace WindowsFormsApp2
             txt_email.Text = dt.Rows[0][8].ToString();
             DataProvider.CloseConnection(conn);
 
+        }
+
+        private void thoat_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            this.Close();
         }
     }
 }

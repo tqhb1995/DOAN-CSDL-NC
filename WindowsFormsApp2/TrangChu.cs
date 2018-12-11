@@ -79,15 +79,6 @@ namespace WindowsFormsApp2
                             tkks.ShowDialog();
                             DataProvider.CloseConnection(conn);
 
-                            conn = DataProvider.OpenConnection();
-                            string TruyVan = "select * from KhachHang where tenDangNhap = '" + txt_UserName.Text + "' ";
-                            SqlCommand cmdx = new SqlCommand(TruyVan, conn);
-                            cmdx.Connection = conn;
-                            cmdx.ExecuteNonQuery();
-                            DataTable dt = DataProvider.GetDataTable(TruyVan, conn);
-                            globalvar.var = dt.Rows[0][0].ToString();
-                            DataProvider.CloseConnection(conn);
-
                             this.Close();
                         }
                         

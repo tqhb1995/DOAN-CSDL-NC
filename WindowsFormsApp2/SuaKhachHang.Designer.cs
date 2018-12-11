@@ -48,8 +48,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txt_makhachhang = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +72,7 @@
             this.thoat.TabIndex = 38;
             this.thoat.Text = "Thoát";
             this.thoat.UseVisualStyleBackColor = true;
+            this.thoat.Click += new System.EventHandler(this.thoat_Click);
             // 
             // txt_mota
             // 
@@ -236,6 +237,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tài khoản ";
             // 
+            // txt_makhachhang
+            // 
+            this.txt_makhachhang.Enabled = false;
+            this.txt_makhachhang.Location = new System.Drawing.Point(264, 34);
+            this.txt_makhachhang.Name = "txt_makhachhang";
+            this.txt_makhachhang.Size = new System.Drawing.Size(292, 36);
+            this.txt_makhachhang.TabIndex = 41;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txt_email);
@@ -254,14 +263,6 @@
             this.groupBox2.TabIndex = 43;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin";
-            // 
-            // txt_makhachhang
-            // 
-            this.txt_makhachhang.Enabled = false;
-            this.txt_makhachhang.Location = new System.Drawing.Point(264, 34);
-            this.txt_makhachhang.Name = "txt_makhachhang";
-            this.txt_makhachhang.Size = new System.Drawing.Size(292, 36);
-            this.txt_makhachhang.TabIndex = 41;
             // 
             // SuaKhachHang
             // 

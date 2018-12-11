@@ -66,6 +66,7 @@ namespace WindowsFormsApp2
         private void Thoat_Click(object sender, EventArgs e)
         {
             this.Hide();
+            this.Close();
         }
 
         private void dsLoaiphong_Click(object sender, EventArgs e)

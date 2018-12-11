@@ -69,23 +69,24 @@ namespace DAO
 
                 //Truyền tham số.
                 cmd.Parameters.Add("@makh", SqlDbType.Char);
-                cmd.Parameters.Add("@hoTen", SqlDbType.NVarChar);
-                cmd.Parameters.Add("@tenDangNhap", SqlDbType.VarChar);
-                cmd.Parameters.Add("@matKhau", SqlDbType.VarChar);
-                cmd.Parameters.Add("@soCMND", SqlDbType.VarChar);
-                cmd.Parameters.Add("@diaChi", SqlDbType.NVarChar);
-                cmd.Parameters.Add("@soDienThoai", SqlDbType.VarChar);
-                cmd.Parameters.Add("@moTa", SqlDbType.NVarChar);
+                cmd.Parameters.Add("@hoten", SqlDbType.NVarChar);
+                cmd.Parameters.Add("@tendangnhap", SqlDbType.VarChar);
+                cmd.Parameters.Add("@matkhau", SqlDbType.VarChar);
+                cmd.Parameters.Add("@CMND", SqlDbType.VarChar);
+                cmd.Parameters.Add("@diachi", SqlDbType.NVarChar);
+                cmd.Parameters.Add("@sodienthoai", SqlDbType.VarChar);
+                cmd.Parameters.Add("@moto", SqlDbType.NVarChar);
                 cmd.Parameters.Add("@email", SqlDbType.VarChar);
 
                 //Truyền giá trị vào tham số.
-                cmd.Parameters["@hoTen"].Value = kh.HoTen;
-                cmd.Parameters["@tenDangNhap"].Value = kh.TenDangNhap;
-                cmd.Parameters["@matKhau"].Value = kh.MatKhau;
-                cmd.Parameters["@soCMND"].Value = kh.SoCMND;
-                cmd.Parameters["@diaChi"].Value = kh.DiaChi;
-                cmd.Parameters["@soDienThoai"].Value = kh.SoDienThoai;
-                cmd.Parameters["@moTa"].Value = kh.MoTa;
+                cmd.Parameters["@makh"].Value = kh.MaKH;
+                cmd.Parameters["@hoten"].Value = kh.HoTen;
+                cmd.Parameters["@tendangnhap"].Value = kh.TenDangNhap;
+                cmd.Parameters["@matkhau"].Value = kh.MatKhau;
+                cmd.Parameters["@CMND"].Value = kh.SoCMND;
+                cmd.Parameters["@diachi"].Value = kh.DiaChi;
+                cmd.Parameters["@sodienthoai"].Value = kh.SoDienThoai;
+                cmd.Parameters["@moto"].Value = kh.MoTa;
                 cmd.Parameters["@email"].Value = kh.Email;
 
 
@@ -191,7 +192,7 @@ namespace DAO
         {
             int kq = 0;
             conn = DataProvider.OpenConnection();
-            string sTruyVan = "select * from KhachHang where soCMND = '" + temp.SoCMND + "' ";
+            string sTruyVan = "select * from KhachHang where soCMND = '" + temp.SoCMND + "' and maKH != " + "'" + temp.MaKH + "' ";
             SqlCommand cmd = new SqlCommand(sTruyVan, conn);
             cmd.ExecuteNonQuery();
             DataTable dt = DataProvider.GetDataTable(sTruyVan, conn);
@@ -199,7 +200,7 @@ namespace DAO
             if (dt.Rows.Count > 0)
                 kq = 1;
 
-            string sTruyVan1 = "select * from KhachHang where email = '" + temp.Email + "' ";
+            string sTruyVan1 = "select * from KhachHang where email = '" + temp.Email + "' and maKH != " + "'" + temp.MaKH + "' ";
             SqlCommand cmd1 = new SqlCommand(sTruyVan1, conn);
             cmd1.ExecuteNonQuery();
             DataTable dt1 = DataProvider.GetDataTable(sTruyVan1, conn);
@@ -207,7 +208,7 @@ namespace DAO
                 kq = 2;
 
 
-            string sTruyVan2 = "select * from KhachHang where soDienThoai = '" + temp.SoDienThoai + "' ";
+            string sTruyVan2 = "select * from KhachHang where soDienThoai = '" + temp.SoDienThoai + "' and maKH != " + "'" + temp.MaKH + "' ";
             SqlCommand cmd2 = new SqlCommand(sTruyVan2, conn);
             cmd2.Connection = conn;
             cmd2.ExecuteNonQuery();
