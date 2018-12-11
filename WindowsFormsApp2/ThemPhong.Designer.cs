@@ -43,56 +43,56 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 40);
+            this.label1.Location = new System.Drawing.Point(13, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 29);
+            this.label1.Size = new System.Drawing.Size(79, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã phòng";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 102);
+            this.label2.Location = new System.Drawing.Point(13, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 29);
+            this.label2.Size = new System.Drawing.Size(109, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mã loại phòng";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 169);
+            this.label3.Location = new System.Drawing.Point(15, 82);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 29);
+            this.label3.Size = new System.Drawing.Size(77, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Số phòng";
             // 
             // txt_maphong
             // 
-            this.txt_maphong.Location = new System.Drawing.Point(244, 37);
+            this.txt_maphong.Location = new System.Drawing.Point(141, 8);
             this.txt_maphong.Name = "txt_maphong";
-            this.txt_maphong.Size = new System.Drawing.Size(261, 36);
+            this.txt_maphong.Size = new System.Drawing.Size(261, 27);
             this.txt_maphong.TabIndex = 3;
             // 
             // txt_maloaiphong
             // 
-            this.txt_maloaiphong.Location = new System.Drawing.Point(244, 99);
+            this.txt_maloaiphong.Location = new System.Drawing.Point(141, 41);
             this.txt_maloaiphong.Name = "txt_maloaiphong";
-            this.txt_maloaiphong.Size = new System.Drawing.Size(261, 36);
+            this.txt_maloaiphong.Size = new System.Drawing.Size(261, 27);
             this.txt_maloaiphong.TabIndex = 4;
             // 
             // txt_sophong
             // 
-            this.txt_sophong.Location = new System.Drawing.Point(244, 166);
+            this.txt_sophong.Location = new System.Drawing.Point(141, 74);
             this.txt_sophong.Name = "txt_sophong";
-            this.txt_sophong.Size = new System.Drawing.Size(261, 36);
+            this.txt_sophong.Size = new System.Drawing.Size(261, 27);
             this.txt_sophong.TabIndex = 5;
             // 
             // thoat
             // 
-            this.thoat.Location = new System.Drawing.Point(79, 330);
+            this.thoat.Location = new System.Drawing.Point(337, 178);
             this.thoat.Name = "thoat";
-            this.thoat.Size = new System.Drawing.Size(132, 54);
+            this.thoat.Size = new System.Drawing.Size(65, 28);
             this.thoat.TabIndex = 6;
             this.thoat.Text = "Thoát";
             this.thoat.UseVisualStyleBackColor = true;
@@ -100,29 +100,31 @@
             // 
             // them
             // 
-            this.them.Location = new System.Drawing.Point(410, 330);
+            this.them.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.them.Location = new System.Drawing.Point(264, 178);
             this.them.Name = "them";
-            this.them.Size = new System.Drawing.Size(132, 54);
+            this.them.Size = new System.Drawing.Size(65, 28);
             this.them.TabIndex = 7;
             this.them.Text = "Thêm";
-            this.them.UseVisualStyleBackColor = true;
+            this.them.UseVisualStyleBackColor = false;
             this.them.Click += new System.EventHandler(this.them_Click);
             // 
             // sua
             // 
-            this.sua.Location = new System.Drawing.Point(244, 330);
+            this.sua.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.sua.Location = new System.Drawing.Point(193, 178);
             this.sua.Name = "sua";
-            this.sua.Size = new System.Drawing.Size(132, 54);
+            this.sua.Size = new System.Drawing.Size(65, 28);
             this.sua.TabIndex = 8;
             this.sua.Text = "Sửa";
-            this.sua.UseVisualStyleBackColor = true;
+            this.sua.UseVisualStyleBackColor = false;
             this.sua.Click += new System.EventHandler(this.sua_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(244, 233);
+            this.button1.Location = new System.Drawing.Point(207, 121);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(261, 54);
+            this.button1.Size = new System.Drawing.Size(195, 33);
             this.button1.TabIndex = 9;
             this.button1.Text = "Danh sách phòng";
             this.button1.UseVisualStyleBackColor = true;
@@ -130,9 +132,9 @@
             // 
             // ThemPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 396);
+            this.ClientSize = new System.Drawing.Size(417, 213);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.sua);
             this.Controls.Add(this.them);
