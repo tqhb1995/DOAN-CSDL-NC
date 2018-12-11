@@ -29,34 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TimKiemKhachSan));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btBack = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.tbPrice1 = new System.Windows.Forms.TextBox();
+            this.tbPrice2 = new System.Windows.Forms.TextBox();
+            this.cbCity = new System.Windows.Forms.ComboBox();
             this.lbPrice1 = new System.Windows.Forms.Label();
             this.lbPrice2 = new System.Windows.Forms.Label();
             this.lbSao = new System.Windows.Forms.Label();
             this.lbTP = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btbSuaThongTin = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btSearch = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btbSuaThongTin = new System.Windows.Forms.Button();
+            this.cbSao = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 213);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(750, 241);
-            this.dataGridView1.TabIndex = 1;
             // 
             // btBack
             // 
@@ -68,35 +60,27 @@
             this.btBack.UseVisualStyleBackColor = true;
             this.btBack.Click += new System.EventHandler(this.btBack_Click);
             // 
-            // textBox1
+            // tbPrice1
             // 
-            this.textBox1.Location = new System.Drawing.Point(97, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.tbPrice1.Location = new System.Drawing.Point(97, 35);
+            this.tbPrice1.Name = "tbPrice1";
+            this.tbPrice1.Size = new System.Drawing.Size(100, 20);
+            this.tbPrice1.TabIndex = 0;
             // 
-            // textBox2
+            // tbPrice2
             // 
-            this.textBox2.Location = new System.Drawing.Point(335, 35);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.tbPrice2.Location = new System.Drawing.Point(335, 35);
+            this.tbPrice2.Name = "tbPrice2";
+            this.tbPrice2.Size = new System.Drawing.Size(100, 20);
+            this.tbPrice2.TabIndex = 1;
             // 
-            // comboBox1
+            // cbCity
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(97, 80);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 2;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(97, 127);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 3;
+            this.cbCity.FormattingEnabled = true;
+            this.cbCity.Location = new System.Drawing.Point(97, 132);
+            this.cbCity.Name = "cbCity";
+            this.cbCity.Size = new System.Drawing.Size(121, 21);
+            this.cbCity.TabIndex = 3;
             // 
             // lbPrice1
             // 
@@ -136,21 +120,32 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbSao);
             this.groupBox1.Controls.Add(this.lbTP);
             this.groupBox1.Controls.Add(this.lbSao);
             this.groupBox1.Controls.Add(this.lbPrice2);
             this.groupBox1.Controls.Add(this.lbPrice1);
             this.groupBox1.Controls.Add(this.btSearch);
-            this.groupBox1.Controls.Add(this.comboBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.cbCity);
+            this.groupBox1.Controls.Add(this.tbPrice2);
+            this.groupBox1.Controls.Add(this.tbPrice1);
             this.groupBox1.Location = new System.Drawing.Point(28, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(494, 168);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm khách sạn";
+            // 
+            // btSearch
+            // 
+            this.btSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btSearch.BackgroundImage")));
+            this.btSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btSearch.Location = new System.Drawing.Point(360, 88);
+            this.btSearch.Name = "btSearch";
+            this.btSearch.Size = new System.Drawing.Size(75, 65);
+            this.btSearch.TabIndex = 4;
+            this.btSearch.UseVisualStyleBackColor = true;
+            this.btSearch.Click += new System.EventHandler(this.btSearch_Click_1);
             // 
             // groupBox2
             // 
@@ -164,6 +159,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tài khoản";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.User003_Edit_512;
+            this.pictureBox1.Location = new System.Drawing.Point(73, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 54);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // btbSuaThongTin
             // 
             this.btbSuaThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -175,55 +180,48 @@
             this.btbSuaThongTin.UseVisualStyleBackColor = true;
             this.btbSuaThongTin.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox1
+            // cbSao
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp2.Properties.Resources.User003_Edit_512;
-            this.pictureBox1.Location = new System.Drawing.Point(73, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 54);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.cbSao.FormattingEnabled = true;
+            this.cbSao.Location = new System.Drawing.Point(97, 85);
+            this.cbSao.Name = "cbSao";
+            this.cbSao.Size = new System.Drawing.Size(121, 21);
+            this.cbSao.TabIndex = 9;
             // 
-            // btSearch
+            // dataGridView1
             // 
-            this.btSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btSearch.BackgroundImage")));
-            this.btSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btSearch.Location = new System.Drawing.Point(360, 88);
-            this.btSearch.Name = "btSearch";
-            this.btSearch.Size = new System.Drawing.Size(75, 65);
-            this.btSearch.TabIndex = 4;
-            this.btSearch.UseVisualStyleBackColor = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(28, 187);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(727, 287);
+            this.dataGridView1.TabIndex = 7;
             // 
             // TimKiemKhachSan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(777, 512);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btBack);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "TimKiemKhachSan";
             this.Text = "TimKiemKhachSan";
             this.Load += new System.EventHandler(this.TimKiemKhachSan_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btBack;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox tbPrice1;
+        private System.Windows.Forms.TextBox tbPrice2;
+        private System.Windows.Forms.ComboBox cbCity;
         private System.Windows.Forms.Button btSearch;
         private System.Windows.Forms.Label lbPrice1;
         private System.Windows.Forms.Label lbPrice2;
@@ -233,5 +231,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btbSuaThongTin;
+        private System.Windows.Forms.ComboBox cbSao;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
