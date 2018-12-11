@@ -343,7 +343,7 @@ create procedure search_KS
 	@gia1 int,
 	@gia2 int,
 	@sao char(2),
-	@tp char(10)
+	@tp nvarchar(100)
 as
 begin
 	create table #result
@@ -403,8 +403,9 @@ begin
 						end
 					else
 						begin
-							raiserror (N'Điền vào thông tin cần tìm',16,1)
-							return
+							insert into #result
+							select *
+							from dbo.KhachSan
 						end
 				end
 		end
