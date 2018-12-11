@@ -14,3 +14,26 @@ BEGIN
 		Rollback transaction
 	End
 END
+go
+--trigger RBTV chỉ đơn đặt phòng đã xác nhận mới có hóa đơn
+create trigger checkDatPhong on HoaDon
+for insert, update
+as
+if update(maHD)
+begin
+	if exists(select * from inserted i where exists (select * from DatPhong 
+													where DatPhong.maDP=i.maDP and DatPhong.tinhTrang='0'))
+	begin
+		raiserror(N'lỗi: Đơn đặt phòng chưa xác nhận',16,1)
+		rollback
+	end
+end;
+go
+
+create trigger setTongTien on HoaDon
+after insert, update
+as
+begin
+	update HoaDon 
+	set tongTien=(select datediff(day,dp.ngayBatDau,dp.ngayTraPhong)*dp.donGia from DatPhong dp where dp.maDP=HoaDon.maDP)
+end;
