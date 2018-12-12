@@ -20,23 +20,25 @@ namespace WindowsFormsApp2
         public KiemTraTinhTrangPhong()
         {
             InitializeComponent();
-            //LoadCbo();
+            LoadCbo();
         }
 
         private void LoadCbo()
         {
-            //conn = DataProvider.OpenConnection();
-            //string sql = "select * from LoaiPhong where maKS = (select maKS from NhanVien where tenDangNhap = ' " + cboLoaiPhong.ValueMember + "') ";
-            //cboLoaiPhong.DataSource = DataProvider.GetDataTable(sql, conn);
-            //cboLoaiPhong.DisplayMember = "maLoaiPhong";
-            //cboLoaiPhong.ValueMember = "maLoaiPhong";
-            //DataProvider.CloseConnection(conn);
+            DataTable data = new DataTable();
+            string query = "select distinct tenLoaiPhong from LoaiPhong";
+            SqlConnection conn;
+            conn = DataProvider.OpenConnection();
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+            adapter.Fill(data);
 
-            DataTable LP = LoaiPhongBUS.LoadDuLieuLoaiPhong(Program.username);
-            cboLoaiPhong.DataSource = LP;
-            //cboLoaiPhong.Items.Add(LP.)
+            cboLoaiPhong.DataSource = data;
             cboLoaiPhong.DisplayMember = "tenLoaiPhong";
-            cboLoaiPhong.ValueMember = "maLoaiPhong";
+
+            cboLoaiPhong.ResetText();
+            cboLoaiPhong.SelectedIndex = -1;
+
+            DataProvider.CloseConnection(conn);
 
         }
 
@@ -61,6 +63,42 @@ namespace WindowsFormsApp2
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void cboLoaiPhong_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btCheck_Click(object sender, EventArgs e)
+        {
+            string procname = "KiemTraTinhTrangPhong";
+            SqlConnection conn;
+            conn = DataProvider.OpenConnection();
+            SqlCommand cmd = new SqlCommand(procname, conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Connection = conn;
+
+            string TruyVan = "select * from NhanVien where tenDangNhap = '" + Program.username + "' ";
+            SqlCommand command = new SqlCommand(TruyVan, conn);
+            command.Connection = conn;
+            command.ExecuteNonQuery();
+            DataTable dt = DataProvider.GetDataTable(TruyVan, conn);
+
+            cmd.Parameters.Add("@manv", SqlDbType.Char).Value = dt.Rows[0][0].ToString();
+            cmd.Parameters.Add("@tenloaiphong", SqlDbType.NVarChar).Value = this.cboLoaiPhong.GetItemText(this.cboLoaiPhong.SelectedItem);
+            cmd.Parameters.Add("@ngaydat", SqlDbType.DateTime).Value = dtpNgay.Value;
+
+            cmd.ExecuteNonQuery();
+
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable data = new DataTable();
+            adapter.Fill(data);
+
+            viewPhongTrong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            viewPhongTrong.DataSource = data;
+
+            DataProvider.CloseConnection(conn);
         }
     }
 }
