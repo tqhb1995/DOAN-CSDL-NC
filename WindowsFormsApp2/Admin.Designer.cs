@@ -66,6 +66,8 @@
             this.khachSanBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.khachSanTableAdapter1 = new WindowsFormsApp2.DatKhachSanOnlineDataSet_All_KSTableAdapters.KhachSanTableAdapter();
             this.nhanVienTableAdapter = new WindowsFormsApp2.DatKhachSanOnlineDataSet_All_NVTableAdapters.NhanVienTableAdapter();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl_Admin.SuspendLayout();
             this.tabPage_NV.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_NV)).BeginInit();
@@ -97,7 +99,7 @@
             // btnThemKS
             // 
             this.btnThemKS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemKS.Location = new System.Drawing.Point(6, 19);
+            this.btnThemKS.Location = new System.Drawing.Point(348, 15);
             this.btnThemKS.Name = "btnThemKS";
             this.btnThemKS.Size = new System.Drawing.Size(180, 26);
             this.btnThemKS.TabIndex = 1;
@@ -107,12 +109,12 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(538, 334);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(751, 334);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 28);
+            this.button1.Size = new System.Drawing.Size(111, 28);
             this.button1.TabIndex = 2;
-            this.button1.Text = "THOÁT";
+            this.button1.Text = "Đăng xuất";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -124,7 +126,7 @@
             this.tabControl_Admin.Location = new System.Drawing.Point(12, 1);
             this.tabControl_Admin.Name = "tabControl_Admin";
             this.tabControl_Admin.SelectedIndex = 0;
-            this.tabControl_Admin.Size = new System.Drawing.Size(601, 327);
+            this.tabControl_Admin.Size = new System.Drawing.Size(854, 327);
             this.tabControl_Admin.TabIndex = 3;
             // 
             // tabPage_NV
@@ -137,7 +139,7 @@
             this.tabPage_NV.Location = new System.Drawing.Point(4, 29);
             this.tabPage_NV.Name = "tabPage_NV";
             this.tabPage_NV.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_NV.Size = new System.Drawing.Size(593, 294);
+            this.tabPage_NV.Size = new System.Drawing.Size(846, 294);
             this.tabPage_NV.TabIndex = 1;
             this.tabPage_NV.Text = "Nhân Viên";
             this.tabPage_NV.UseVisualStyleBackColor = true;
@@ -171,7 +173,7 @@
             this.dataGridView_NV.DataSource = this.nhanVienBindingSource;
             this.dataGridView_NV.Location = new System.Drawing.Point(7, 53);
             this.dataGridView_NV.Name = "dataGridView_NV";
-            this.dataGridView_NV.Size = new System.Drawing.Size(547, 210);
+            this.dataGridView_NV.Size = new System.Drawing.Size(580, 210);
             this.dataGridView_NV.TabIndex = 2;
             // 
             // maNVDataGridViewTextBoxColumn
@@ -216,13 +218,15 @@
             // 
             // tabPage_KS
             // 
+            this.tabPage_KS.Controls.Add(this.textBox1);
+            this.tabPage_KS.Controls.Add(this.label1);
             this.tabPage_KS.Controls.Add(this.dataGridView_KS);
             this.tabPage_KS.Controls.Add(this.btnThemKS);
             this.tabPage_KS.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage_KS.Location = new System.Drawing.Point(4, 29);
             this.tabPage_KS.Name = "tabPage_KS";
             this.tabPage_KS.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_KS.Size = new System.Drawing.Size(956, 294);
+            this.tabPage_KS.Size = new System.Drawing.Size(846, 294);
             this.tabPage_KS.TabIndex = 0;
             this.tabPage_KS.Text = "Khách Sạn";
             this.tabPage_KS.UseVisualStyleBackColor = true;
@@ -244,7 +248,7 @@
             this.dataGridView_KS.DataSource = this.khachSanBindingSource3;
             this.dataGridView_KS.Location = new System.Drawing.Point(6, 71);
             this.dataGridView_KS.Name = "dataGridView_KS";
-            this.dataGridView_KS.Size = new System.Drawing.Size(944, 217);
+            this.dataGridView_KS.Size = new System.Drawing.Size(844, 235);
             this.dataGridView_KS.TabIndex = 3;
             // 
             // maKSDataGridViewTextBoxColumn
@@ -353,11 +357,27 @@
             // 
             this.nhanVienTableAdapter.ClearBeforeFill = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(84, 12);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(236, 26);
+            this.textBox1.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Tìm kiếm";
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 370);
+            this.ClientSize = new System.Drawing.Size(876, 370);
             this.Controls.Add(this.tabControl_Admin);
             this.Controls.Add(this.button1);
             this.Name = "Admin";
@@ -370,6 +390,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nhanVienBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSet_All_NV)).EndInit();
             this.tabPage_KS.ResumeLayout(false);
+            this.tabPage_KS.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_KS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khachSanBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datKhachSanOnlineDataSet_All_KS)).EndInit();
@@ -422,5 +443,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn maKSDataGridViewTextBoxColumn1;
         private System.Windows.Forms.Label lblTimKiem;
         private System.Windows.Forms.TextBox txtTimKiem;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

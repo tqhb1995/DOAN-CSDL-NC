@@ -16,20 +16,22 @@ namespace WindowsFormsApp2
 {
     public partial class ThemPhong : Form
     {
+        static SqlConnection conn;
         public ThemPhong()
         {
             InitializeComponent();
+            LoadCbo();
         }
 
         private void them_Click(object sender, EventArgs e)
         {
-            if (txt_maloaiphong.Text == "" || txt_maphong.Text == "")
+            if (cboLoaiPhong.Text == "" || txt_maphong.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo");
                 return;
             }
             PhongDTO p = new PhongDTO();
-            p.LoaiPhong = txt_maloaiphong.Text;
+            p.LoaiPhong = cboLoaiPhong.Text;
             p.MaPhong = txt_maphong.Text;
             p.SoPhong = int.Parse(txt_sophong.Text);
             int temp = PhongBUS.KiemTra(p);
@@ -58,6 +60,8 @@ namespace WindowsFormsApp2
         private void thoat_Click(object sender, EventArgs e)
         {
             this.Hide();
+            NhanVienQuanLy n = new NhanVienQuanLy();
+            n.Show();
             this.Close();
         }
 
@@ -69,13 +73,13 @@ namespace WindowsFormsApp2
 
         private void sua_Click(object sender, EventArgs e)
         {
-            if (txt_maloaiphong.Text == "" || txt_maphong.Text == "")
+            if (cboLoaiPhong.Text == "" || txt_maphong.Text == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo");
                 return;
             }
             PhongDTO p = new PhongDTO();
-            p.LoaiPhong = txt_maloaiphong.Text;
+            p.LoaiPhong = cboLoaiPhong.Text;
             p.MaPhong = txt_maphong.Text;
             p.SoPhong = int.Parse(txt_sophong.Text);
             int temp = PhongBUS.KiemTraSua(p);
@@ -98,6 +102,43 @@ namespace WindowsFormsApp2
                 else
                     MessageBox.Show("Lỗi, vui lòng thử lại! \n ", "Thông báo");
             }
+
+        }
+
+        private void ThemPhong_Load(object sender, EventArgs e)
+        {
+            conn = DataProvider.OpenConnection();
+            string TruyVan = "select * from LoaiPhong where maKS = (select MaKS from NhanVien where tenDangNhap = '" + Program.username + ")' ";
+            SqlCommand cmd = new SqlCommand(TruyVan, conn);
+            cmd.Connection = conn;
+            cmd.ExecuteNonQuery();
+            DataTable dt = DataProvider.GetDataTable(TruyVan, conn);
+            //txt_maloaiphong.Text = dt.Rows[0][1].ToString();
+
+            DataProvider.CloseConnection(conn);
+        }
+
+        private void LoadCbo()
+        {
+            DataTable data = new DataTable();
+            string query = "select distinct tenLoaiPhong from LoaiPhong";
+            SqlConnection conn;
+            conn = DataProvider.OpenConnection();
+            SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+            adapter.Fill(data);
+
+            cboLoaiPhong.DataSource = data;
+            cboLoaiPhong.DisplayMember = "tenLoaiPhong";
+
+            cboLoaiPhong.ResetText();
+            cboLoaiPhong.SelectedIndex = -1;
+
+            DataProvider.CloseConnection(conn);
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

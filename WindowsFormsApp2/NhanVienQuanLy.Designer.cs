@@ -35,6 +35,7 @@
             this.btnKiemTraTinhTrangPhong = new System.Windows.Forms.Button();
             this.btnDuyetPhong = new System.Windows.Forms.Button();
             this.btnLapHoaDon = new System.Windows.Forms.Button();
+            this.btnThemPhong = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelQuanLyKhachSan
@@ -60,19 +61,19 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(419, 309);
+            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Location = new System.Drawing.Point(387, 309);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(75, 32);
+            this.btnThoat.Size = new System.Drawing.Size(107, 32);
             this.btnThoat.TabIndex = 2;
-            this.btnThoat.Text = "Thoát";
+            this.btnThoat.Text = "Đăng xuất";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnXemBaoCao
             // 
             this.btnXemBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXemBaoCao.Location = new System.Drawing.Point(285, 64);
+            this.btnXemBaoCao.Location = new System.Drawing.Point(285, 121);
             this.btnXemBaoCao.Name = "btnXemBaoCao";
             this.btnXemBaoCao.Size = new System.Drawing.Size(209, 30);
             this.btnXemBaoCao.TabIndex = 3;
@@ -82,19 +83,20 @@
             // 
             // btnKiemTraTinhTrangPhong
             // 
+            this.btnKiemTraTinhTrangPhong.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnKiemTraTinhTrangPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKiemTraTinhTrangPhong.Location = new System.Drawing.Point(32, 117);
             this.btnKiemTraTinhTrangPhong.Name = "btnKiemTraTinhTrangPhong";
             this.btnKiemTraTinhTrangPhong.Size = new System.Drawing.Size(202, 31);
             this.btnKiemTraTinhTrangPhong.TabIndex = 4;
             this.btnKiemTraTinhTrangPhong.Text = "Kiểm tra tình trạng phòng";
-            this.btnKiemTraTinhTrangPhong.UseVisualStyleBackColor = true;
+            this.btnKiemTraTinhTrangPhong.UseVisualStyleBackColor = false;
             this.btnKiemTraTinhTrangPhong.Click += new System.EventHandler(this.btnKiemTraTinhTrangPhong_Click);
             // 
             // btnDuyetPhong
             // 
             this.btnDuyetPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDuyetPhong.Location = new System.Drawing.Point(285, 118);
+            this.btnDuyetPhong.Location = new System.Drawing.Point(285, 175);
             this.btnDuyetPhong.Name = "btnDuyetPhong";
             this.btnDuyetPhong.Size = new System.Drawing.Size(209, 30);
             this.btnDuyetPhong.TabIndex = 5;
@@ -104,20 +106,33 @@
             // 
             // btnLapHoaDon
             // 
+            this.btnLapHoaDon.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnLapHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLapHoaDon.Location = new System.Drawing.Point(32, 174);
             this.btnLapHoaDon.Name = "btnLapHoaDon";
             this.btnLapHoaDon.Size = new System.Drawing.Size(202, 31);
             this.btnLapHoaDon.TabIndex = 6;
             this.btnLapHoaDon.Text = "Lập hóa đơn";
-            this.btnLapHoaDon.UseVisualStyleBackColor = true;
+            this.btnLapHoaDon.UseVisualStyleBackColor = false;
             this.btnLapHoaDon.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // btnThemPhong
+            // 
+            this.btnThemPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemPhong.Location = new System.Drawing.Point(285, 63);
+            this.btnThemPhong.Name = "btnThemPhong";
+            this.btnThemPhong.Size = new System.Drawing.Size(202, 31);
+            this.btnThemPhong.TabIndex = 7;
+            this.btnThemPhong.Text = "Thêm phòng mới";
+            this.btnThemPhong.UseVisualStyleBackColor = true;
+            this.btnThemPhong.Click += new System.EventHandler(this.btnThemPhong_Click);
             // 
             // NhanVienQuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(512, 353);
+            this.Controls.Add(this.btnThemPhong);
             this.Controls.Add(this.btnLapHoaDon);
             this.Controls.Add(this.btnDuyetPhong);
             this.Controls.Add(this.btnKiemTraTinhTrangPhong);
@@ -141,5 +156,6 @@
         private System.Windows.Forms.Button btnKiemTraTinhTrangPhong;
         private System.Windows.Forms.Button btnDuyetPhong;
         private System.Windows.Forms.Button btnLapHoaDon;
+        private System.Windows.Forms.Button btnThemPhong;
     }
 }

@@ -98,7 +98,7 @@ namespace WindowsFormsApp2
 
         private void linkLoaiPhong_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            MessageBox.Show("Chưa  cài đặt");
         }
     }
 }

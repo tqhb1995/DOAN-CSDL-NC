@@ -81,7 +81,7 @@
             // btn_DangKy
             // 
             this.btn_DangKy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_DangKy.Location = new System.Drawing.Point(597, 387);
+            this.btn_DangKy.Location = new System.Drawing.Point(800, 367);
             this.btn_DangKy.Name = "btn_DangKy";
             this.btn_DangKy.Size = new System.Drawing.Size(106, 37);
             this.btn_DangKy.TabIndex = 15;
@@ -138,7 +138,7 @@
             // 
             this.btn_ThemNhanVienMoi.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_ThemNhanVienMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ThemNhanVienMoi.Location = new System.Drawing.Point(468, 387);
+            this.btn_ThemNhanVienMoi.Location = new System.Drawing.Point(671, 367);
             this.btn_ThemNhanVienMoi.Name = "btn_ThemNhanVienMoi";
             this.btn_ThemNhanVienMoi.Size = new System.Drawing.Size(112, 37);
             this.btn_ThemNhanVienMoi.TabIndex = 14;
@@ -198,61 +198,61 @@
             this.dataGridView1.DataSource = this.khachSanBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(3, 159);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(903, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(903, 202);
             this.dataGridView1.TabIndex = 22;
             // 
             // maKSDataGridViewTextBoxColumn
             // 
             this.maKSDataGridViewTextBoxColumn.DataPropertyName = "maKS";
-            this.maKSDataGridViewTextBoxColumn.HeaderText = "maKS";
+            this.maKSDataGridViewTextBoxColumn.HeaderText = "Mã Khách sạn";
             this.maKSDataGridViewTextBoxColumn.Name = "maKSDataGridViewTextBoxColumn";
             // 
             // tenKSDataGridViewTextBoxColumn
             // 
             this.tenKSDataGridViewTextBoxColumn.DataPropertyName = "tenKS";
-            this.tenKSDataGridViewTextBoxColumn.HeaderText = "tenKS";
+            this.tenKSDataGridViewTextBoxColumn.HeaderText = "Tên khách sạn";
             this.tenKSDataGridViewTextBoxColumn.Name = "tenKSDataGridViewTextBoxColumn";
             // 
             // soSaoDataGridViewTextBoxColumn
             // 
             this.soSaoDataGridViewTextBoxColumn.DataPropertyName = "soSao";
-            this.soSaoDataGridViewTextBoxColumn.HeaderText = "soSao";
+            this.soSaoDataGridViewTextBoxColumn.HeaderText = "Số sao";
             this.soSaoDataGridViewTextBoxColumn.Name = "soSaoDataGridViewTextBoxColumn";
             // 
             // soNhaDataGridViewTextBoxColumn
             // 
             this.soNhaDataGridViewTextBoxColumn.DataPropertyName = "soNha";
-            this.soNhaDataGridViewTextBoxColumn.HeaderText = "soNha";
+            this.soNhaDataGridViewTextBoxColumn.HeaderText = "số nhà";
             this.soNhaDataGridViewTextBoxColumn.Name = "soNhaDataGridViewTextBoxColumn";
             // 
             // duongDataGridViewTextBoxColumn
             // 
             this.duongDataGridViewTextBoxColumn.DataPropertyName = "duong";
-            this.duongDataGridViewTextBoxColumn.HeaderText = "duong";
+            this.duongDataGridViewTextBoxColumn.HeaderText = "Đường";
             this.duongDataGridViewTextBoxColumn.Name = "duongDataGridViewTextBoxColumn";
             // 
             // quanDataGridViewTextBoxColumn
             // 
             this.quanDataGridViewTextBoxColumn.DataPropertyName = "quan";
-            this.quanDataGridViewTextBoxColumn.HeaderText = "quan";
+            this.quanDataGridViewTextBoxColumn.HeaderText = "Quận";
             this.quanDataGridViewTextBoxColumn.Name = "quanDataGridViewTextBoxColumn";
             // 
             // thanhPhoDataGridViewTextBoxColumn
             // 
             this.thanhPhoDataGridViewTextBoxColumn.DataPropertyName = "thanhPho";
-            this.thanhPhoDataGridViewTextBoxColumn.HeaderText = "thanhPho";
+            this.thanhPhoDataGridViewTextBoxColumn.HeaderText = "Thành phố";
             this.thanhPhoDataGridViewTextBoxColumn.Name = "thanhPhoDataGridViewTextBoxColumn";
             // 
             // giaTBDataGridViewTextBoxColumn
             // 
             this.giaTBDataGridViewTextBoxColumn.DataPropertyName = "giaTB";
-            this.giaTBDataGridViewTextBoxColumn.HeaderText = "giaTB";
+            this.giaTBDataGridViewTextBoxColumn.HeaderText = "Giá trung bình";
             this.giaTBDataGridViewTextBoxColumn.Name = "giaTBDataGridViewTextBoxColumn";
             // 
             // moTaDataGridViewTextBoxColumn
             // 
             this.moTaDataGridViewTextBoxColumn.DataPropertyName = "moTa";
-            this.moTaDataGridViewTextBoxColumn.HeaderText = "moTa";
+            this.moTaDataGridViewTextBoxColumn.HeaderText = "Mô tả";
             this.moTaDataGridViewTextBoxColumn.Name = "moTaDataGridViewTextBoxColumn";
             // 
             // ThemNhanVien

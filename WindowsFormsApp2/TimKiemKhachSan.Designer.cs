@@ -52,11 +52,12 @@
             // 
             // btBack
             // 
-            this.btBack.Location = new System.Drawing.Point(694, 480);
+            this.btBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBack.Location = new System.Drawing.Point(652, 477);
             this.btBack.Name = "btBack";
-            this.btBack.Size = new System.Drawing.Size(75, 23);
+            this.btBack.Size = new System.Drawing.Size(103, 31);
             this.btBack.TabIndex = 2;
-            this.btBack.Text = "Quay lại";
+            this.btBack.Text = "Đăng xuất";
             this.btBack.UseVisualStyleBackColor = true;
             this.btBack.Click += new System.EventHandler(this.btBack_Click);
             // 
@@ -201,7 +202,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 512);
+            this.ClientSize = new System.Drawing.Size(777, 513);
             this.Controls.Add(this.dgvtk);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btBack);

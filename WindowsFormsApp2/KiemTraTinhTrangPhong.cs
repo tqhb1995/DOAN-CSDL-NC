@@ -24,7 +24,13 @@ namespace WindowsFormsApp2
         }
 
         private void LoadCbo()
-        {
+        { /*
+            DataTable LP = LoaiPhongBUS.LoadDuLieuLoaiPhong(Program.username);
+            cboLoaiPhong.DataSource = LP;
+            //cboLoaiPhong.Items.Add(LP.)
+            cboLoaiPhong.DisplayMember = "tenLoaiPhong";
+            cboLoaiPhong.ValueMember = "maLoaiPhong";
+            */
             DataTable data = new DataTable();
             string query = "select distinct tenLoaiPhong from LoaiPhong";
             SqlConnection conn;
@@ -39,12 +45,7 @@ namespace WindowsFormsApp2
             cboLoaiPhong.SelectedIndex = -1;
 
             DataProvider.CloseConnection(conn);
-
-        }
-
-        private void LoadDGV()
-        {
-
+            
         }
 
         private void KiemTraTinhTrangPhong_Load(object sender, EventArgs e)
@@ -99,6 +100,11 @@ namespace WindowsFormsApp2
             viewPhongTrong.DataSource = data;
 
             DataProvider.CloseConnection(conn);
+        }
+
+        private void cboLoaiPhong_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

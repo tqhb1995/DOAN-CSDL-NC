@@ -447,7 +447,7 @@ end
 --=============================================================================
 --================STORED PROCEDURE Danh Sach Phong Trong=======================
 --=============================================================================
-
+go
 create procedure KiemTraTinhTrangPhong
 	@tenloaiphong nvarchar (30),
 	@manv char(10),

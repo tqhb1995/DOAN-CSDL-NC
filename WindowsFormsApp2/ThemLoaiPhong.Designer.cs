@@ -161,9 +161,9 @@
             // Them
             // 
             this.Them.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Them.Location = new System.Drawing.Point(384, 271);
+            this.Them.Location = new System.Drawing.Point(468, 268);
             this.Them.Name = "Them";
-            this.Them.Size = new System.Drawing.Size(78, 27);
+            this.Them.Size = new System.Drawing.Size(78, 28);
             this.Them.TabIndex = 12;
             this.Them.Text = "Thêm";
             this.Them.UseVisualStyleBackColor = false;
@@ -171,7 +171,7 @@
             // 
             // Thoat
             // 
-            this.Thoat.Location = new System.Drawing.Point(490, 270);
+            this.Thoat.Location = new System.Drawing.Point(574, 267);
             this.Thoat.Name = "Thoat";
             this.Thoat.Size = new System.Drawing.Size(78, 29);
             this.Thoat.TabIndex = 13;
@@ -182,7 +182,7 @@
             // Sua
             // 
             this.Sua.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Sua.Location = new System.Drawing.Point(286, 269);
+            this.Sua.Location = new System.Drawing.Point(384, 267);
             this.Sua.Name = "Sua";
             this.Sua.Size = new System.Drawing.Size(78, 29);
             this.Sua.TabIndex = 14;

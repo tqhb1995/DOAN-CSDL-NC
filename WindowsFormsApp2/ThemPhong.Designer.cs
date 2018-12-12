@@ -32,18 +32,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_maphong = new System.Windows.Forms.TextBox();
-            this.txt_maloaiphong = new System.Windows.Forms.TextBox();
             this.txt_sophong = new System.Windows.Forms.TextBox();
             this.thoat = new System.Windows.Forms.Button();
             this.them = new System.Windows.Forms.Button();
             this.sua = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.cboLoaiPhong = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 16);
+            this.label1.Location = new System.Drawing.Point(13, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 19);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 49);
+            this.label2.Location = new System.Drawing.Point(13, 20);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 19);
             this.label2.TabIndex = 1;
@@ -61,7 +61,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 82);
+            this.label3.Location = new System.Drawing.Point(15, 86);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 19);
             this.label3.TabIndex = 2;
@@ -69,21 +69,14 @@
             // 
             // txt_maphong
             // 
-            this.txt_maphong.Location = new System.Drawing.Point(141, 8);
+            this.txt_maphong.Location = new System.Drawing.Point(141, 45);
             this.txt_maphong.Name = "txt_maphong";
             this.txt_maphong.Size = new System.Drawing.Size(261, 27);
             this.txt_maphong.TabIndex = 3;
             // 
-            // txt_maloaiphong
-            // 
-            this.txt_maloaiphong.Location = new System.Drawing.Point(141, 41);
-            this.txt_maloaiphong.Name = "txt_maloaiphong";
-            this.txt_maloaiphong.Size = new System.Drawing.Size(261, 27);
-            this.txt_maloaiphong.TabIndex = 4;
-            // 
             // txt_sophong
             // 
-            this.txt_sophong.Location = new System.Drawing.Point(141, 74);
+            this.txt_sophong.Location = new System.Drawing.Point(141, 78);
             this.txt_sophong.Name = "txt_sophong";
             this.txt_sophong.Size = new System.Drawing.Size(261, 27);
             this.txt_sophong.TabIndex = 5;
@@ -130,17 +123,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // cboLoaiPhong
+            // 
+            this.cboLoaiPhong.FormattingEnabled = true;
+            this.cboLoaiPhong.Location = new System.Drawing.Point(141, 12);
+            this.cboLoaiPhong.Name = "cboLoaiPhong";
+            this.cboLoaiPhong.Size = new System.Drawing.Size(261, 27);
+            this.cboLoaiPhong.TabIndex = 10;
+            this.cboLoaiPhong.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // ThemPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(417, 213);
+            this.Controls.Add(this.cboLoaiPhong);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.sua);
             this.Controls.Add(this.them);
             this.Controls.Add(this.thoat);
             this.Controls.Add(this.txt_sophong);
-            this.Controls.Add(this.txt_maloaiphong);
             this.Controls.Add(this.txt_maphong);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -149,6 +151,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ThemPhong";
             this.Text = "ThemPhong";
+            this.Load += new System.EventHandler(this.ThemPhong_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,11 +163,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_maphong;
-        private System.Windows.Forms.TextBox txt_maloaiphong;
         private System.Windows.Forms.TextBox txt_sophong;
         private System.Windows.Forms.Button thoat;
         private System.Windows.Forms.Button them;
         private System.Windows.Forms.Button sua;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cboLoaiPhong;
     }
 }

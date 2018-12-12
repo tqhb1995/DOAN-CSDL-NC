@@ -20,9 +20,9 @@ namespace WindowsFormsApp2
         private void btnSuaKhachSan_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //Admin ad = new Admin();
-            //ad.ShowDialog();
-            MessageBox.Show("chưa cài đặt");
+
+            NhanVienQuanLy n = new NhanVienQuanLy();
+            n.Show();
             this.Close();
         }
 
@@ -54,12 +54,22 @@ namespace WindowsFormsApp2
 
         private void btnDuyetPhong_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("chưa cài đặt");
+
+            this.Hide();
+            this.Close();
         }
 
         private void btnXemBaoCao_Click(object sender, EventArgs e)
         {
             MessageBox.Show("chưa cài đặt");
+        }
+
+        private void btnThemPhong_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThemPhong a = new ThemPhong();
+            a.Show();
+            this.Close();
         }
     }
 }
