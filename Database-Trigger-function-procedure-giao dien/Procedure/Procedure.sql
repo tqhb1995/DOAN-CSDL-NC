@@ -444,3 +444,26 @@ begin
 	drop table #result
 end
 
+--=============================================================================
+--================STORED PROCEDURE Danh Sach Phong Trong=======================
+--=============================================================================
+
+create procedure KiemTraTinhTrangPhong
+	@tenloaiphong nvarchar (30),
+	@manv char(10),
+	@ngaydat datetime
+as
+begin
+	select distinct P.maPhong, P.loaiPhong, P.soPhong, KS.tenKS
+	from dbo.Phong P, dbo.KhachSan KS, dbo.NhanVien NV, dbo.LoaiPhong LP, dbo.TrangThaiPhong TTP
+	where NV.maNV = @manv and NV.maKS=KS.maKS and KS.maKS=LP.maKS and LP.maLoaiPhong=P.loaiPhong and LP.tenLoaiPhong=@tenloaiphong and P.maPhong=TTP.maPhong and TTP.ngay<@ngaydat
+end
+---------------------------------------
+create procedure DanhSachLoaiPhong
+	@manv char(10)
+as
+begin
+	select distinct LP.tenLoaiPhong
+	from dbo.LoaiPhong LP, dbo.NhanVien NV, dbo.KhachSan KS
+	where NV.maNV=@manv and NV.maKS=KS.maKS and KS.maKS=LP.maKS
+end
