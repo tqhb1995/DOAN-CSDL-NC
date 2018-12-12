@@ -169,21 +169,22 @@ BEGIN
 			SET slTrong = slTrong + 1
 			WHERE maLoaiPhong = @maLoaiPhong
 			----- UPDATE trạng thái phòng
-			UPDATE TrangThaiPhong
-			SET tinhTrang = N'còn trống',
-				ngay = GETDATE()
-			WHERE maPhong = @maPhong
+			INSERT INTO TrangThaiPhong VALUES (@maPhong, GETDATE(),N'còn trống')
 		END
 END
 
 --DROP PROCEDURE lapHoaDon
---EXECUTE lapHoaDon 'DP00000001'
---drop database DatKhachSanOnline
-----S
-----select * from TrangThaiPhong
+--create nonclustered index IX_maDP
+--on HoaDon(maDP)
+--create nonclustered index IX_ngayThanhToan_tongTien
+--on HoaDon(ngayThanhToan, tongTien)
+
+--delete from HoaDon where maHD = 'HD99999999' or maHD = 'HD99999998'
+--drop function Auto_IdHD
+
 --go
 --declare @maHD char(10)
---EXECUTE lapHoaDon 'DP00000002', @maHD out
+--EXECUTE lapHoaDon 'DP00000019', @maHD out
 --print @maHD
 
 --=============================================

@@ -104,5 +104,3 @@ C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\W
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Admin.resources
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.DangKiKhachHang.resources
 C:\Users\Phuong Truong\Desktop\csdl nc\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.TimKiemKhachSan.resources
-C:\Users\ASUS\Documents\GitHub\DOAN-CSDL-NC\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
-C:\Users\ASUS\Documents\GitHub\DOAN-CSDL-NC\WindowsFormsApp2\obj\Debug\QuanLyKhachSan_GUI.csproj.ResolveComReference.cache

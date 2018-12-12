@@ -95,6 +95,7 @@ BEGIN
 		WHEN @temp >= 9999 AND @temp < 99999 THEN 'HD000' + CONVERT(CHAR, @temp + 1)
 		WHEN @temp >= 99999 AND @temp < 999999 THEN 'HD00' + CONVERT(CHAR, @temp + 1)
 		WHEN @temp >= 999999 AND @temp < 9999999 THEN 'HD0' + CONVERT(CHAR, @temp + 1)
+		WHEN @temp >= 9999999 AND @temp < 99999999 THEN 'HD' + CONVERT(CHAR, @temp + 1)
 		END
      RETURN @id
 END
