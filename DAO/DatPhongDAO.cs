@@ -37,8 +37,11 @@ namespace DAO
                 //Truyền giá trị vào tham số.
                 cmd.Parameters["@maKS"].Value = ks.MaKS;
                 cmd.Parameters["@maLoaiPhong"].Value = dp.MaLoaiPhong;
-                cmd.Parameters["@NgayBatDau"].Value = dp.NgayBatDau;
-                cmd.Parameters["@NgayTraPhong"].Value = dp.NgayTraPhong;
+                //cmd.Parameters["@NgayBatDau"].Value = dp.NgayBatDau;
+                //cmd.Parameters["@NgayBatDau"].Value = dp.NgayTraPhong; ;
+
+                cmd.Parameters["@NgayBatDau"].Value = DateTime.ParseExact(dp.NgayBatDau, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
+                cmd.Parameters["@NgayTraPhong"].Value = DateTime.ParseExact(dp.NgayTraPhong, "dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
                 cmd.Parameters["@MoTa"].Value = dp.MoTa;
                 cmd.Parameters["@SDT"].Value = kh.SoDienThoai;
 

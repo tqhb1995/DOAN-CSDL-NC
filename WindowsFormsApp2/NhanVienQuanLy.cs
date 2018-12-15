@@ -46,10 +46,10 @@ namespace WindowsFormsApp2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Hide();
+           
             frmLapHoaDon n = new frmLapHoaDon();
-            n.Show();
-            Close();
+            n.ShowDialog();
+            
         }
 
         private void btnDuyetPhong_Click(object sender, EventArgs e)

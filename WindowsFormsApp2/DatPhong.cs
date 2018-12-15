@@ -56,12 +56,17 @@ namespace WindowsFormsApp2
             {
                 if (DatPhongBUS.DatPhong(dp, ks, kh) == true)
                 {
-                    MessageBox.Show("Thêm thành công!\n Cảm ơn bạn đã sử dụng dịch vụ!", "Thông báo");
+                    MessageBox.Show("Đặt phòng thành công!\n Cảm ơn bạn đã sử dụng dịch vụ!", "Thông báo");
                     this.Close();
+                    TimKiemKhachSan n = new TimKiemKhachSan();
+                    n.Show();
                 }
                 else
                 {
+                    this.Close();
                     MessageBox.Show("Lỗi, vui lòng thử lại! \n ", "Thông báo");
+                    TimKiemKhachSan n = new TimKiemKhachSan();
+                    n.Show();
                 }
             }
         }

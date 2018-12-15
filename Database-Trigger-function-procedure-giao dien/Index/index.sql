@@ -5,8 +5,6 @@
 create nonclustered index IX_tenDangNhap_matKhau
 on KhachHang(tenDangNhap, matKhau)
 
-create nonclustered index IX_soCMND
-on KhachHang(soCMND)
 
 --Tạo index trên bảng KhachSan
 create nonclustered index IX_soSao_thanhPho
